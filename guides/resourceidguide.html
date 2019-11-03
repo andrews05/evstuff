@@ -1,0 +1,649 @@
+<html>
+<head>
+  <title>Resource ID Guide</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <style type="text/css">
+    body {font-family: monospace; text-align: center}
+    h1 {font-size: 24px; font-weight: normal}
+    table {font-size: 12px; border-collapse: collapse}
+    th {font-size: 18px; font-weight: normal; text-align: left; padding-bottom: 14px}
+    td {vertical-align: top}
+    .note {padding-bottom: 14px}
+    .command {font-family: Lucida Grande}
+  </style>
+</head>
+<body>
+<h1>EV Nova Resource ID Guide</h1>
+<br>
+Items in <b>bold</b> are required for the game to load cleanly
+<br>
+Items in <i>italics</i> are by convention only
+<br>
+<br>
+<br>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <th colspan="2">Valid ID Ranges</th>
+    </tr>
+    <tr>
+      <td width="100">sh&auml;n</td>	<td>128-895</td>
+    </tr>
+    <tr>
+      <td>b&ouml;&ouml;m</td>		<td>128-191</td>
+    </tr>
+    <tr>
+      <td>cr&ouml;n</td>		<td>128-639</td>
+    </tr>
+    <tr>
+      <td>d&uuml;de</td>		<td>128-639</td>
+    </tr>
+    <tr>
+      <td>fl&euml;t</td>		<td>128-383</td>
+    </tr>
+    <tr>
+      <td>g&ouml;vt</td>		<td>128-383</td>
+    </tr>
+    <tr>
+      <td>j&uuml;nk</td>		<td>128-255</td>
+    </tr>
+    <tr>
+      <td>m&iuml;sn</td>		<td>128-1127</td>
+    </tr>
+    <tr>
+      <td>n&euml;bu</td>		<td>128-159</td>
+    </tr>
+    <tr>
+      <td>&ouml;ops</td>		<td>128-383</td>
+    </tr>
+    <tr>
+      <td>o&uuml;tf</td>		<td>128-639</td>
+    </tr>
+    <tr>
+      <td>p&euml;rs</td>		<td>128-1150</td>
+    </tr>
+    <tr>
+      <td>r&auml;nk</td>		<td>128-255</td>
+    </tr>
+    <tr>
+      <td>r&ouml;id</td>		<td>128-143</td>
+    </tr>
+    <tr>
+      <td>sh&iuml;p</td>		<td>128-895</td>
+    </tr>
+    <tr>
+      <td>sp&ouml;b</td>		<td>128-2175</td>
+    </tr>
+    <tr>
+      <td>s&yuml;st</td>		<td>128-2175</td>
+    </tr>
+    <tr>
+      <td>w&euml;ap</td>		<td>128-383</td>
+    </tr>
+    <tr>
+      <td><br><br></td>
+    </tr>
+    <tr>
+      <th colspan="2">sp&iuml;n IDs</th>
+    </tr>
+    <tr>
+      <td class="note" colspan="2">
+        Note: All sprites with masks should be encoded as rl&euml;Ds. The others (606 and 608-610) are optional.
+      </td>
+    </tr>
+    <tr>
+      <td><b>400</b>-463</td>		<td>Explosions</td>
+    </tr>
+    <tr>
+      <td><b>500</b></td>		<td>Cargo boxes</td>
+    </tr>
+    <tr>
+      <td><b>501-504</b></td>		<td>Mini-asteroids for mining</td>
+    </tr>
+    <tr>
+      <td>600-605</td>			<td>Main menu buttons. If not present the buttons cannot be clicked but keyboard shortcuts will still work.</td>
+    </tr>
+    <tr>
+      <td><b>606</b></td>		<td>Main screen logo. This requires at least two frames and will be played in random order. It does not use a mask.</td>
+    </tr>
+    <tr>
+      <td>607</td>			<td>Main screen rollover images</td>
+    </tr>
+    <tr>
+      <td>608-<b>610</b></td>		<td>Main screen button animations. These are played within a fixed time so more frames does not mean a longer animation. They do not use masks.</td>
+    </tr>
+    <tr>
+      <td>650</td>			<td>Target cursor</td>
+    </tr>
+    <tr>
+      <td><b>700</b></td>		<td>Starfield</td>
+    </tr>
+    <tr>
+      <td><b>800</b>-815</td>		<td>Asteroids. To ensure these appear on widescreen displays they should all have a frame size of at least 50x50 (for 16:10) or 100x100 (for 16:9).</td>
+    </tr>
+    <tr>
+      <td><b>1000</b>-1255</td>		<td>Stellar objects</td>
+    </tr>
+    <tr>
+      <td><b>3000</b>-3255</td>		<td>Weapons</td>
+    </tr>
+    <tr>
+      <td><br><br></td>
+    </tr>
+    <tr>
+      <th colspan="2">sh&auml;n IDs</th>
+    </tr>
+    <tr>
+      <td><b>128</b></td>
+    </tr>
+    <tr>
+      <td><b>895</b></td>		<td>Escape Pod</td>
+    </tr>
+    <tr>
+      <td><br><br></td>
+    </tr>
+    <tr>
+      <th colspan="2">b&ouml;&ouml;m IDs</th>
+    </tr>
+    <tr>
+      <td>128</td>			<td>'Spark'. A random number of these can be used in weapon or ship explosions in addition to the main explosion type. It will also appear when a weapon with an explosion type of 129 or higher expires.</td>
+    </tr>
+    <tr>
+      <td><br><br></td>
+    </tr>
+    <tr>
+      <th colspan="2">d&euml;sc IDs</th>
+    </tr>
+    <tr>
+      <td>128-2175</td>			<td>Stellar object descriptions</td>
+    </tr>
+    <tr>
+      <td>3000-3511</td>		<td>Outfit item descriptions</td>
+    </tr>
+    <tr>
+      <td>4000-4999</td>		<td>Mission offer texts</td>
+    </tr>
+    <tr>
+      <td><i>5000-5999</i></td>		<td>Mission briefing texts</td>
+    </tr>
+    <tr>
+      <td><i>6000-6999</i></td>		<td>Mission quick brief texts</td>
+    </tr>
+    <tr>
+      <td><i>7000-7999</i></td>		<td>Mission load cargo texts</td>
+    </tr>
+    <tr>
+      <td><i>8000-8999</i></td>		<td>Mission drop cargo texts</td>
+    </tr>
+    <tr>
+      <td><i>9000-9999</i></td>		<td>Mission completion texts</td>
+    </tr>
+    <tr>
+      <td>10000-12047</td>		<td>Bar descriptions</td>
+    </tr>
+    <tr>
+      <td>13000-13767</td>		<td>Ship class descriptions</td>
+    </tr>
+    <tr>
+      <td>13999</td>			<td>Message shown after the player uses an escape pod.</td>
+    </tr>
+    <tr>
+      <td>14000-14767</td>		<td>Ship pilot descriptions, shown in the hire-escort dialog.</td>
+    </tr>
+    <tr>
+      <td><i>15000-15999</i></td>	<td>Mission failure texts</td>
+    </tr>
+    <tr>
+      <td><i>16000-16999</i></td>	<td>Mission ship goal completion texts</td>
+    </tr>
+    <tr>
+      <td><i>17000-17999</i></td>	<td>Mission refusal texts</td>
+    </tr>
+    <tr>
+      <td><i>20000+</i></td>		<td>Character intro texts</td>
+    </tr>
+    <tr>
+      <td>32760-32763</td>		<td>Racing commentary, tells who won when gambling.</td>
+    </tr>
+    <tr>
+      <td>32764</td>			<td>Racing help text</td>
+    </tr>
+    <tr>
+      <td>32766</td>			<td>Acknowledgements text, shown when the player presses 'x' at the main screen.</td>
+    </tr>
+    <tr>
+      <td>32767</td>			<td>About text</td>
+    </tr>
+    <tr>
+      <td><br><br></td>
+    </tr>
+    <tr>
+      <th colspan="2">&iuml;ntf IDs</th>
+    </tr>
+    <tr>
+      <td>128</td>			<td>Used for ships with no inherent government</td>
+    </tr>
+    <tr>
+      <td><br><br></td>
+    </tr>
+    <tr>
+      <th colspan="2">g&ouml;vt IDs</th>
+    </tr>
+    <tr>
+      <td>128</td>			<td>Independent systems use the Crime Tolerance from this g&ouml;vt</td>
+    </tr>
+    <tr>
+      <td><br><br></td>
+    </tr>
+    <tr>
+      <th colspan="2">p&euml;rs IDs</th>
+    </tr>
+    <tr>
+      <td>1150</td>			<td>Bounty Hunter. If any stellars are dominated this person will show up about 20% of the time and attack the player. It cannot use a Link Mission.</td>
+    </tr>
+    <tr>
+      <td><br><br></td>
+    </tr>
+    <tr>
+      <th colspan="2">sh&iuml;p IDs</th>
+    </tr>
+    <tr>
+      <td>128</td>			<td>The ship given to the player after using an escape pod.</td>
+    </tr>
+    <tr>
+      <td>895</td>			<td>Escape Pod. This is not required for the escape pod to function properly but if present the escape pod will inherit certain attributes from it. It cannot be used as an AI ship but if used as the player's ship it will be invulnerable.</td>
+    </tr>
+    <tr>
+      <td><br><br></td>
+    </tr>
+    <tr>
+      <th colspan="2">rl&euml;D IDs</th>
+    </tr>
+    <tr>
+      <td class="note" colspan="2">
+        Note: rl&euml;Ds store both the sprite and the mask in the same resource which means that the mask field in sp&iuml;n and sh&auml;n resources is ignored.<br>
+        Note: Do not create rl&euml;8 resources for your plug-in. These are an obsolete resource type used to store 8-bit versions of sprites.<br>
+        Note: Any sprites not listed here should use the same ID as their sp&iuml;ns.
+      </td>
+    </tr>
+    <tr>
+      <td><i>200-455</i></td>		<td>Weapons</td>
+    </tr>
+    <tr>
+      <td><i>1000-1199</i></td>		<td>Ship base sprites</td>
+    </tr>
+    <tr>
+      <td><i>1200-1399</i></td>		<td>Ship alternate sprites</td>
+    </tr>
+    <tr>
+      <td><i>1400-1599</i></td>		<td>Ship engine glows</td>
+    </tr>
+    <tr>
+      <td><i>1600-1799</i></td>		<td>Ship running lights</td>
+    </tr>
+    <tr>
+      <td><i>1800-1999</i></td>		<td>Ship weapon glows</td>
+    </tr>
+    <tr>
+      <td><i>2000-2255</i></td>		<td>Stellar objects</td>
+    </tr>
+    <tr>
+      <td><i>4000-4063</i></td>		<td>Explosions</td>
+    </tr>
+    <tr>
+      <td><i>12000-12199</i></td>	<td>Ship shield glows</td>
+    </tr>
+    <tr>
+      <td><br><br></td>
+    </tr>
+    <tr>
+      <th colspan="2">PICT IDs</th>
+    </tr>
+    <tr>
+      <td class="note" colspan="2">
+        Note: PICTs should not use any QuickTime compression as they may not work on the Windows version of Nova. For best results, all PICTs should be exactly 16-bit (w00tware's BlitZen utility can help with this).
+      </td>
+    </tr>
+    <tr>
+      <td>129</td>			<td>Strict Play explanation (182x22 standard)</td>
+    </tr>
+    <tr>
+      <td>130</td>			<td>Icon shown in New Pilot dialog (32x32 standard)</td>
+    </tr>
+    <tr>
+      <td>131</td>			<td>Splash screen</td>
+    </tr>
+    <tr>
+      <td><i>700+</i></td>		<td>Status bar backgrounds (width=194 only, height=767 standard)</td>
+    </tr>
+    <tr>
+      <td>3000-3767</td>		<td>Ship target images (128x64 only)</td>
+    </tr>
+    <tr>
+      <td>5000-5767</td>		<td>Shipyard/communication images (200x200 standard)</td>
+    </tr>
+    <tr>
+      <td>6000-6511</td>		<td>Outfit item images (200x200 standard)</td>
+    </tr>
+    <tr>
+      <td>7500-7502</td>		<td>Dialog buttons, left, middle and right (??x25 standard). The middle sections are stretched out to fill the length of a button.</td>
+    </tr>
+    <tr>
+      <td>7503-7505</td>		<td>Dialog buttons clicked</td>
+    </tr>
+    <tr>
+      <td>7506-7508</td>		<td>Dialog buttons disabled</td>
+    </tr>
+    <tr>
+      <td>7600-7608</td>		<td>Dialog button masks. Unlike sprite masks, white is transparent here. Middle sections do not use masks.</td>
+    </tr>
+    <tr>
+      <td><i>7800+</i></td>		<td>Custom person communication images</td>
+    </tr>
+    <tr>
+      <td>8000</td>			<td>Main screen background</td>
+    </tr>
+    <tr>
+      <td>8010</td>			<td>Main screen logo</td>
+    </tr>
+    <tr>
+      <td><i>8030-8032</i></td>		<td>Main screen button animations</td>
+    </tr>
+    <tr>
+      <td>8100</td>			<td>Ambrosia logo, shown before the splash screen.</td>
+    </tr>
+    <tr>
+      <td><i>8200+</i></td>		<td>Character intro images</td>
+    </tr>
+    <tr>
+      <td>8500-8529</td>		<td>Dialog backgrounds</td>
+    </tr>
+    <tr>
+      <td>8530-8533</td>		<td>Gambling buttons (100x100 standard)</td>
+    </tr>
+    <tr>
+      <td>8540-8543</td>		<td>Gambling buttons clicked</td>
+    </tr>
+    <tr>
+      <td>8550-8553</td>		<td>Gambling buttons winner</td>
+    </tr>
+    <tr>
+      <td>8560-8563</td>		<td>Gambling buttons loser</td>
+    </tr>
+    <tr>
+      <td>9000</td>			<td>Default news image (300x230 standard)</td>
+    </tr>
+    <tr>
+      <td><i>9001+</i></td>		<td>Custom government news images</td>
+    </tr>
+    <tr>
+      <td>9500-9723</td>		<td>Nebulae images. 32 groups of 7, for different map zoom levels.</td>
+    </tr>
+    <tr>
+      <td>10000-10255</td>		<td>Stellar landing scenes (612x285 standard)</td>
+    </tr>
+    <tr>
+      <td><i>11000+</i></td>		<td>Custom stellar landing scenes</td>
+    </tr>
+    <tr>
+      <td><i>20128-20895</i></td>	<td>Ship scenes, for the ship info dialog (600x400 standard). These are referenced by the ship/pilot descriptions.</td>
+    </tr>
+    <tr>
+      <td><br><br></td>
+    </tr>
+    <tr>
+      <th colspan="2">snd&nbsp; IDs</th>
+    </tr>
+    <tr>
+      <td>128</td>			<td>Warp up. If this sound is missing there may be odd behaviour with x2 mode.</td>
+    </tr>
+    <tr>
+      <td>129</td>			<td>Warp up x2, used when in x2 mode. If this sound is missing the game will activate x2 mode whenever any other sound is playing.</td>
+    </tr>
+    <tr>
+      <td>130</td>			<td>Warp out</td>
+    </tr>
+    <tr>
+      <td>150</td>			<td>Beep 1: navigation off, hyperspace on, map close, stellar select.</td>
+    </tr>
+    <tr>
+      <td>151</td>			<td>Beep 2: mission info open, request/grant landing clearance, cancel self-destruct.</td>
+    </tr>
+    <tr>
+      <td>152</td>			<td>Beep 3: map open, mission info/communication close, cycle weapons/targets/hyper routes, self-destruct countdown.</td>
+    </tr>
+    <tr>
+      <td>153</td>			<td>Beep 4: unable to land/hyperjump/board, no active missions, mission failed, initiate self-destruct.</td>
+    </tr>
+    <tr>
+      <td>154</td>			<td>Beep 5: open communication, center map, hyperspace clearance, person hail quotes, reinforcements approaching, jettison cargo.</td>
+    </tr>
+    <tr>
+      <td>200-455</td>			<td>Weapon sounds. Beware the overlap with some of the following sounds.</td>
+    </tr>
+    <tr>
+      <td>300-363</td>			<td>Explosion sounds</td>
+    </tr>
+    <tr>
+      <td>370</td>			<td>Red Alert</td>
+    </tr>
+    <tr>
+      <td>371</td>			<td>Klaxxon, played when player's ship is exploding.</td>
+    </tr>
+    <tr>
+      <td>372</td>			<td>Eject</td>
+    </tr>
+    <tr>
+      <td>380</td>			<td>Cloak off</td>
+    </tr>
+    <tr>
+      <td>381</td>			<td>Cloak on</td>
+    </tr>
+    <tr>
+      <td>390</td>			<td>Airlock, played when boarding another ship.</td>
+    </tr>
+    <tr>
+      <td>600</td>			<td>Menu button down</td>
+    </tr>
+    <tr>
+      <td>601</td>			<td>Menu button up</td>
+    </tr>
+    <tr>
+      <td>602</td>			<td>Menu button start animation</td>
+    </tr>
+    <tr>
+      <td>603</td>			<td>Menu button end animation</td>
+    </tr>
+    <tr>
+      <td>1000-1029</td>		<td>Voice type 0 fighter/escort speeches. 3 groups of 10: acknowledgement, targeting, victory.</td>
+    </tr>
+    <tr>
+      <td>...</td>
+    </tr>
+    <tr>
+      <td>1700-1729</td>		<td>Voice type 7 fighter/escort speeches</td>
+    </tr>
+    <tr>
+      <td><i>10000+</i></td>		<td>Custom stellar landing sounds</td>
+    </tr>
+    <tr>
+      <td>30003</td>			<td>'Transition' music. This sound will be played along with any and all intro pics defined by a char.</td>
+    </tr>
+    <tr>
+      <td><br><br></td>
+    </tr>
+    <tr>
+      <th colspan="2">STR# IDs</th>
+    </tr>
+    <tr>
+      <td>128</td>			<td>Default Names. 3 groups of 3: pilot names, pilot nicknames, ship names.</td>
+    </tr>
+    <tr>
+      <td>130</td>			<td>Default Filenames, used by the mac version of Nova. Plug-ins that include a music file should also include this STR# with the following six entries: "EV Nova Prefs", "Nova Music.mp3", "Pilots", "Last Pilot", "EV Nova", "http://www.ambrosiasw.com/games/evn/".</td>
+    </tr>
+    <tr>
+      <td>134</td>			<td>Legal Status. Entry 1 is unused, 2 is a clean record, 3-10 are the bad scale, 11-16 are the good scale, 17 is when a stellar in the system is dominated, 18 is when all stellars in the system are dominated.</td>
+    </tr>
+    <tr>
+      <td>137</td>			<td>Dates and Numbers. Entries 1-12 are month names, 13-24 are month abbreviations, 25-28 are date suffixes, 29-38 are number names.</td>
+    </tr>
+    <tr>
+      <td>138</td>			<td>Combat Ratings</td>
+    </tr>
+    <tr>
+      <td>150</td>			<td>Button Labels</td>
+    </tr>
+    <tr>
+      <td>1000</td>			<td>Message Buoys</td>
+    </tr>
+    <tr>
+      <td>1100</td>			<td>Stellar Types</td>
+    </tr>
+    <tr>
+      <td>2002</td>			<td>Miscellaneous strings. Unfortunately there's way too much stuff in here to list.</td>
+    </tr>
+    <tr>
+      <td>3000</td>			<td>Ship Communication strings. 33 groups of 5: open channel, greetings (non-talkative), open channel (hostile), unknown, open channel (mission escort), open channel (carried ship), unknown, unknown, unknown, greetings (generic), unknown, unknown, can't afford payment, greetings (hostile), won't assist (unnecessary), coming to assist (combat), won't assist (busy), won't assist (don't want to), assist if paid (combat), won't assist (ridiculous), accept mercy bribe, deny mercy, won't assist (carried ship), mercy if paid, mercy if paid (mean), won't assist (fleet escort), unknown, mercy for free, assist if paid (service), coming to assist (service), reject lower price (mercy), reject lower price (assistance), unknown.</td>
+    </tr>
+    <tr>
+      <td>3002</td>			<td>Stellar Communication strings. 10 groups of 5: open channel, demand tribute (inexperienced), demand tribute, unknown, greetings (hostile), demand tribute (successful), reject lower price, release, allow bribe, deny bribe.</td>
+    </tr>
+    <tr>
+      <td>4000</td>			<td>Basic cargo types. The full names of the six basic cargo types that may appear in the Trade Center.</td>
+    </tr>
+    <tr>
+      <td>4001</td>			<td>Lowercase cargo names, for all cargo types. Used in the 'Cargo' section of the player info and the &lt;CT&gt; description tag.</td>
+    </tr>
+    <tr>
+      <td>4002</td>			<td>Cargo abbreviations, for all cargo types. Used in the 'Special' section of the cargo status display.</td>
+    </tr>
+    <tr>
+      <td>4003</td>			<td>Basic cargo status display labels</td>
+    </tr>
+    <tr>
+      <td>4004</td>			<td>Basic cargo base prices</td>
+    </tr>
+    <tr>
+      <td>5003</td>			<td>Ship help messages, shown when a trader is under attack.</td>
+    </tr>
+    <tr>
+      <td>6999-7255</td>		<td>Government-specific ship greetings (6999 for independent). Entries 1-5 are for traders, 6-10 are for warships/interceptors. Blank or "*" entries will instead use the generic greetings from STR# 3000. Beware the overlap with the next two STR#s.</td>
+    </tr>
+    <tr>
+      <td>7100</td>			<td>Person communication quotes</td>
+    </tr>
+    <tr>
+      <td>7101</td>			<td>Person hail quotes</td>
+    </tr>
+    <tr>
+      <td>7500+</td>			<td>Special Advice</td>
+    </tr>
+    <tr>
+      <td>8100</td>			<td>Commercials, shown in the news dialog.</td>
+    </tr>
+    <tr>
+      <td>8101</td>			<td>Generic news, shown when no other news is applicable.</td>
+    </tr>
+    <tr>
+      <td><i>10000+</i></td>		<td>Mission special ship names</td>
+    </tr>
+    <tr>
+      <td><i>15000+</i></td>		<td>Cron-controlled news</td>
+    </tr>
+    <tr>
+      <td><i>25000+</i></td>		<td>Qxxx messages</td>
+    </tr>
+    <tr>
+      <td><br><br></td>
+    </tr>
+    <tr>
+      <th colspan="2">STR&nbsp; IDs</th>
+    </tr>
+    <tr>
+      <td class="note" colspan="2">
+        STR&nbsp; resources are used to 'patch' individual entries of STR# resources.<br>
+        Note: You can have up to 256 cargo types in the STR# resources but only the first 100 can be patched in this way.
+      </td>
+    </tr>
+    <tr>
+      <td>1000+</td>			<td>STR# 1000 (Message Buoys)</td>
+    </tr>
+    <tr>
+      <td>5000+</td>			<td>STR# 7101 (Person hail quotes)</td>
+    </tr>
+    <tr>
+      <td>7000-7255</td>		<td>STR# 1100 (Stellar Types)</td>
+    </tr>
+    <tr>
+      <td>9000-9005</td>		<td>STR# 4000 (Basic cargo types)</td>
+    </tr>
+    <tr>
+      <td>9100-9199</td>		<td>STR# 4001 (Lowercase cargo names)</td>
+    </tr>
+    <tr>
+      <td>9200-9299</td>		<td>STR# 4002 (Cargo abbreviations)</td>
+    </tr>
+    <tr>
+      <td>9300-9305</td>		<td>STR# 4004 (Basic cargo base prices)</td>
+    </tr>
+    <tr>
+      <td>9400-9405</td>		<td>STR# 4003 (Basic cargo status display labels)</td>
+    </tr>
+    <tr>
+      <td>10000-12569</td>		<td>STR# 6999-7255 (Government-specific ship greetings)</td>
+    </tr>
+    <tr>
+      <td>15001+</td>			<td>STR# 7100 (Person communication quotes)</td>
+    </tr>
+    <tr>
+      <td><br><br></td>
+    </tr>
+    <tr>
+      <th colspan="2">cicn IDs</th>
+    </tr>
+    <tr>
+      <td><b>10000-10003</b></td>	<td>Stellar target brackets, top-left, top-right, bottom-right, bottom-left.</td>
+    </tr>
+    <tr>
+      <td><b>10004-10007</b></td>	<td>Dominated stellar target brackets</td>
+    </tr>
+    <tr>
+      <td><b>10008-10011</b></td>	<td>Hostile ship target brackets</td>
+    </tr>
+    <tr>
+      <td><b>10012-10015</b></td>	<td>Ship target brackets</td>
+    </tr>
+    <tr>
+      <td><b>10016-10019</b></td>	<td>Fighter/escort target brackets</td>
+    </tr>
+    <tr>
+      <td><b>10020-10023</b></td>	<td>Disabled ship target brackets</td>
+    </tr>
+    <tr>
+      <td>15000</td>			<td>Red mission arrow. On the map these will point to destination systems for missions player has active.</td>
+    </tr>
+    <tr>
+      <td>15001</td>			<td>Green mission arrow. This will point to the destination system for the selected mission.</td>
+    </tr>
+    <tr>
+      <td><b>18000-18001</b></td>	<td>Red Alert. These will appear as an addition to the Red Alert sound when the volume is turned down low.</td>
+    </tr>
+    <tr>
+      <td><b>20000</b></td>		<td>x2 indicator</td>
+    </tr>
+    <tr>
+      <td><br><br></td>
+    </tr>
+    <tr>
+      <th colspan="2">ppat IDs</th>
+    </tr>
+    <tr>
+      <td>128-137</td>			<td>Interference patterns</td>
+    </tr>
+    <tr>
+      <td><br><br></td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>
