@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>EV Stuff</title>
+        <meta name="viewport" content="width=device-width">
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <style>
             body {padding-top: 1rem}
@@ -9,19 +10,25 @@
             .filesize {font-size: 0.75rem; color: #555}
             .source {font-size: 0.8rem; padding-top: 0.3rem}
             .update {font-size: 0.75rem}
-            .icon {float: left; margin-right: 0.6em}
+            .icon {height: 48px; float: left; margin-right: 0.6em}
             .desc {margin-bottom: 1.5em}
             .icon-item .update {margin: .3rem 0}
+            .alert .icon {height: 64px; margin-top: 0.1em; margin-right: 0.75em}
             h5 {margin: 0}
             #backroom-nav {margin-left: auto}
             #backroom-nav>a:not(.active) {opacity:0}
         </style>
     </head>
     <body class="container" onload="checkHash()">
+        <div class="alert alert-warning">
+            <h5>Downloads disabled until April 2nd</h5>
+            Unfortunately the GitHub LFS quota for this repository has been exceeded, meaning all downloads except EV Nova are currently disabled.
+        </div>
         <div class="alert alert-success">
-            <h4><a href="applescript://com.apple.scripteditor?action=new&script=tell%20application%20%22Finder%22%20to%20set%20evn%20to%20application%20file%20id%20%22com.AmbrosiaSW.EV_Nova%22%20as%20text%0Aset%20evnPath%20to%20quoted%20form%20of%20(POSIX%20path%20of%20evn%20%26%20%22%2FContents%2FMacOS%2FEV%20Nova%22)%0Ado%20shell%20script%20%22echo%200%3A0F1F4400%20%7C%20xxd%20-r%20%7C%20dd%20bs%3D1%20seek%3D112072%20conv%3Dnotrunc%20of%3D%22%20%26%20evnPath%0Ado%20shell%20script%20%22echo%200%3A0F1F4400%20%7C%20xxd%20-r%20%7C%20dd%20bs%3D1%20seek%3D112242%20conv%3Dnotrunc%20of%3D%22%20%26%20evnPath%0Adisplay%20alert%20%22EV%20Nova%20Patched%22%20message%20evn">EV Nova Mac Fix</a> <span class="filesize">(AppleScript)</span></h4>
-            This patch is necessary to make EV Nova work on OS 10.11 thru 10.14. Click the link to open it in Script Editor, then click the Run button to apply.<br>
-            Or <a href="https://www.dropbox.com/s/s2onrgdvz3a6w9o/EVNova.dmg">download a pre-patched copy of EV Nova</a>.
+            <img src="evnicon.png" class="icon">
+            <h5><a href="https://www.dropbox.com/s/s2onrgdvz3a6w9o/EVNova.dmg">EV Nova</a> </h5>
+            This copy of EV Nova has been pre-patched to allow it to run on versions of macOS up to 10.14.
+            <div class="small">If you have an unpatched copy of EV Nova you can&nbsp;<a href="applescript://com.apple.scripteditor?action=new&amp;script=tell%20application%20%22Finder%22%20to%20set%20evn%20to%20application%20file%20id%20%22com.AmbrosiaSW.EV_Nova%22%20as%20text%0Aset%20evnPath%20to%20quoted%20form%20of%20(POSIX%20path%20of%20evn%20%26%20%22%2FContents%2FMacOS%2FEV%20Nova%22)%0Ado%20shell%20script%20%22echo%200%3A0F1F4400%20%7C%20xxd%20-r%20%7C%20dd%20bs%3D1%20seek%3D112072%20conv%3Dnotrunc%20of%3D%22%20%26%20evnPath%0Ado%20shell%20script%20%22echo%200%3A0F1F4400%20%7C%20xxd%20-r%20%7C%20dd%20bs%3D1%20seek%3D112242%20conv%3Dnotrunc%20of%3D%22%20%26%20evnPath%0Adisplay%20alert%20%22EV%20Nova%20Patched%22%20message%20evn">run this AppleScript&nbsp;to apply the patch</a>.</div> 
         </div>
         <ul class="nav nav-tabs">
             <li class="nav-item"><a class="nav-link active" href="#evo">EV/O Plug-ins</a></li>
@@ -43,17 +50,22 @@
                             <p class="desc">Port of the original Escape Velocity to the Nova engine.</p>
                         </div>
                         
-                        <a href="plugins/rEV_1.1b5.zip">rEV 1.1b5</a> <span class="filesize">(28.8 MB)</span>
-                        <div class="update text-muted">6 May 2014: Minor update - allows Gunboats to be captured as fighters.</div>
-                        <p class="desc">Kris Quistorff's rEVisited graphical remake and expansion, rebuilt for EV Classic for Nova.</p>
+                        <div class="icon-item">
+                            <img src="plugins/revicon.png" class="icon">
+                            <a href="plugins/rEV_1.1b5.zip">rEV 1.1b5</a> <span class="filesize">(28.8 MB)</span>
+                            <div class="update text-muted">6 May 2014: Minor update - allows Gunboats to be captured as fighters.</div>
+                            <p class="desc">Kris Quistorff's rEVisited graphical remake and expansion, rebuilt for EV Classic for Nova.</p>
+                        </div>
+
                         <br>
-                        <br>
+                        <br class="d-none d-lg-block">
                         <div class="icon-item">
                             <img src="plugins/fhicon.png" class="icon">
                             <a href="plugins/The_Frozen_Heart.zip">The Frozen Heart</a> <span class="filesize">(7.3 MB)</span>
                             <div class="update text-muted">12 November 2019: 1.0.6 released with minor fixes.</div>
                             <p class="desc">Martin Turner's classic adventure, ported to the Nova engine.</p>
                         </div>
+                        <br>
                     </div>
                     <div class="col-lg-6">
                         <div class="icon-item">
@@ -63,18 +75,26 @@
                             <p class="desc">Port of the original EV Override to the Nova engine.</p>
                         </div>
                         
-                        <a href="plugins/EVO_Extras.zip">EVO Extras</a> <span class="filesize">(1 MB)</span>
-                        <div class="update text-muted">3 November 2019: Added "Paaren Proceedings".</div>
-                        <p class="desc">Collection of six small plug-ins for EV Override for Nova.</p>
+                        <div class="icon-item">
+                            <img src="plugins/eeicon.png" class="icon">
+                            <a href="plugins/EVO_Extras.zip">EVO Extras</a> <span class="filesize">(1 MB)</span>
+                            <div class="update text-muted">3 November 2019: Added "Paaren Proceedings".</div>
+                            <p class="desc">Collection of six small plug-ins for EV Override for Nova.</p>
+                        </div>
                         
-                        <a href="plugins/EVO_Facelift_1.0.5.zip">EVO Facelift 1.0.5</a> <span class="filesize">(21.9 MB)</span>
-                        <div class="update text-muted">31 March 2010: 1.0.5 released.</div>
-                        <p class="desc">Tim Morgan's graphical facelift for EV Override for Nova.</p>
+                        <div class="icon-item">
+                            <img src="plugins/flicon.png" class="icon">
+                            <a href="plugins/EVO_Facelift_1.0.5.zip">EVO Facelift 1.0.5</a> <span class="filesize">(21.9 MB)</span>
+                            <div class="update text-muted">31 March 2010: 1.0.5 released.</div>
+                            <p class="desc">Tim Morgan's graphical facelift for EV Override for Nova.</p>
+                        </div>
                         
-                        <a href="plugins/Cold_Fusion_for_Nova_1.0.1.zip">Cold Fusion for Nova 1.0.1</a> <span class="filesize">(10.1 MB)</span>
-                        <div class="update text-muted">20 October 2009: 1.0.1 released with minor fixes and improvements.</div>
-                        <p class="desc">Dreamwave Studios' Cold Fusion graphics replacement for EV Override, ported to the Nova engine by Dr. Trowel.</p>
-                        <br>
+                        <div class="icon-item">
+                            <img src="plugins/cficon.png" class="icon">
+                            <a href="plugins/Cold_Fusion_for_Nova_1.0.1.zip">Cold Fusion for Nova 1.0.1</a> <span class="filesize">(10.1 MB)</span>
+                            <div class="update text-muted">20 October 2009: 1.0.1 released with minor fixes and improvements.</div>
+                            <p class="desc">Dreamwave Studios' Cold Fusion graphics replacement for EV Override, ported to the Nova engine by Dr. Trowel.</p>
+                        </div>
                     </div>
                 </div>
             </div>
