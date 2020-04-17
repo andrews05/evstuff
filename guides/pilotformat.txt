@@ -124,8 +124,8 @@ AltPlayerFileDataStruct (26366 bytes)
  3588	short priceFlux[2][2]		global price fluctuations
  3590	short cronDuration[512]
  3990	short cronHoldOff[512]
- 3d90	short stelOwned[2048]
- 4d90	short stelDestroyed[2048]
+ 3d90	short reinforcements[2048]	number of days until system reinforcements regenerate
+ 4d90	short stelDestroyed[2048]	number of days until stellar regenerates (-1 = alive)
  5d90	short unknown[4] (0)
  5d98	Byte playerNicknameLength
  5d99	char[63] playerNickname
