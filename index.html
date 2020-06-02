@@ -201,8 +201,9 @@
         }
         window.addEventListener('hashchange', checkHash);
         var regex = new RegExp('://(.*)\.github\.io/([^/]*)/');
+        var replace = Math.random() >= 0.5 ? '://media.githubusercontent.com/media/$1/$2/master/' : '://bitbucket.org/andrews050/$2/raw/master/';
         for (var lfs of document.querySelectorAll('a[href$=".zip"],a[href$=".dmg"]')) {
-            lfs.href = lfs.href.replace(regex, '://media.githubusercontent.com/media/$1/$2/master/');
+            lfs.href = lfs.href.replace(regex, replace);
         }
         </script>
     </body>
