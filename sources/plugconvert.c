@@ -65,6 +65,11 @@ OSErr npif2rez(FSRef npif, char *rez) {
 
     FSGetResourceForkName(&forkName);
     errorCode = FSOpenResourceFile(&npif, forkName.length, forkName.unicode, fsRdPerm, &inputRefNum);
+    if (errorCode) {
+        // Try data fork if resource fork failed
+        FSGetDataForkName(&forkName);
+        errorCode = FSOpenResourceFile(&npif, forkName.length, forkName.unicode, fsRdPerm, &inputRefNum);
+    }
     if (!errorCode) {
         UseResFile(inputRefNum);
 
@@ -138,15 +143,16 @@ OSErr npif2rez(FSRef npif, char *rez) {
 
         CloseResFile(inputRefNum);
     } else {
-        fprintf(stderr, "Failed to open resource map in input data fork\n");
+        fprintf(stderr, "Failed to open resource map in input resource fork\n");
     }
 
     return errorCode;
 }
 
-OSErr rez2npif(char *rez, FSRef npifDir, HFSUniStr255 npifName) {
+OSErr rez2npif(char *rez, FSRef npifDir, HFSUniStr255 npifName, Boolean dataFork) {
     OSErr           errorCode;
     HFSUniStr255    forkName;
+    FSCatalogInfoBitmap whichInfo = 0;
     FSCatalogInfo   catInfo = {0};
     FSRef           npif;
     ResFileRefNum   outputRefNum;
@@ -172,10 +178,15 @@ OSErr rez2npif(char *rez, FSRef npifDir, HFSUniStr255 npifName) {
                 fread(*resources[i], offsets[i].size, 1, fp);
             }
 
-            FSGetResourceForkName(&forkName);
-            ((FileInfo *)&catInfo.finderInfo)->fileType = 'Np\225f';
-            ((FileInfo *)&catInfo.finderInfo)->fileCreator = 'N\232v\212';
-            errorCode = FSCreateResourceFile(&npifDir, npifName.length, npifName.unicode, kFSCatInfoFinderInfo, &catInfo, forkName.length, forkName.unicode, &npif, NULL);
+            if (dataFork) {
+                FSGetDataForkName(&forkName);
+            } else {
+                FSGetResourceForkName(&forkName);
+                whichInfo = kFSCatInfoFinderInfo;
+                ((FileInfo *)&catInfo.finderInfo)->fileType = 'Np\225f';
+                ((FileInfo *)&catInfo.finderInfo)->fileCreator = 'N\232v\212';
+            }
+            errorCode = FSCreateResourceFile(&npifDir, npifName.length, npifName.unicode, whichInfo, &catInfo, forkName.length, forkName.unicode, &npif, NULL);
             if (!errorCode) {
                 errorCode = FSOpenResourceFile(&npif, forkName.length, forkName.unicode, fsWrPerm, &outputRefNum);
             }
@@ -223,13 +234,13 @@ int main (int argc, const char * argv[]) {
     Boolean check;
     
     if (argc < 3) {
-        printf("Usage:\nplugconvert -mac <input plugin.rez> <output mac plugin>\nplugconvert -win <input mac plugin> <output plugin.rez>\n");
+        printf("Usage:\nplugconvert -rsrc <input plugin.rez> <output mac plugin>\nplugconvert -data <input plugin.rez> <output mac plugin.ndat>\nplugconvert -rez <input mac plugin> <output plugin.rez>\n");
         return noErr;
     }
 
     format = (char *)argv[1];
 
-    if (strcmp(format, "-win") == 0) {
+    if (strcmp(format, "-rez") == 0) {
         npifPath = (UInt8 *)argv[2];
         rezPath = (char *)argv[3];
         errorCode = FSPathMakeRef(npifPath, &ref, &check);
@@ -242,7 +253,7 @@ int main (int argc, const char * argv[]) {
         } else {
             errorCode = npif2rez(ref, rezPath);
         }
-    } else if (strcmp(format, "-mac") == 0) {
+    } else if (strcmp(format, "-rsrc") == 0 || strcmp(format, "-data") == 0) {
         rezPath = (char *)argv[2];
         npifPath = (UInt8 *)argv[3];
         HFSUniStr255 npifName;
@@ -253,7 +264,7 @@ int main (int argc, const char * argv[]) {
             fprintf(stderr, "Directory of output file not found\n");
             errorCode = paramErr;
         } else {
-            errorCode = rez2npif(rezPath, ref, npifName);
+            errorCode = rez2npif(rezPath, ref, npifName, strcmp(format, "-data") == 0);
         }
     } else {
         fprintf(stderr, "Invalid format\n");

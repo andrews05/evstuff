@@ -74,4 +74,4 @@ elif encode == cmpSH:
 af._ssnd_chunk.seek(8) # Seek past header fields
 data += af._ssnd_chunk.read() # Read entire chunk directly rather than calling readframes()
 
-print data
+sys.stdout.write(data)
