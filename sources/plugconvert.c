@@ -138,7 +138,7 @@ OSErr npif2rez(FSRef npif, char *rez) {
 
         CloseResFile(inputRefNum);
     } else {
-        fprintf(stderr, "Failed to open resource map in input data fork\n");
+        fprintf(stderr, "Failed to open resource map in input resource fork\n");
     }
 
     return errorCode;
