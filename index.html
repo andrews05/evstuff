@@ -13,7 +13,8 @@
             .icon {height: 48px; float: left; margin-right: 0.6em}
             .desc {margin-bottom: 1.5em}
             .icon-item .update {margin: .3rem 0}
-            .alert .icon {height: 64px; margin-top: 0.1em; margin-right: 0.75em}
+            .alert {display: flex}
+            .alert .icon {height: 64px; margin-right: 0.75em}
             h5 {margin: 0}
             #backroom-nav {margin-left: auto}
             #backroom-nav>a:not(.active) {opacity:0}
@@ -22,9 +23,10 @@
     <body class="container" onload="checkHash()">
         <div class="alert alert-primary">
             <img src="evnicon.png" class="icon">
-            <h5><a href="https://www.dropbox.com/s/s2onrgdvz3a6w9o/EVNova.dmg">EV Nova</a> </h5>
-            This copy of EV Nova has been pre-patched to allow it to run on versions of macOS up to 10.14.
-            <div class="small">If you have an unpatched copy of EV Nova you can&nbsp;<a href="applescript://com.apple.scripteditor?action=new&amp;script=tell%20application%20%22Finder%22%20to%20set%20evn%20to%20application%20file%20id%20%22com.AmbrosiaSW.EV_Nova%22%20as%20text%0Aset%20evnPath%20to%20quoted%20form%20of%20(POSIX%20path%20of%20evn%20%26%20%22%2FContents%2FMacOS%2FEV%20Nova%22)%0Ado%20shell%20script%20%22echo%200%3A0F1F4400%20%7C%20xxd%20-r%20%7C%20dd%20bs%3D1%20seek%3D112072%20conv%3Dnotrunc%20of%3D%22%20%26%20evnPath%0Ado%20shell%20script%20%22echo%200%3A0F1F4400%20%7C%20xxd%20-r%20%7C%20dd%20bs%3D1%20seek%3D112242%20conv%3Dnotrunc%20of%3D%22%20%26%20evnPath%0Adisplay%20alert%20%22EV%20Nova%20Patched%22%20message%20evn">run this AppleScript&nbsp;to apply the patch</a>.</div> 
+            <div>
+                <h5><a href="https://www.dropbox.com/s/zgg0piv6zk82ifw/EV%20Nova%20mod%202.dmg">EV Nova mod 2</a></h5>
+                Custom edition of EV Nova for macOS 10.11 to 10.14, with some compatibility fixes and support for the .rez plug-in format.</div> 
+            </div>
         </div>
         <ul class="nav nav-tabs">
             <li class="nav-item"><a class="nav-link active" href="#evo">EV/O Plug-ins</a></li>
@@ -173,6 +175,9 @@
                 <a href="guides/pilotformat.txt">Pilot File Format</a>
                 <div class="update text-muted">Last modified: 18 April 2020</div>
                 <p>Based on Matt Burch's <a href="http://asw.forums.cytheraguides.com/topic/15023/pilot-data/9">spec for original EV pilot files</a>.</p>
+                <br>
+                <a href="guides/evnhacks.txt">EV Nova Hacks</a>
+                <div class="update text-muted">Last modified: 8 September 2020</div>
                 <br>
             </div>
             <div class="tab-pane" id="backroom-tab">

@@ -1,0 +1,13 @@
+﻿Binary hacks for EV Nova.
+Offsets are for the "thin" binary included in the modded version. Add 0x1000 to offsets for the original binary.
+
+Function                Offset  Old Value   New Value   Info
+10.11 Window Fix        01A5C8  E898A33900  0F1F440000  Replaces call to CGSSetWindowDepthLimit with no-op
+10.11 Fullscreen Fix    01A672  E8EEA23900  0F1F440000  Replaces call to CGSSetWindowDepthLimit with no-op
+Data Fork Pilots        071116  E8343A3400  E8253A3400  Replaces call to FSGetResourceForkName with FSGetDataForkName
+Data Fork Plug-ins      0A3194  742C        6690        Replaces jump after "Npïf" check with no-op
+
+Other fun things to change (values are little endian).
+Window Height           01A4BF  5C02
+Window Width            01A4C7  4003
+Particle Cap            02117B  0004
