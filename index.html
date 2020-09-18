@@ -13,15 +13,15 @@
             .icon {height: 48px; float: left; margin-right: 0.6em}
             .desc {margin-bottom: 1.5em}
             .icon-item .update {margin: .3rem 0}
-            .alert {display: flex}
-            .alert .icon {height: 64px; margin-right: 0.75em}
-            h5 {margin: 0}
+            .alert-flex {display: flex}
+            .alert-flex .icon {height: 64px; margin-right: 0.75em}
+            h5 {margin-bottom: .25rem}
             #backroom-nav {margin-left: auto}
             #backroom-nav>a:not(.active) {opacity:0}
         </style>
     </head>
     <body class="container" onload="checkHash()">
-        <div class="alert alert-primary">
+        <div class="alert alert-primary alert-flex">
             <img src="evnicon.png" class="icon">
             <div>
                 <h5><a href="https://www.dropbox.com/s/zgg0piv6zk82ifw/EV%20Nova%20mod%202.dmg">EV Nova mod 2</a></h5>
@@ -94,6 +94,10 @@
                             <p class="desc">Dreamwave Studios' Cold Fusion graphics replacement for EV Override, ported to the Nova engine by Dr. Trowel.</p>
                         </div>
                     </div>
+                </div>
+                <div class="alert alert-warning">
+                    <h5>&#x261E;&ensp;"No data files could be found"</h5>
+                    Due to a security feature of macOS 10.12 and later, you may see this error when running any of the launcher apps here after first downloading them. To resolve this, simply move the app to a different location and then move it back again.
                 </div>
             </div>
             <div class="tab-pane" id="nova-tab">
