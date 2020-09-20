@@ -1,17 +1,19 @@
 #import <Carbon/Carbon.h>
 #import <Foundation/Foundation.h>
+#include <dlfcn.h>
 
 NSEnumerator<NSURL *> *enumerator = nil;
 
 OSErr FSOpenIterator(const FSRef *container, FSIteratorFlags iteratorFlags, FSIterator *iterator) {
-    NSURL *url = (__bridge_transfer NSURL*)CFURLCreateFromFSRef(NULL, container);
-    if (!url) return nsvErr;
-    NSArray *urls = [NSFileManager.defaultManager contentsOfDirectoryAtURL:url
+    CFURLRef urlRef = CFURLCreateFromFSRef(NULL, container);
+    if (!urlRef) return nsvErr;
+    NSArray *urls = [NSFileManager.defaultManager contentsOfDirectoryAtURL:(__bridge NSURL *)urlRef
                                                 includingPropertiesForKeys:nil
                                                                    options:NSDirectoryEnumerationSkipsHiddenFiles
                                                                      error:nil];
     NSArray *descriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"lastPathComponent" ascending:YES]];
     enumerator = [urls sortedArrayUsingDescriptors:descriptors].objectEnumerator;
+    CFRelease(urlRef);
     return noErr;
 }
 
@@ -30,4 +32,18 @@ OSErr FSGetCatalogInfoBulk(FSIterator iterator, ItemCount maximumObjects, ItemCo
     }
     *actualObjects = i;
     return noErr;
+}
+
+
+void (*original_TextSize) (short) = NULL;
+
+void TextSize(short size) {
+    if (!original_TextSize) {
+        original_TextSize = dlsym(RTLD_NEXT, "TextSize");
+    }
+    if (size > 0) {
+        NSInteger minSize = [NSUserDefaults.standardUserDefaults integerForKey:@"FontSize"];
+        if (minSize > size) size = minSize;
+    }
+    original_TextSize(size);
 }
