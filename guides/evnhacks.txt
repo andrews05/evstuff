@@ -10,5 +10,5 @@ Data Fork Plug-ins      0A3194  742C        6690        Replaces jump after "Np√
 Other fun things to change (values are little endian).
 Window Height           01A4BF  5C02
 Window Width            01A4C7  4003
-Font Size               01C3EE  0900  Recommend no more than size 10 (0A00)
+Font Size               01C3EE  0900
 Particle Cap            02117B  0004
