@@ -35,7 +35,8 @@ PlayerFileDataStruct (59826 bytes)
  e7ae	short fighterClass[64]		stores the player's current deployed fighters: for each one:
 						-1 means not a fighter data item
 						0-767 means a fighter of a certain class
- e82e	short unknown[128] (0)
+ e82e	short escortUpgrade[64]		whether each escort is scheduled for upgrade
+ e8ae	short escortSale[64]		whether each escort is scheduled for sale
  e92e	short unknown[64] (-1 or 0)	related to escorts but probably unused
  e9ae	long rating			player's combat rating
 
