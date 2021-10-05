@@ -1,7 +1,11 @@
 ﻿EV Nova Pilot File Format
 
-Unknown fields are likely unused
-Offsets given in MissionObjectives and MissionData are for the first mission in the resource
+Unknown fields are likely unused.
+Offsets given in MissionObjectives and MissionData are for the first mission in the resource.
+Note: Resource data is encrypted using Andrew Welch's SimpleCrypt algorithm with key 0xB36A210F.
+
+The Windows .plt format concatenates the two resources together, prefixing each with their size as a long and appending the ship name at the end.
+Some minor differences in padding are noted in the MissionData.
 
 
 NpïL resource 128 in the pilot file
@@ -68,13 +72,13 @@ MissionData (2284 bytes)
  2978	short scanMask
  297a	short compGovt, compReward
  297e	short datePostInc
- 2980	short unknown
+ 2980	short unused			(0 bytes in windows .plt format)
  2982	long pay
  2986	short specialShipsKilled, specialShipsBoarded, specialShipsDisabled, specialShipsJumpedIn, specialShipsJumpedOut
  2990	short initialShipCount		how many special ships there were at the start of the mission
  2992	Boolean canAbort
  2993	Boolean cargoLoaded		mission cargo is aboard
- 2994	short unknown
+ 2994	short unused			(1 byte in windows .plt format)
  2996	short briefText, quickBriefText, loadCargoText, dropOffCargoText, compText, failText, refuseText, shipDoneText
  29a6	short timeLeft			number of days remaining
  29a8	short specialShipNameResID	ID of 'STR#' resource used to name the special ships
@@ -102,7 +106,7 @@ MissionData (2284 bytes)
  3147	Byte missionNameLength
  3148	char[127] missionName
  31c7	short unknown[64]
- 3247	Byte unknown[3]
+ 3247	Byte unused[3]			(0 bytes in windows .plt format)
 
 
 NpïL resource 129 in the pilot file (universe-settings and missions)
