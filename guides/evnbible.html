@@ -2,89 +2,88 @@
 <html>
 <head>
   <title>EV Nova Bible</title>
-  <meta name="viewport" content="width=1200,initial-scale=1">
+
   <style type="text/css">
-    body    
+    body
     {
       font-family: monospace;
       font-size: 12px;
       margin: 0px;
       background-color: #bbf;
     }
-  
-    .content {
-      white-space: pre;
-      margin-left: 200px;
-      padding-left: 0px;
-      padding-top: 10px;
-      color: #111;
-      
-      background-color: #ddf;
-      border-left: solid 10px #ddf;
-    }
-    
-    
-    
-    
-    .navCell {
-      position: fixed;
+
+    .scroll-content {
+      position: sticky;
       top: 0px;
-      left: 0px;
+      margin-left: 200px;
+    }
+    .content {
+      background-color: #ddf;
+      white-space: pre;
+      padding: 10px;
+      color: #111;
+      min-width: 100%;
+      display: inline-block;
+      box-sizing: border-box;
+    }
+
+
+
+
+    .navCell {
+      position: sticky;
+      top: 0px;
       width: 200px;
       padding-top: 20px;
+      float: left;
     }
-    
+
     .navPart {
       display: block;
       padding-left: 15px;
-      
+
       color: #007;
       text-decoration: none;
     }
-    
+
     .navItem {
       display: block;
       padding-left: 30px;
-      
+
       color: #337;
       text-decoration: none;
     }
-    
+
     .navPart:hover {
       background-color: #aaf;
     }
-    
+
     .navItem:hover {
       background-color: #aaf;
     }
-    
+
     .navPart:active {
       color: black;
       background-color: #99f;
     }
-    
     .navItem:active {
       color: black;
       background-color: #99f;
       border: none;
     }
-    
-    
-    
-    
+
+
+
+
     .contentH2 {
       font-size: 18px;
       color: black;
     }
-    
     .divider {
-      margin-top: 25px;
-      margin-bottom: 25px;
-      margin-left: -10px; /* minus content margin */
-      
-      width: (100% + 10px);
+      margin: 25px -10px;
+
       height: 1px;
-      
+
       border-top: 5px solid #bbf;
     }
   </style>
@@ -133,27 +132,27 @@
 </div>
 
 <!-- content -->
-<div class="content">
+<div class="scroll-content"><div class="content">
 
 <div style="text-align: center; color: black;">
 
 <div style="font-size: 22px;">The EV Nova Resource Bible</div>
 
 Last Revision:
-5/2/03 by mcb
+1/24/06 by mcb
 
 <div style="height: 60px;"></div>
 
-This information is not guaranteed to be 100% accurate. Use   
+This information is not guaranteed to be 100% accurate. Use
 at your own risk. Has been known to cause cancer in laboratory
-animals. Caveat lector.                                       
+animals. Caveat lector.
 
 
 
 
 
 by Matt Burch
-&copy;1995-2003 by Ambrosia Software, Inc.
+&copy;1995-2006 by Ambrosia Software, Inc.
 All Rights Reserved Worldwide
 
 
@@ -301,7 +300,7 @@ Axxx - if mission ID xxx is currently active, abort it.
 
 Fxxx - if mission ID xxx is currently active, cause it to fail.
 
-Sxxx - start mission ID xxx automatically. 
+Sxxx - start mission ID xxx automatically.
 
 Gxxx - grant one of outfit item ID xxx to the player
 
@@ -317,11 +316,11 @@ Nxxx - move the player to system xxx. The player will remain at the same
 Cxxx - change the player's ship to ship type (ID) xxx. The player will keep all
        of his previous outfit items and won't be given any of the default
        weapons or items that come with ship type xxx.
-       
+
 Exxx - change the player's ship to ship type (ID) xxx. The player will keep all
        of his previous outfit items and will also be given all of the default
        weapons and items that come with ship type xxx.
-       
+
 Hxxx - change the player's ship to ship type (ID) xxx. The player will lose any
        nonpersistent outfit items he previously had, but will be given all of
        the default weapons and items that come with ship type xxx.
@@ -342,7 +341,6 @@ Qxxx - make the player immediately leave (absquatulate) whatever stellar he's
        ID xxx, and is parsed for mission text tags (e.g. &lt;PSN&gt; and &lt;PRK&gt; )
        but not text-selection tags like those above (e.g. {G "he" "she"} )
        (see d&euml;sc and m&iuml;sn resource descriptions for more examples)
-       
 Txxx - change the name (Title) of the player's ship to a string randomly
        selected from STR# resource ID xxx. The previous ship name will be
        substituted for any '*' characters which are encountered in the
@@ -365,8 +363,8 @@ resource)
 MasksID    ID number of the masks' PICT resource
 xSize      Horizontal size of each sprite
 ySize      Vertical size of each sprite
-xTiles     Horizontal grid dimension 
-yTiles     Vertical grid dimension 
+xTiles     Horizontal grid dimension
+yTiles     Vertical grid dimension
 
 Spin resources have certain reserved ID numbers, which correspond to different
 types of objects:
@@ -403,7 +401,6 @@ BaseSetCount    The number of sprite sets for the basic sprite images. A sprite
                   a ship's basic sprite sets are stored in the same
 PICT/rleD/rle8
                   resource, referred to in BaseImageID.
-                  
 BaseXSize       The X size of each basic sprite image
 
 BaseYSize       The Y size of each basic sprite image
@@ -416,7 +413,6 @@ AltImageID      The resource ID of the alternating sprite images for this ship.
                   the basic sprite for the ship, cycling through each available
                   sprite set at a rate defined in the Delay field, below.
                   Set to zero if unused.
-                  
 AltMaskID       The corresponding mask ID. Set to zero if unused.
 
 AltSetCount     The number of sprite sets for the alternating sprites.
@@ -458,8 +454,8 @@ Flags      0x0001    Extra frames in base image are used to display banking.
                        will be cycled upon landing, taking off, and
                        entering/exiting hyperspace.
            0x0004    The second set of frames in the base image are displayed
-                       when the ship is carrying any of its KeyCarried type
-                       ships onboard.
+                       when the ship is carrying at least one of its KeyCarried
+                       type ships onboard.
            0x0008    Extra frames in base image are shown in sequence, just
                        like the sprites in the alternating image. The AnimDelay
                        field has the same effect in this case.
@@ -475,7 +471,6 @@ Flags      0x0001    Extra frames in base image are used to display banking.
                       based on the ship's actual heading. Use this with
                       caution, as it tends to cause very jerky ship
                       rotation and is mostly included as a curiosity.
-                      
            Note that the first four flags in this field are mutually
              exclusive - i.e. you can have a ship that banks, unfolds,
              changes appearance when it is carrying a certain other ship
@@ -488,7 +483,6 @@ Flags      0x0001    Extra frames in base image are used to display banking.
              got thrown in at some point when I realized that it would
              be necessary to have in order to replicate the behavior of
              a certain type of ship from a certain TV show).
-           
 
 AnimDelay  The delay between frames of the sprite animations, in 30ths of a
              second.
@@ -525,12 +519,11 @@ GunPosX        Here you can set the exit points on the ship sprite for four
 GunPosY         different classes of weapons. Note that The "Gun" "Beam" etc.
 TurretPosX      designations are for convenience only, since which set of
 TurretPosY      weapon exit points is used by a given weapon are defined in
-GuidedPosX      that weapon's ExitType field. The x &amp; y positions of each 
+GuidedPosX      that weapon's ExitType field. The x &amp; y positions of each
 GuidedPosY      weapon exit point are measured in pixels from the center of the
 BeamPosX        ship when the ship is pointing straight up (frame index 0). See
 BeamPosY        the next four fields if you need to account for any perspective
                 corrections in your sprites.
-                
 UpCompressX    If you have ship sprites that are rendered at an angle, these
 UpCompressY     fields are used to correct for the ships perspective when
 DnCompressX     calculating the weapon exit points (above). If the ship is
@@ -582,7 +575,6 @@ SoundIndex     The index (0-63) of the explosion sound to associate with this
                 itself (e.g. 1 for b&ouml;&ouml;m resource 129, etc.) but if you want to
                 use the same sound for two different explosion types, you can
                 do that with this field.
-                
 GraphicIndex   The index (0-63) of the explosion graphic to associate with this
                 explosion type. Usually you'd set this to the same value as the
                 explosion index itself (e.g. 1 for b&ouml;&ouml;m resource 129, etc.) but
@@ -601,8 +593,8 @@ the start of the game, and also allows for the setting-up of mission stuff by
 way of a control bit set string that is evaluated when a new pilot is started.
 
 Cash          The amount of money a player gets when starting out with this
-               character type 
-               
+               character type
+
 ShipType      ID number of the starting ship type
 
 System1-4     ID numbers of up to four possible starting systems for the
@@ -610,7 +602,6 @@ System1-4     ID numbers of up to four possible starting systems for the
                systems when starting out. Set to -1 if unused (if all four of
                these fields are set to -1, the player will be placed in system
                ID 128 as a default).
-               
 Govt1-4 &amp;     For each of the governments whose ID is entered in a Govt1-4
 Status1-4      field, the player's legal status in systems owned by that
                government or one of its allies is set to the value in the
@@ -618,7 +609,6 @@ Status1-4      field, the player's legal status in systems owned by that
                of the govt identified in the Govt field, the player's legal
                status is set to the negative value of the number in the
                corresponding Status field. Set unused Govt fields to -1.
-               
 Kills         The player's starting combat rating.
 
 IntroPict1-4  IDs of up to four PICT resources to show in sequence when the
@@ -636,7 +626,6 @@ IntroTextID   The ID of the d&euml;sc resource to show when the player starts ou
                lets you have an introduction movie. The intro text (and any
                associated movie) is displayed after the above PICT resouces
                are shown.
-               
 OnStart       A control bit set string that is called when the player starts
                out with a new pilot of this type.
 
@@ -645,7 +634,6 @@ Flags         0x0001    Denotes the "default" ch&auml;r resource, which will be
                          than one ch&auml;r resource has this bit set (there
                          shouldn't be) the one with the lowest ID will be
                          considered the default.
-                         
 StartYear     The starting year of the game.
 
 DatePrefix    String that is appended to the start of the date whenever
@@ -672,7 +660,6 @@ GridBright        Shipyard/outfit dialog selection square color
 
 ProgressBar       Position and shape of the loading progress bar, relative to
                    the center of the window
-                   
 ProgBright        Bright progress bar color
 ProgDim           Dim progress bar color
 ProgOutline       Progress bar outline color
@@ -728,7 +715,6 @@ FirstMonth    The first month of the year (1-12) on which the cron event can
                 be activated. Set to 0 or -1 for this to be ignored.
 FirstYear     The first year in which the cron event can be activated. Set to
                 0 or -1 for this to be ignored.
-                
 LastDay       The last day of the month (1-31) on which the cron event can
                 be activated. Set to 0 or -1 for this to be ignored.
 LastMonth     The last month of the year (1-12) on which the cron event can
@@ -747,13 +733,11 @@ Duration      The duration during which the event is active, in days. If this
 PreHoldoff    The number of days to "hold" the event in a waiting state after
                it is activated and before it starts. Set this to zero to have
                the event start immediately when it is activated.
-               
 PostHoldoff   The number of days to hold the event in a waiting state after it
                ends and before it is deactivated. This is used to keep a
                repeating event from being activated immediately after it has
                just happened. Set this to zero to have the event be deactivated
                immediately after it ends.
-               
 Flags         0x0001    Continuous, iterative cron entry - keep evaluating
                          the cron's OnStart field until the EnableOn expression
                          is no longer true or the constraints of the Require
@@ -769,26 +753,24 @@ EnableOn      A control bit test string that is used to determine whether the
                cron event is eligible to be activated or not. Leave this
                blank if you are creating an event whose activation doesn't
                depend on the state of any control bits.
-               
+
 OnStart       A control bit set string that is called when the cron event
                starts, after waiting through the PreHoldoff time, if any.
-               
+
 OnEnd         A control bit set string that is called when the cron event
                ends.
- 
+
 Contribute    When the cron event is active, these two Contribute fields
 Contribute     together form a 64-bit flag that is subsequently combined with
                the Contribute fields from the player's ship and the other
                outfit items in the player's possession, to be used with the
                Require fields in the outf and misn resources.
-  
 Require       These two Require fields together form a 64-bit flag that is
 Require        logically and'ed with the Contribute fields from the player's
                current ship and outfit items. Unless for each 1 bit in the
                Require fields there is a matching 1 bit in one or more of the
                Contribute fields, the cron will not be activated. Leave these
                set to zero if unused.
-  
 NewsGovt1-4     On planets or stations that are allied with the government
 GovtNewsStr1-4   whose ID is given by one of the NewsGovt fields, a string
                  will be randomly selected from the STR# resource whose
@@ -797,13 +779,12 @@ GovtNewsStr1-4   whose ID is given by one of the NewsGovt fields, a string
                  This allows you to let up to four different governments
                  (and their allies) have their own "local news" for a given
                  cron event. Set unused NewsGovt and GovtNewsStr fields to -1.
-  
 IndNewsStr      The ID of a STR# resource from which to randomly select a
                  string to be displayed in the news dialog while this cron
                  event is in progress, if it doesn't have any applicable local
                  news. Set to -1 for no independent news.
-               
-  
+
+
 Some notes:
 
 1. Setting any of the above date fields to 0 or -1 effectively makes that
@@ -832,13 +813,13 @@ other resources, so their ID numbers are not necessarily fixed, and can be set
 to virtually anything by the scenario designer. The reserved desc ID numbers,
 along with the maximum length for each type, are below:
 
-128-2175        Stellar object descriptions, shown when landed on a planet. 
+128-2175        Stellar object descriptions, shown when landed on a planet.
 3000-3511       Outfit item descriptions, shown in ship outfitting dialog.
-4000-4999       Mission descriptions, shown in mission dialog. 
+4000-4999       Mission descriptions, shown in mission dialog.
 13000-13767     Ship class descriptions, shown in the shipyard and
-                 requisition-escort dialog. 
+                 requisition-escort dialog.
 13999           Message shown after the player uses an escape pod.
-14000-14767     Ship pilot descriptions, shown in the hire-escort dialog. 
+14000-14767     Ship pilot descriptions, shown in the hire-escort dialog.
 32760-32767     Reserved
 
 If you wish, you can make a d&euml;sc resource mutable via control bits - embedding a
@@ -900,8 +881,9 @@ Graphic        This is used to include graphics in mission briefings. If you
                 put in the ID of a valid PICT resource, Nova will display that
                 image along with the description text when it displays a
                 mission dialog box (with the exception of the Mission Computer
-                and Mission Info dialogs).
-                
+                and Mission Info dialogs). This is also used to associate
+                graphics with bar and ship descriptions.
+
 MovieFile      The name of a QuickTime movie file to display before the
                 briefing dialog appears. This file must reside either in
                 "Nova Files" or "Nova Plugins".
@@ -909,7 +891,7 @@ MovieFile      The name of a QuickTime movie file to display before the
 Flags          0x0001    Show the movie after the briefing instead of before
                0x0002    Show movie at double-size
                0x0004    Cinematic movie - blank background and fade screen
-                          before and after 
+                          before and after
 <div class="divider"></div>
 <a class="contentH2" name="dude">The d&uuml;de resource</a>
 
@@ -941,7 +923,6 @@ InfoTypes          What kind of info to display when hailed
                                                the ID of the STR# resource
                                                from which to get the quote)
                    0x8000     Generic govt hail messages
-                                             
 Flags              0x0001     Carries food when plundered
                    0x0002     Carries industrial goods
                    0x0004     Carries medical supplies
@@ -957,7 +938,6 @@ Flags              0x0001     Carries food when plundered
 
 ShipType (x16)     These fields contain the ID numbers of up to 16 different
                      ship classes. Set to 0 or -1 if unused.
-                     
 Probability (x16)  These fields set the probability that a ship of this dude
                      class will be of a certain ship type
 
@@ -1044,7 +1024,6 @@ VoiceType          Sets this government's voice type, used for when you have
                    govt). There can be up to eight different voice types,
                    numbered 0-7. The voice resources are loaded from 'snd '
                    resources as follows:
-                    
                     1000-1009   Voice type 0 acknowledgement speech
                     1010-1019   Voice type 0 targeting speech
                     1020-1029   Voice type 0 victory speech
@@ -1055,7 +1034,6 @@ VoiceType          Sets this government's voice type, used for when you have
                     1700-1709   Voice type 7 acknowledgement speech
                     1710-1719   Voice type 7 targeting speech
                     1720-1729   Voice type 7 victory speech
-                   
                    If a particular set of voices (i.e. the acknowledgement,
                    targeting, or victory sounds for a given voice type)
                    contains an even number of sound resources, Nova will
@@ -1068,10 +1046,10 @@ VoiceType          Sets this government's voice type, used for when you have
                    sounds, set VoiceType to between 1000 and 1007. To
                    force ships to use only even-numbered sounds, set
                    VoiceType to between 2000 and 2007.
-                   
+
                    (None of the preceeding paragraph applies if Nova
                    doesn't have an even number of sounds to work with)
-                    
+
                    If you don't want any ships of a government to use speech,
                    set that govt's VoiceType to -1. Also note that ship types
                    with no inherent attributes govt defined (see sh&iuml;p section
@@ -1087,30 +1065,29 @@ ScanFine           If the player is caught carrying an illegal (and non-
                      and he isn't yet evil enough to attack (i.e. his legal
                      status in the current system isn't below CrimeTol) then
                      he will be fined the amount in this field.
-                   
                    1 and up       fine this amount
                    0              no fine, just a warning
                    -1 and below   fine this % of the player's cash
                                    (-5 is 5%, etc)
-                     
+
 SmugPenalty        The amount of evilness a player gains for being detected
                      smuggling illegal cargo (defined in a misn resource) past
                      this government's ships.
-                     
+
 DisabPenalty       The amount of evilness for disabling one of this govt's
                      ships.
-                     
+
 BoardPenalty       Evilness from pirating one of this govt's ships
 
 KillPenalty        Evilness from killing this govt's ships
 
 ShootPenalty       Evilness from shooting one of this govt's ships (currently
                      ignored)
-                     
+
 InitialRec         The player&rsquo;s initial legal record in systems controlled by
                      this govt (0 is neutral, positive is good, negative is
                      bad)
-                     
+
 MaxOdds            The maximum combat odds ships of this govt will consider
                      favorable. Combat odds are calculated by summing the
                      strengths of the ship's enemies (where a ship's strength
@@ -1126,17 +1103,16 @@ MaxOdds            The maximum combat odds ships of this govt will consider
                      are outnumbered by more than 2-to-1. 300 means that ships
                      of this govt won't engage a group of enemies more than 3x
                      stronger than them and their friends, etc.
-                     
 Class1-Class4      Allows you to assign this govt to up to four different
                      "classes", which are simply arbitrary groupings of govts
                      that you can use to flexibly assign allies and enemies.
                      Two govts of the same class are not inherently allied
                      unless one of them has that same class number set in
                      one of its Ally fields. Set unused class fields to -1.
-                     
+
 Ally1-Ally4        The number of up to four classes that this govt will be
                      allied with. Set to -1 if unused.
-                     
+
 Enemy1-Enemy4      The number of up to four classes that this govt will be
                      enemies with. Set to -1 if unused.
 
@@ -1185,8 +1161,8 @@ The different bits that can be set in a govt's Flags field are:
 0x0800     Ships of this govt start out disabled (derelicts). Note that ships
              of other governments don't care if you attack or board
              derelict govt ships.
-0x1000     Warships will plunder non-mission, non-player enemies before
-             destroying them
+0x1000     Warships will plunder non-mission, trader-type enemies (including
+             the player) before destroying them
 0x2000     Freighters will take bribes.
 0x4000     Planets of this govt will take bribes
 0x8000     Ships of this govt taking bribes will demand a larger percentage of
@@ -1237,24 +1213,22 @@ permits, for example. Leave these set to zero if unused.
 
 InhJam1-4 -  The government's inherent jamming ability for each of the four
               jamming types, from 0 to 100%.
-            
 MediumName - The government's name in medium length, which is primarily used
               in the string "Sensors detect xxx reinforcement fleet
               approaching."
 
 Color        The government's theme color, encoded the same as HTML colors.
               (00RRGGBB)
-              
 ShipColor    The theme color for this government's ships, encoded the same as
               HTML colors (00RRGGBB). You should use this sparingly, as it
               gets annoying when you have dozens of multicolored variants of
               some ship type flying around all at once. Set to 00000000 if
               unused (which is the same as 00FFFFFF, or "pure white paint"
               i.e. no shading)
-              
+
 CommName     The short string to show for ships of this government when they are
               hailed by the player.
-              
+
 TargetCode   The short string to show in the player's target display when a ship
               of this government is targeted.
 <div class="divider"></div>
@@ -1265,19 +1239,18 @@ sold at a few locations. The fields are:
 
 SoldAt1-8    ID number of the stellar object where the commodity is sold.
                Set to 0 or -1 if unused.
-               
+
 BoughtAt1-8  ID number of the stellar object where the commodity is purchased.
                Set to 0 or -1 if unused.
-               
+
 BasePrice  The average price of the commodity (works much like the base prices
              for "regular" commodities)
-             
+
 Flags      Misc flag bits
            0x0001     Tribbles flag - When in your cargo bay, the commodity
                         multiplies like tribbles.
            0x0002     Perishable - When in your cargo bay, the commodity
                         gradually decays away.
-                        
 ScanMask   If this is an "illegal" cargo type, this is used in conjunction with
             the ScanMask field in the g&ouml;vt resource. If any of the 1 bits in a
             ship's government's ScanMask field match any of the 1 bits in a
@@ -1288,13 +1261,13 @@ LCName     The lower-case string to display in the player-info dialog box,
             among other places, e.g. "machine parts".
             Note: all outfits with identical, non-empty LCNames will be
                   displayed together as one type in the player-info dialog.
-            
+
 Abbrev     The short string that is displayed in the player's status bar when
             the player is carrying j&uuml;nk of this type, e.g. "Parts".
-            
+
 BuyOn      Control bit test expression. This j&uuml;nk will only be available to be
             bought when this expression evaluates true. Leave blank if unused.
-            
+
 SellOn     Control bit test expression. This j&uuml;nk will only be able to be
             sold when this expression evaluates true. Leave blank if unused.
 <div class="divider"></div>
@@ -1469,7 +1442,6 @@ DropOffMode     Where the cargo is to be dropped off
                              mission's special ship goal has been
                              completed or the mission has no special
                              ship goal)
-                
                 Note: don't set your cargo to be picked up and dropped
                       off at the same place, as it may cause Nova to
                       behave strangely
@@ -1557,7 +1529,6 @@ ShipStart       Defines where in the system the ships will start
                 0            Appear randomly in the system (as usual)
                 1            Jump in from hyperspace after a short delay
                 2            Appear randomly, cloaked
-                
                 Note that a ShipStart value of 0 (appear randomly in the system)
                 is the proper value to use in conjunction with p&euml;rs
                 resource flag 0x0040.
@@ -1646,7 +1617,7 @@ Flags           Some misc. flag bits
                                  which will automatically abort itself after it
                                  is accepted. (sometimes useful to create
                                  special ships) Any control bits pointed to by
-                                 the mission&rsquo;s CompBitSet fields will be
+                                 the mission&rsquo;s OnAbort fields will be
                                  automatically set when the mission aborts.
                                  Note: there must be special ships associated
                                  with the mission to trigger the auto-abort.
@@ -1686,7 +1657,6 @@ Flags           Some misc. flag bits
                                  inherentAI type 3 or 4  (warships)
                 0x8000         Mission will fail if player is boarded by
                                  pirates.
- 
 Flags2          More flag bits
                 0x0001         Don't offer mission if the player doesn't have
                                  enough cargo space to hold the mission cargo
@@ -1694,7 +1664,6 @@ Flags2          More flag bits
                                  until later)
                 0x0002         Apply mission Pay on auto-abort
                 0x0004         Mission fails if player is disabled or destroyed
-                
 
 AvailShipType   Defines what class of ship you must have for this mission to be
                 made available:
@@ -1716,7 +1685,7 @@ OnAccept        Control bit set expression which is evaluated when the mission
                 is accepted by the player
 
 OnRefuse        Control bit set expression which is evaluated when the mission
-                is refused by the player       
+                is refused by the player
 
 OnSuccess       Control bit set expression which is evaluated when the mission
                 is completed successfully
@@ -1736,7 +1705,6 @@ Require         logically and'ed with the Contribute fields from the player's
                 fields there is a matching 1 bit in one or more of the
                 Contribute fields, the mission will be available. Leave these
                 set to zero if unused.
-                
 DatePostInc     If this is set to something greater than zero, the game date
                 will be advanced by this number of days after successful
                 completion or auto-aborting of the mission.
@@ -1830,7 +1798,6 @@ When Nova selects a random mission destination, it attempts to ensure
       mission and Nova refuses to make it available, check the debug log
       to see if the mission couldn't find a suitable nontransient random
       stellar of the desired characteristics.
-      
 <div class="divider"></div>
 <a class="contentH2" name="nebu">The n&euml;bu resource</a>
 
@@ -1862,7 +1829,7 @@ YSize      the scale of the &ldquo;normal&rdquo; map zoom level (not zoomed in o
            tell Nova how big to make the image when the map is at normal
            zoom.
 
-ActiveOn   Control bit test expression. Leave blank if unused. 
+ActiveOn   Control bit test expression. Leave blank if unused.
 
 OnExplore  Control bit set expression that is evaluated whenever the nebula is
             tested for visibility and found to be visible. Note that this field
@@ -1885,10 +1852,10 @@ currently going on at a planet. The fields of an oops resource are:
 Stellar      The stellar object this disaster is linked to
              128-2175           ID of a stellar object
              -1                 Any planet or station (use sparingly)
-             
+
 Commodity    Which commodity to affect the price of (0 = food, 1 = industrial,
                etc.)
-               
+
 PriceDelta   How much to raise or lower the price. (negative numbers lower it)
 
 Duration     How many days the disaster lasts.
@@ -1966,7 +1933,6 @@ If ModType is: Then it&rsquo;s:              And ModVal refers to:
                                                   with a ship carrying this
                                                   cloaking device will also
                                                   be cloaked
-                                       
 18             fuel scoop              How many frames per 1 unit of fuel
                                          generated. Enter a negative value to
                                          perform the same function in &ldquo;fuel
@@ -1980,7 +1946,7 @@ If ModType is: Then it&rsquo;s:              And ModVal refers to:
                                          can&rsquo;t go below 1 day/jump)
 23             hyperspace dist mod     Amount to increase or decrease the
                                          no-jump zone&rsquo;s radius by (the
-                                         standard radius is 1000) 
+                                         standard radius is 1000)
 24             interference mod        Subtracts the value in ModVal from the
                                          current star system&rsquo;s Interference
                                          value when calculating how &ldquo;fuzzy&rdquo; to
@@ -2017,7 +1983,7 @@ If ModType is: Then it&rsquo;s:              And ModVal refers to:
                                                  untargetable ships
                                         0x0008  allow targeting of
                                                  cloaked ships
-31             mining scoop            
+31             mining scoop
 32             multi-jump               number of extra jumps to perform when
                                           the user initiates a hyperspace jump
 33             Jamming Type 1           amount of jamming to add or subtract
@@ -2030,11 +1996,11 @@ If ModType is: Then it&rsquo;s:              And ModVal refers to:
 39             ion dissipator           amount of deionization to add. 100
                                          equals 1 point of ion energy per
                                          1/30th of a second. Higher values
-                                         yield faster ion charge dissipation. 
+                                         yield faster ion charge dissipation.
 40             ion absorber             amount of extra ionization capacity
-                                         to add 
-41             gravity resistance                   
-42             resist deadly stellars   
+                                         to add
+41             gravity resistance
+42             resist deadly stellars
 43             paint                    the color to paint the player's ship,
                                          encoded as a 15-bit color value, where
                                          the bits are: 0RRRRRGGGGGBBBBB (this
@@ -2049,8 +2015,8 @@ If ModType is: Then it&rsquo;s:              And ModVal refers to:
                                          -1 will inhibit reinforcements for
                                          all ships regardless of govt. note
                                          that this outfit will only work when
-                                         carried by the player.                            
-  
+                                         carried by the player.
+
 45             modify max guns          add/subtract from max number of guns
 46             modify max turrets       add/subtract from max number of turrets
 47             bomb                     destroys the player in flight. set the
@@ -2070,8 +2036,8 @@ If ModType is: Then it&rsquo;s:              And ModVal refers to:
                                          the player (nonfatally) in flight.
                                          set this field to the ID of a b&ouml;&ouml;m
                                          resource to display when an item
-                                         of this type self-destructs 
-                                        
+                                         of this type self-destructs
+
 
 The next two fields tell Nova how many of this item you can possibly have at
 once:
@@ -2108,7 +2074,6 @@ Flags     Miscellaneous info:
           0x4000     Don't show this item unless its Availability evaluates
                        to true, or if the player already has at least one
                        of it.
-                       
 
 The next field, Cost, tells Nova how much to charge you for the item.
 
@@ -2139,7 +2104,6 @@ Require         logically and'ed with the Contribute fields from the player's
                 configuration of other flags, the item might still appear in
                 the outfit window even if the player doesn't meet the Require
                 bits (it will still not be able to be purchased).
-                
 OnSell          Evaluated when the item is sold.
 
 ItemClass       The item's classification, used in the p&euml;rs resource for
@@ -2163,11 +2127,11 @@ ShortName       The short string that is displayed in the outfit dialog menu for
                  "Real Big\nScary Gun". When using this, lines that start with
                  an alphanumeric character are drawn in white, while lines
                  that start with other symbols are drawn in grey.
-                 
+
 LCName          The lower-case, singular name that's displayed in the
                  player-info dialog and other places,
                  e.g. "real big scary gun".
-                 
+
 LCPlural        The lower-case, plural name that's displayed in the player-info
                  dialog and other places, e.g. "real big scary guns".
 
@@ -2215,7 +2179,7 @@ AI Type        The person's AI type (see the section on d&uuml;de resources)
 
 Aggress        The person's aggression, i.e. how close ships have to be before
                  the person will attack them, on a scale of 1 (close) to
-                 3 (far). 
+                 3 (far).
 
 Coward         At what percent of total shield capacity will the person run
                  away from a fight? e.g. a value of 25 would cause the person
@@ -2248,7 +2212,7 @@ Credits           How many credits the person carries
                   0              ignored (no credits)
                   1 and up       This many credits, +/- 25%
 
-ShieldMod         How much to increase/decrease the person's shield capacity, 
+ShieldMod         How much to increase/decrease the person's shield capacity,
                     in percent. For example, a value of 130 entered here would
                     make the person's ship have shields that are 30% stronger
                     than if he were flying a stock ship. Similarly, a value of
@@ -2305,7 +2269,7 @@ Flags             Some control bits
      0x4000       Don&rsquo;t offer if player is flying a warship (aiType 3)
      0x8000       Show disaster info when hailing
 
-ActiveOn          Control bit test expression. Leave blank if unused. 
+ActiveOn          Control bit test expression. Leave blank if unused.
 
 GrantClass     The class of outfit item that is given out by this person's
                  ship when boarded by the player. If there are multiple outfit
@@ -2339,7 +2303,7 @@ Weight       The importance of this rank, relative to the other rank resources
               highest weight is selected for the &lt;PRK&gt; and &lt;PSR&gt; mission
               briefing tags.
 
-AffilGovt    The ID of the government affiliated with this rank. 
+AffilGovt    The ID of the government affiliated with this rank.
 
 Contribute   Another 64 bits of Contribute values that kick in when the rank
               is active. These can be used to prevent the player from buying
@@ -2409,7 +2373,7 @@ ShortName    The short rank named as used in conversation through mission
               briefings and the &lt;PSR&gt; tag. Behavior with an empty string is the
               same as for the ConvName field.  example: if ShortName is
               "Marshall" then "Hi there, &lt;PSR&gt;" becomes either "Hi there,
-              Marshall" or "Hi there, captain".                 
+              Marshall" or "Hi there, captain".
 <div class="divider"></div>
 <a class="contentH2" name="roid">The r&ouml;id resource</a>
 
@@ -2422,7 +2386,6 @@ Strength     The strength of this asteroid type - this is equivalent to armor
 
 SpinRate     The frame advance rate of this asteroid type. A value of 100 is
                30 frames per second (quite fast) - lower numbers are slower.
-               
 YieldType    Defines what the resource-boxes which are ejected from this
                asteroid type will contain:
                0-5         This type of standard cargo
@@ -2438,7 +2401,6 @@ YieldQty     The average resource yield of this type of asteroid. Zero will
 
 PartCount    The number of particles that are thrown off when an asteroid
                of this type is destroyed.
-               
 PartColor    The color of the particles, encoded the same as HTML colors.
               (00RRGGBB)
 
@@ -2447,7 +2409,6 @@ FragType1&amp;2  Asteroids can break up into some number of sub-asteroids when
                randomly pick between them for each sub-asteroid that is
                created. If only one is used, all sub-asteroids will be of
                that type.
-               
                128-143    Generate this type of sub-asteroid
                -1         No sub-asteroids
 
@@ -2539,7 +2500,7 @@ TechLevel     What the technology level of the ship is. This ship will be
 The next field, Cost, tells Nova how much to charge you when you buy this ship.
 The cost of buying a ship is always the cost of the new ship minus 25% of the
 original cost of your current ship and upgrades. (i.e. you always "trade up" to
-a new ship) 
+a new ship)
 
 The next field stores info on how the ship explodes:
 
@@ -2561,7 +2522,6 @@ ArmorRech       Armor recharge speed, in number of armor points x1000 per
 Explode1       Type of explosion to show (0-63) while the ship is breaking up,
                  or -1 to not show any explosions until the ship is finished
                  being destroyed.
-                 
 Explode2       Type of explosion to show (0-63) when the ship is completely
                  destroyed. You can also add 1000 to the value of this field in
                  the same manner as the ExplodeType field in the w&euml;ap resource.
@@ -2611,10 +2571,11 @@ Note that unlike previous EV games, Nova actually handles two inherent
 government associations for each ship type: an inherent combat govt
 (used when an AI ship or stellar is deciding if it likes or hates another
 ship) and an inherent attributes govt (used for non-combat things like
-voice type, distress message flags, etc). Sometimes you might want to
-create a ship type that inherits attributes from a particular govt but
-isn't considered to be inherently of that govt in combat, so Nova lets
-you use the InherentGovt field in several different ways:
+voice type, distress message flags, etc, as well as for inherent jamming
+ability). Sometimes you might want to create a ship type that inherits
+attributes from a particular govt but isn't considered to be inherently
+of that govt in combat, so Nova lets you use the InherentGovt field in
+several different ways:
 
 InherentGovt     -1          No inherent combat govt or inherent attributes
                               govt for this ship
@@ -2683,8 +2644,8 @@ SkillVar       The amount (in percent) to which this ship&rsquo;s pilots&rsquo; 
                  i.e. a skill variance of 10% would make each ship of a given
                  type up to 10% slower or faster than &ldquo;stock&rdquo;. Values from
                  1 to 50% are valid.
-          
-                 
+
+
 Flags2         0x0001    Ship exhibits swarming behavior
                0x0002    Ship prefers standoff attacks
                0x0004    Ship can't be targeted
@@ -2701,7 +2662,7 @@ Flags2         0x0001    Ship exhibits swarming behavior
                0x0800    AI ships will cloak when just flying around
                0x1000    AI ships will not uncloak until close to their target
                0x2000    AI ships will cloak when docking
-               0x4000    AI ships will cloak when preemptively attacked 
+               0x4000    AI ships will cloak when preemptively attacked
 
 
 Availability   Control bit test expression. The player will be able to purchase
@@ -2709,22 +2670,22 @@ Availability   Control bit test expression. The player will be able to purchase
                blank if unused. Depending on the configuration of other flags,
                the ship might appear in the shipyard but not be able to be
                purchased if its Availability evaluates to false.
- 
+
 AppearOn       Control bit test expression. Ships of this type will not show up
                in dude resources if this expression evaluates to false. Leave
                blank if unused.
-               
-OnPurchase     Control bit set expression. Leave blank if unused. 
+
+OnPurchase     Control bit set expression. Leave blank if unused.
 
 Deionize       The rate at which this ship type dissipates ionization charge.
                A value of 100 equals 1 point of ion energy per 1/30th of a
                second. Higher values for Deionize yield faster ion charge
                dissipation.
-               
+
 IonizeMax      The amount of ion charge at which a ship of this type will be
                considered "fully ionized".
-               
-KeyCarried     The key carried ship type, used for interesting effects in 
+
+KeyCarried     The key carried ship type, used for interesting effects in
                the w&euml;ap and sh&auml;n resources.
 
 DefaultItms2   More default items, used as above
@@ -2753,7 +2714,7 @@ HireRandom     The percent chance that a ship of this type will be available for
                  ship will never be made available for hire.
 
 OnCapture      Control bit set expression, evaluated when you capture a ship of
-                 this type. Leave blank if unused. 
+                 this type. Leave blank if unused.
 
 OnRetire       Control bit set expression, evaluated when you sell a ship of
                  this type and/or replace it with a captured ship.
@@ -2776,7 +2737,6 @@ Flags3         Even more flags!
 UpgradeTo      If an escort ship of this type can be upgraded, this field holds
                 the ID of the ship type that it can be upgraded to. Set to 0 or
                 -1 if this ship class can't be upgraded.
-                
 EscUpgrdCost   The cost to upgrade an escort ship of this type to the next more
                 advanced version, as defined in the UpgradeTo field.
 
@@ -2806,7 +2766,6 @@ CommName       The short string to display for this ship when it is hailed by
 
 Long Name      The long string to display when the player purchases a ship of
                 this type or starts a new pilot.
-                
 MovieFile      The filename of a QuickTime movie to display in place of the
                 ship picture  in the shipyard dialog. The QuickTime movie must
                 reside within the Nova Files or Nova Plug-Ins folders and will
@@ -2926,7 +2885,7 @@ CustPicID         Which custom landscape to show
 
 CustSndID         Which ambient sound to play
                   -1                No ambient sound effect
-                  Anything else     ID number of snd resource to load 
+                  Anything else     ID number of snd resource to load
                   (Note: for hypergates and wormholes, this field serves
                    a different purpose - it controls the angle at which
                    ships emerge. Values between 0 and 359 specify an
@@ -2990,9 +2949,9 @@ Flags2      0x0001      For an animated stellar, the first frame will be
                           wormhole which also has no defined hyper links.
                           If the wormhole has any hyper links defined,
                           the player will end up at one of the wormholes
-                          on the other end. 
-           
-                          
+                          on the other end.
+
+
 AnimDelay   The time to wait between frames, in 30ths of a second.
 
 Frame0Bias  If greater than 1, this is used as a multiplier to extend the
@@ -3012,7 +2971,6 @@ OnDominate      Control bit set expression which is evaluated when the stellar
 
 OnRelease       Control bit set expression which is evaluated when the stellar
                  is released from domination by the player
-                 
 Fee             The fee that is deducted from the player's credits when landing
                  on this stellar. Set to zero if unused.
 
@@ -3021,7 +2979,6 @@ Gravity         The stellar's gravity - 0 for none, positive for stellars that
                  is mostly here for laughs. It severely confuses the AI, so it
                  should only be used in empty systems where only the player
                  can go.
-                 
 Weapon          Stellars can have a single projectile or missile type weapon,
                   with unlimited ammunition (don't put the ID of a beam or PD
                   weapon here or bad things will happen). Stellars' weapons can
@@ -3131,7 +3088,7 @@ Interference            How thick the static in the system should be. 0 is no
 
 
 Want to make a &lsquo;pers&rsquo; type ship always appear? Put its ID into one of the Person
-fields that appear at the end of the syst resource. 
+fields that appear at the end of the syst resource.
 
 The Visibility field controls how and when to make the system visible or
 invisible. You can pull off some cool tricks with this field, including
@@ -3165,7 +3122,6 @@ AstTypes       Flag bits that determine what types of asteroids will appear
                0x0010    Small ice     (r&ouml;id ID 132)
                0x0020    Medium ice    (r&ouml;id ID 133)
                etc.
-                
 
 ReinfFleet     The ID of a fleet to use as this system's reinforcement fleet.
                  If ships allied with the reinforcement fleet's government are
@@ -3176,13 +3132,11 @@ ReinfFleet     The ID of a fleet to use as this system's reinforcement fleet.
 
 ReinfTime      The delay between the time the reinforcement call goes out and
                  the time the fleet appears. A value of 30 = one second.
-                 
 ReinfIntrval   The interval, in days, that it takes for the reinforcement fleet
                  to be regenerated. If you set this to 0, a reinforcement fleet
                  will be available every day. If you set this higher than zero,
                  it will take that number of days for the reinforcement fleet
                  to be available again.
-                 
 <div class="divider"></div>
 <a class="contentH2" name="weap">The w&euml;ap resource</a>
 
@@ -3247,21 +3201,22 @@ AmmoType       What kind of ammo the weapon uses
                -1000 &amp; below    Weapon uses abs(AmmoType+1000)/10 units of
                                   fuel per shot.
                                   (example: -1005 = 0.5 units per shot)
-                                            
 
 
 The next three fields tell Nova which graphic and sound to use for this weapon,
 and how to launch it:
 
 Graphic        What graphic set to use for this weapon
-               0-63             Use this graphic set (i.e. spin resources
-                                  200-263)
+               0-255             Use this graphic set (i.e. spin resources
+                                  3000-3255)
 
 Inaccuracy     The weapon's inaccuracy as it leaves the ship (ignored for
                  guidance-10 point defense beams)
-               0                Fires straight
-               1 and up         Fires with up to this amount of inaccuracy (in
-                                  degrees)
+               -1 and below     Fires to the side by this angle
+                                  (absolute value in degrees)
+                0               Fires straight
+                1 and up        Fires with up to this amount of inaccuracy
+                                  (in degrees)
 
 Sound          Which sound to play when the weapon fires
                -1               Silent but deadly
@@ -3342,7 +3297,7 @@ Decay          How fast to decay each shot&rsquo;s power
                                 time this number of frames goes by
                                 (1 frame = 1/30 sec.)
 
-Particles      Number of particles to generate per frame. Set to zero for 
+Particles      Number of particles to generate per frame. Set to zero for
                no particles
 
 PartVel        Particle velocity, from 1 to about 200 or so. Experiment to
@@ -3363,15 +3318,15 @@ BeamWidth      Beam width (actually, radius) in pixels. A BeamWidth of 0 will
                  Note: Lightning beams require a BeamWidth or 1 or greater.
                  Note: For sprite-based weapons that spin continuously, this
                        field controls the time between frames, in 30ths of
-                       a second. 
-                 
+                       a second.
+
 Falloff        The corona falloff. Higher numbers make the corona fall off
                  faster. This value must be between 2 and 16. (since lightning
                  beams have no corona, this is ignored for lightning beams)
-                 
+
 BeamColor      The color of the beam center, encoded as a 24-bit RGB value
                   (00RRGGBB).
-                  
+
 CoronaColor    The color of the beam corona, encoded as a 24-bit RGB value.
                   Note that since the corona is translucent, it will appear
                   approximately half as bright at its maximum as what you
@@ -3382,13 +3337,16 @@ CoronaColor    The color of the beam corona, encoded as a 24-bit RGB value.
 SubCount       The number of submunitions to create when the shot reaches the
                   end of its life or detonates because something wanders into
                   its proximity radius. Set to 0 or -1 if unused.
-                  
+
 SubType        The resource ID of the weapon type to create as submunitions.
                   Anything except beams and fighters is handled.
-                  
+
 SubTheta       The angular error of the submunitions as they are launched,
                   as expressed in degrees error from the carrier weapons'
-                  heading.
+                  heading. If this value is negative, submunitions will
+                  emerge from the parent shot in a starburst pattern, with
+                  angular separation between the submunitions equal to
+                  the absolute value of this field in degrees.
 
 SubLimit       If you have defined a recursively-submunitioning weapon (i.e.
                   one which splits into more copies of itself) this field
@@ -3426,30 +3384,29 @@ Flags2         0x0001           For cycling weapons, keep the graphic on the
                                   ships instead of on top of them.
                0x4000           Weapon can be fired while cloaked.
                0x8000           Weapon does x10 mass damage to asteroids
-               
-               
+
+
 Ionization     The amount of ionization energy to add to the ship that gets hit
                by this weapon. When a ship is ionized it becomes nearly
                immobilized until the ionization charge dissipates.
-               
+
 HitParticles   The number of particles to generate when a shot of this type hits
                a ship or asteroid. Set to zero if unused.
-               
+
 HitPartLife    The average life (in frames) of the hit-particles.
-               
+
 HitPartVel     The speed of the hit-particles; a value of 100 is one pixel
                per frame.
-               
+
 HitPartColor   The color of the hit-particles, encoded as a 24-bit HTML color
                (00RRGGBB)
-               
+
 ExitType       The type of weapon exit point to use for this weapon:
                -1   Ignored - weapon will fire from the center of the ship
                 0   GunPosX/Y
                 1   TurretPosX/Y
                 2   GuidedPosX/Y
                 3   BeamPosX/Y
-                
 BurstCount     The number of shots this weapon can fire before having to endure
                  a burst reload. Set to 0 or -1 if unused.  For weapons that do
                  not fire simultaneously, this value will be multiplied by how
@@ -3458,15 +3415,15 @@ BurstCount     The number of shots this weapon can fire before having to endure
                  will be able to fire 12 times before entering the burst reload
                  period. For weapons that fire simultaneously, this value is
                  independent of how many of the weapon the ship has.
-                 
+
 BurstReload    The reload time that is imposed when the weapon has fired &gt;=
-                 BurstCount shots. Ignored if BurstCount is 0 or -1.           
- 
-             
+                 BurstCount shots. Ignored if BurstCount is 0 or -1.
+
+
 JamVuln1-4     The weapon's vulnerability to the four different types of
                  jamming, from 0 to 100%. Ignored if the weapon is not a
                  guided weapon.
-                 
+
 Flags3         0x0001  Weapon will only use ammo at the end of a burst cycle
                0x0002  Weapon's shots are translucent
                0x0004  Firing ship can't fire another shot of this type until
@@ -3475,18 +3432,17 @@ Flags3         0x0001  Weapon will only use ammo at the end of a burst cycle
                         to the target
                0x0020  Weapon is exclusive - no other weapons on the ship can
                         fire while this weapon is firing or reloading
-             
 Durability     For guided weapons, this is how many point defense hits a shot
                 from this weapon can take before it is destroyed. Set to 0 for
                 weapons that are immediately destroyed by any PD hits. Ignored
                 for non-guided projectile weapons or beams. (PD damage to
                 guided weapons is calculated as 100% of mass damage plus
                 50% of energy damage)
-                
+
 GuidedTurn     For guided weapons, this is the turning speed of the weapon.
                 Higher values yield more maneuverable missiles. Ignored for
                 anything but guided weapons.
-                
+
 MaxAmmo        For ammo-using weapons, this is the maximum amount of ammo
                 per each instance of this weapon. (so, if you have two of these
                 weapons, the max amount of ammo for that weapon type would
@@ -3654,7 +3610,6 @@ plugin developers:
    amount of debug info will be dumped into this file as the game runs.
    Further, enabling this output also turns on some additional error checking,
    which can be very handy for finding errors in plugins.
-   
 2. If you create a file called "pilotlog.txt" in your Nova folder, every time
    a pilot file is opened its contents will be written in human-readable
    form to the pilotlog.txt file. (works only after registering)
@@ -3668,20 +3623,20 @@ Resource Descriptions
   Various ID ranges have been corrected to reflect the maximum specified in the
   Game Constants.
 
-sh&auml;n Flags field
-  0x0004 description has been tweaked to correctly indicate the state.
-
 sh&auml;n Square-wave blinking
   BlinkValA and BlinkValB descriptions have been swapped.
 
-fl&euml;t resource
-  Note about fleets in dudes has been removed (s&yuml;sts reference fleets directly).
+g&ouml;vt resource
+  0x1000 option no longer confusingly says "non-player".
 
 m&iuml;sn ShipStart
   Updated to show all 16 nav defaults are possible.
 
 &ouml;ops Stellar field
   -2 option is obsolete and has been removed (superseded by cr&ouml;ns).
+
+s&yuml;st DudeTypes
+  Restored mention of fleets which had been mistakenly removed.
 
 w&euml;ap Flags field
   0x0008 option is obsolete and has been removed (superseded by improved AI).
@@ -3693,7 +3648,7 @@ Legal Status
 &copy; 1995-2002 by Ambrosia Software, Inc.
 All Rights Reserved Worldwide
 
-</div>
+</div></div>
 
 </body>
 </html>
