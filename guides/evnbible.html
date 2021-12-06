@@ -3254,7 +3254,7 @@ Flags          0x0001           Spin the weapon's graphic continuously (rate
                                   BeamWidth field as detailed below)
                0x0002           Weapon fired by second trigger
                0x0004           For cycling weapons, always start on the first
-                                  frame of the animation
+                                  frame of the animation               0x0008           For guided weapons, don't fire at fast ships                                  (ships with turn rate > 30)
                0x0010           Weapon's sound is looped rather than played
                                   repeatedly
                0x0020           Weapon passes through shields (use sparingly!)
@@ -3637,9 +3637,6 @@ m&iuml;sn ShipStart
 
 s&yuml;st DudeTypes
   Restored mention of fleets which had been mistakenly removed.
-
-w&euml;ap Flags field
-  0x0008 option is obsolete and has been removed (superseded by improved AI).
 
 Legal Status
   Corrected values.
