@@ -127,7 +127,7 @@
 <a class="navPart" href="#appendix ii">Legal Status</a>
 <a class="navPart" href="#appendix iii">Patching STR# Resources</a>
 <a class="navPart" href="#appendix iv">Log Files</a>
-<a class="navPart" href="#appendix v">Errata</a>
+<a class="navPart" href="#appendix v">Errata &amp; Addenda</a>
 
 </div>
 
@@ -2434,11 +2434,17 @@ Holds             Cargo capacity, in tons. Put a negative sign in front of this
                     mass expansions. (e.g. a value of -100 would mean 100 tons
                     of hold space but no mass expansions allowed)
 
-Shield            Shield strength.
+Shield            Shield strength. Setting this to a negative value will result
+                    in shield strength equal to 5x the absolute value. This
+                    allows you to create a ship with shields exceeding the
+                    field&rsquo;s maximum value of 32767.
 
 Accel             Acceleration magnitude. 300 is considered an average value.
 
 Speed             Top speed. 300 is also an average value here.
+                    Note: Creating a ship with zero speed and acceleration and
+                    giving it a Warship AI will cause it to spawn in a defensive
+                    perimeter around the first stellar in a system.
 
 Maneuver          Turn rate. 10 &asymp; 30&deg;/sec.
 
@@ -2724,6 +2730,10 @@ Subtitle       The subtitle to show on the target display for this ship type
 Flags3         Even more flags!
                0x0001    Ship destroys asteroids
                0x0002    Ship scoops asteroid debris
+                          Note: If you set this flag but don&rsquo;t also provide a
+                                mining scoop in the DefaultItems, the ship will
+                                instead shuttle back and forth between friendly
+                                stellars in the system.
                0x0010    Ship ignores gravity
                0x0020    Ship ignores deadly stellars
                0x0040    Ship's turreted shots appear above the ship instead
@@ -3323,6 +3333,9 @@ BeamWidth      Beam width (actually, radius) in pixels. A BeamWidth of 0 will
 Falloff        The corona falloff. Higher numbers make the corona fall off
                  faster. This value must be between 2 and 16. (since lightning
                  beams have no corona, this is ignored for lightning beams)
+                 Note: For sprite-based weapons, setting this field to a value
+                       of 1 will cause the sprite to fade out over the final 32
+                       frames of its life. Higher values will fade out faster.
 
 BeamColor      The color of the beam center, encoded as a 24-bit RGB value
                   (00RRGGBB).
@@ -3614,32 +3627,47 @@ plugin developers:
    a pilot file is opened its contents will be written in human-readable
    form to the pilotlog.txt file. (works only after registering)
 <div class="divider"></div>
-<a class="contentH2" name="appendix v">Appendix V - Errata</a>
+<a class="contentH2" name="appendix v">Appendix V - Errata &amp; Addenda</a>
 
 The following unofficial corrections have been made to this edition of the EV
-Nova Bible.
+Nova Bible:
 
-Resource Descriptions
-  Various ID ranges have been corrected to reflect the maximum specified in the
-  Game Constants.
+  Resource Descriptions
+    Various ID ranges have been corrected to reflect the maximum specified in
+    the Game Constants.
 
-sh&auml;n Square-wave blinking
-  BlinkValA and BlinkValB descriptions have been swapped.
+  sh&auml;n Square-wave blinking
+    BlinkValA and BlinkValB descriptions have been swapped.
 
-g&ouml;vt resource
-  0x1000 option no longer confusingly says "non-player".
+  g&ouml;vt Flags 0x1000 option
+    Description no longer contradictingly says "non-player".
 
-m&iuml;sn ShipStart
-  Updated to show all 16 nav defaults are possible.
+  m&iuml;sn ShipStart field
+    Updated to show all 16 nav defaults are possible.
 
-&ouml;ops Stellar field
-  -2 option is obsolete and has been removed (superseded by cr&ouml;ns).
+  &ouml;ops Stellar field
+    -2 option is obsolete and has been removed (superseded by cr&ouml;ns).
 
-s&yuml;st DudeTypes
-  Restored mention of fleets which had been mistakenly removed.
+  s&yuml;st DudeTypes
+    Restored mention of fleets which had been mistakenly removed.
 
-Legal Status
-  Corrected values.
+  Legal Status
+    Corrected values.
+
+The following additions have been made to clarify previously undocumented
+features:
+
+  sh&iuml;p Shields field
+    Added note about negative shield values.
+
+  sh&iuml;p Speed field
+    Added note about zero-speed warships.
+
+  sh&iuml;p Flags3 0x0002 option
+    Added note about behaviour when lacking mining scoop.
+
+  w&euml;ap Falloff field
+    Added note about sprite-based weapons.
 
 <div class="divider"></div>
 &copy; 1995-2002 by Ambrosia Software, Inc.
