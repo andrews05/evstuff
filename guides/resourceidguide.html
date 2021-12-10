@@ -11,6 +11,9 @@
     td {vertical-align: top}
     .note {padding-bottom: 14px}
     .command {font-family: Lucida Grande}
+    @media (prefers-color-scheme: dark) {
+      body {background: #1E1E1E; color: #eee}
+    }
   </style>
 </head>
 <body>
@@ -579,7 +582,7 @@ Items in <i>italics</i> are by convention only
     <tr>
       <td class="note" colspan="2">
         STR&nbsp; resources are used to 'patch' individual entries of STR# resources.<br>
-        Note: You can have up to 256 cargo types in the STR# resources but only the first 100 can be patched in this way.
+        Beware the overlaps with cargo types.
       </td>
     </tr>
     <tr>
@@ -595,10 +598,10 @@ Items in <i>italics</i> are by convention only
       <td>9000-9005</td>		<td>STR# 4000 (Basic cargo types)</td>
     </tr>
     <tr>
-      <td>9100-9199</td>		<td>STR# 4001 (Lowercase cargo names)</td>
+      <td>9100-9355</td>		<td>STR# 4001 (Lowercase cargo names)</td>
     </tr>
     <tr>
-      <td>9200-9299</td>		<td>STR# 4002 (Cargo abbreviations)</td>
+      <td>9200-9455</td>		<td>STR# 4002 (Cargo abbreviations)</td>
     </tr>
     <tr>
       <td>9300-9305</td>		<td>STR# 4004 (Basic cargo base prices)</td>
