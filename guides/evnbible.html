@@ -3637,16 +3637,19 @@ change the first cargo type from food to something else, you’d simply create a
 chart of 'STR ' resource numbers is provided below:
 
 String Type:                                        Replacement 'STR ' ID range:
-Message buoys                                       1000-2500
-Hail quotes                                         5000-5511
-Stellar types                                       7000-7063
+Message buoys                                       1000+
+përs-resource Hail quotes                           5000+
+Stellar types                                       7000-7255
+Commodity names                                     9000-9005
+Lowercase cargo names                               9100-9355
+Cargo abbreviations for status display              9200-9455
 Base prices of commodities                          9300-9305
 Commodity abbreviations for status display          9400-9405
-Govt-specific greetings for comm dialog           10000-12559 (first 10 for
+Govt-specific greetings for comm dialog            10000-12559 (first 10 for
                                                     govt -1, second 10 for
                                                     govt 0, third 10 for govt
                                                     1, etc.)
-përs-resource CommQuotes                          15000-15511
+përs-resource CommQuotes                           15000+
 <div class="divider"></div>
 <a class="contentH2" name="appendix-iv">Appendix IV - Log Files</a>
 
@@ -3687,6 +3690,9 @@ Nova Bible:
 
   Legal Status
     Corrected values.
+
+  Patching STR# Resources
+    Restored cargo string types which had been mistakenly removed.
 
 The following additions have been made to clarify previously undocumented
 features:
