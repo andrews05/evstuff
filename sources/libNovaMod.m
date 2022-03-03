@@ -11,7 +11,7 @@ OSErr FSOpenIterator(const FSRef *container, FSIteratorFlags iteratorFlags, FSIt
                                                 includingPropertiesForKeys:nil
                                                                    options:NSDirectoryEnumerationSkipsHiddenFiles
                                                                      error:nil];
-    NSArray *descriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"lastPathComponent" ascending:YES]];
+    NSArray *descriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"lastPathComponent" ascending:YES selector:@selector(caseInsensitiveCompare:)]];
     enumerator = [urls sortedArrayUsingDescriptors:descriptors].objectEnumerator;
     CFRelease(urlRef);
     return noErr;
