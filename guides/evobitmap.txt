@@ -1,0 +1,2097 @@
+﻿ EVN Mission Bit Map (v1.0.0fc):
+ --------------------------------------
+Analysed: 8/3/22 at 9:56 AM
+
+ Resources Scanned :
+ -------
+   1 : chär
+   2 : crön
+   3 : dësc
+   4 : flët
+   5 : jünk
+   6 : mïsn
+   7 : nëbu
+   8 : öops
+   9 : oütf
+   10 : përs
+   11 : shïp
+   12 : spöb
+   13 : sÿst
+ -------
+
+ Files :
+ -------
+   1 : Override Data 1
+   2 : Override Data 2
+ -------
+
+
+ Bit Usage Analysis:
+ -------------------
+
+ Total Bits Used          : 0
+ Total Unique Bits Used   : 161
+ Total Bits Tested        : 637
+ Total Unique Bits Tested : 161
+ Total Bits Set           : 170
+ Total Unique Bits Set    : 160
+
+ Bits Tested But Not Set:
+  0,
+
+ Bits Set But Not Tested:
+
+
+ Used Bits:
+ ---------
+  0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,18,99,100,
+  101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,
+  121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,
+  141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,
+  161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,
+  181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,199,200,
+  201,202,203,204,205,206,207,208,209,210,211,212,213,214,215,216,217,218,219,220,
+  221,222,223,224,225,226,227,228,511,1000,1001,1002,1003,1004,1005,1006,1007,1008,1009,1010,
+  1011,
+
+
+ Other Test Operators Analysis:
+ ------------------------------
+ Paid Days Details :
+  ------------------
+
+ Outfit Test Bit Details :
+  -------------------------
+
+ Explore Test Bit Details :
+  --------------------------
+
+ Set Operators Analysis:
+ -----------------------
+ Total Outfs Granted (Gxxxx)         : 7
+ Total Unique Outfs Granted (Gxxxx)  : 7
+ Total Outfs Deleted (Dxxxx)         : 8
+ Total Unique Outfs Deleted (Dxxxx)  : 4
+
+ Used Set Operators:
+ ------------------
+ Grant outfs (Gxxxx):
+  142,145,146,147,197,198,254,
+ Delete outfs (Dxxxx):
+  142,145,147,197,
+
+
+ Set Operator Details :
+ ----------------------
+ Grant outf (Gxxxx):
+ Outf 142 :
+   Set   : 1 times
+   Locations:
+   -----------------------
+      Res.: mïsn 176  "Destroy Renegade Raiders"   File: 1 : Override Data 1.
+   -----------------------
+ Outf 145 :
+   Set   : 1 times
+   Locations:
+   -----------------------
+      Res.: mïsn 183  "Observe Voinian Research Base"   File: 1 : Override Data 1.
+   -----------------------
+ Outf 146 :
+   Set   : 1 times
+   Locations:
+   -----------------------
+      Res.: mïsn 365  "Transport Cargo to <DST>"   File: 1 : Override Data 1.
+   -----------------------
+ Outf 147 :
+   Set   : 1 times
+   Locations:
+   -----------------------
+      Res.: mïsn 243  "Test Prototype NPD"   File: 1 : Override Data 1.
+   -----------------------
+ Outf 197 :
+   Set   : 1 times
+   Locations:
+   -----------------------
+      Res.: mïsn 319  "Test New Shield Generator"   File: 1 : Override Data 1.
+   -----------------------
+ Outf 198 :
+   Set   : 1 times
+   Locations:
+   -----------------------
+      Res.: mïsn 350  "Take Sensor Readings to <DST>"   File: 1 : Override Data 1.
+   -----------------------
+ Outf 254 :
+   Set   : 1 times
+   Locations:
+   -----------------------
+      Res.: mïsn 201  "Capture Gualon station"   File: 1 : Override Data 1.
+   -----------------------
+
+ Delete outf (Dxxxx):
+ Outf 142 :
+   Set   : 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 176  "Destroy Renegade Raiders"   File: 1 : Override Data 1.
+      Res.: mïsn 176  "Destroy Renegade Raiders"   File: 1 : Override Data 1.
+   -----------------------
+ Outf 145 :
+   Set   : 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 183  "Observe Voinian Research Base"   File: 1 : Override Data 1.
+      Res.: mïsn 183  "Observe Voinian Research Base"   File: 1 : Override Data 1.
+   -----------------------
+ Outf 147 :
+   Set   : 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 243  "Test Prototype NPD"   File: 1 : Override Data 1.
+      Res.: mïsn 243  "Test Prototype NPD"   File: 1 : Override Data 1.
+   -----------------------
+ Outf 197 :
+   Set   : 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 319  "Test New Shield Generator"   File: 1 : Override Data 1.
+      Res.: mïsn 319  "Test New Shield Generator"   File: 1 : Override Data 1.
+   -----------------------
+
+
+ Used Bit Details :
+  ------------------
+
+   Bit 0 :
+   Total : 1 times
+   Set   : 0 times
+   Tested: 1 times
+   Locations:
+   -----------------------
+      Res.: flët 142  "Independent Trader Convoy (Small)"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 1 :
+   Total : 14 times
+   Set   : 1 times
+   Tested: 13 times
+   Locations:
+   -----------------------
+      Res.: mïsn 149  "Rescue Voinian Defector"   File: 1 : Override Data 1.
+      Res.: mïsn 149  "Rescue Voinian Defector"   File: 1 : Override Data 1.
+      Res.: mïsn 154  "Destroy <SN>"   File: 1 : Override Data 1.
+      Res.: mïsn 155  "Destroy Voinian <SN>"   File: 1 : Override Data 1.
+      Res.: mïsn 156  "Destroy Voinian <SN>"   File: 1 : Override Data 1.
+      Res.: mïsn 157  "Destroy Voinian <SN>"   File: 1 : Override Data 1.
+      Res.: mïsn 158  "Destroy <SN>"   File: 1 : Override Data 1.
+      Res.: mïsn 159  "Destroy <SN>"   File: 1 : Override Data 1.
+      Res.: mïsn 160  "Defend <RST>"   File: 1 : Override Data 1.
+      Res.: mïsn 161  "Rescue Scoutship Crew"   File: 1 : Override Data 1.
+      Res.: mïsn 162  "Cargo for <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 174  "Rescue UE Agent"   File: 1 : Override Data 1.
+      Res.: mïsn 182  "Aid the Voinians!"   File: 1 : Override Data 1.
+      Res.: shïp 130  "UE Fighter"   File: 2 : Override Data 2.
+   -----------------------
+   Bit 2 :
+   Total : 10 times
+   Set   : 1 times
+   Tested: 9 times
+   Locations:
+   -----------------------
+      Res.: mïsn 161  "Rescue Scoutship Crew"   File: 1 : Override Data 1.
+      Res.: mïsn 161  "Rescue Scoutship Crew"   File: 1 : Override Data 1.
+      Res.: mïsn 166  "Smuggle Saalian brandy to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 178  "Investigate Abduction"   File: 1 : Override Data 1.
+      Res.: mïsn 183  "Observe Voinian Research Base"   File: 1 : Override Data 1.
+      Res.: mïsn 185  "Destroy Renegade Fleet"   File: 1 : Override Data 1.
+      Res.: mïsn 325  "Travel to <RST>"   File: 1 : Override Data 1.
+      Res.: shïp 131  "UE Destroyer"   File: 2 : Override Data 2.
+      Res.: shïp 132  "UE Carrier"   File: 2 : Override Data 2.
+      Res.: oütf 139  "UE Fighter"   File: 2 : Override Data 2.
+   -----------------------
+   Bit 3 :
+   Total : 12 times
+   Set   : 1 times
+   Tested: 11 times
+   Locations:
+   -----------------------
+      Res.: mïsn 232  "Raid Outpost Alpha"   File: 1 : Override Data 1.
+      Res.: mïsn 232  "Raid Outpost Alpha"   File: 1 : Override Data 1.
+      Res.: mïsn 233  "Defend <RST>"   File: 1 : Override Data 1.
+      Res.: mïsn 234  "Defend <RST>"   File: 1 : Override Data 1.
+      Res.: mïsn 235  "Defend <RST>"   File: 1 : Override Data 1.
+      Res.: mïsn 236  "Raid Emalghion"   File: 1 : Override Data 1.
+      Res.: mïsn 281  "Raid Emalghion"   File: 1 : Override Data 1.
+      Res.: mïsn 282  "Raid Outpost Alpha"   File: 1 : Override Data 1.
+      Res.: mïsn 283  "Raid Outpost Gamma"   File: 1 : Override Data 1.
+      Res.: mïsn 284  "Raid Outpost Theta"   File: 1 : Override Data 1.
+      Res.: shïp 135  "Voinian Frigate"   File: 2 : Override Data 2.
+      Res.: oütf 143  "R. Turret"   File: 2 : Override Data 2.
+   -----------------------
+   Bit 4 :
+   Total : 4 times
+   Set   : 1 times
+   Tested: 3 times
+   Locations:
+   -----------------------
+      Res.: mïsn 238  "Divert Emalgha Fleet"   File: 1 : Override Data 1.
+      Res.: shïp 136  "Voinian Cruiser"   File: 2 : Override Data 2.
+      Res.: oütf 137  "Voinian Heavy Fighter"   File: 2 : Override Data 2.
+      Res.: oütf 141  "Bronev Plating"   File: 2 : Override Data 2.
+   -----------------------
+   Bit 5 :
+   Total : 5 times
+   Set   : 1 times
+   Tested: 4 times
+   Locations:
+   -----------------------
+      Res.: mïsn 172  "Rescue Voinian Defector"   File: 1 : Override Data 1.
+      Res.: mïsn 173  "Transport Defector to <DST>"   File: 1 : Override Data 1.
+      Res.: crön 128  "Paaren station news"   File: 2 : Override Data 2.
+      Res.: sÿst 137  "Valos"   File: 2 : Override Data 2.
+      Res.: sÿst 187  "Valos"   File: 2 : Override Data 2.
+   -----------------------
+   Bit 6 :
+   Total : 10 times
+   Set   : 1 times
+   Tested: 9 times
+   Locations:
+   -----------------------
+      Res.: mïsn 181  "Investigate Abduction"   File: 1 : Override Data 1.
+      Res.: shïp 144  "UE Cruiser"   File: 2 : Override Data 2.
+      Res.: shïp 144  "UE Cruiser"   File: 2 : Override Data 2.
+      Res.: crön 129  "UE Cruiser news"   File: 2 : Override Data 2.
+      Res.: përs 150  "U.E.S. New Prussia"   File: 2 : Override Data 2.
+      Res.: përs 151  "U.E.S. Earth"   File: 2 : Override Data 2.
+      Res.: përs 152  "U.E.S. Paaren"   File: 2 : Override Data 2.
+      Res.: përs 153  "U.E.S. Telnan"   File: 2 : Override Data 2.
+      Res.: përs 154  "U.E.S. Knox"   File: 2 : Override Data 2.
+      Res.: përs 155  "U.E.S. New Tokyo"   File: 2 : Override Data 2.
+   -----------------------
+   Bit 7 :
+   Total : 5 times
+   Set   : 1 times
+   Tested: 4 times
+   Locations:
+   -----------------------
+      Res.: mïsn 177  "Attack Renegade Base"   File: 1 : Override Data 1.
+      Res.: mïsn 177  "Attack Renegade Base"   File: 1 : Override Data 1.
+      Res.: oütf 142  "Needle Jammer"   File: 2 : Override Data 2.
+      Res.: sÿst 171  "Pariah"   File: 2 : Override Data 2.
+      Res.: sÿst 237  "Pariah"   File: 2 : Override Data 2.
+   -----------------------
+   Bit 8 :
+   Total : 117 times
+   Set   : 1 times
+   Tested: 116 times
+   Locations:
+   -----------------------
+      Res.: mïsn 206  "Diplomatic Relations"   File: 1 : Override Data 1.
+      Res.: mïsn 206  "Diplomatic Relations"   File: 1 : Override Data 1.
+      Res.: mïsn 207  "Miranu Delivery to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 221  "Zachit Testing"   File: 1 : Override Data 1.
+      Res.: mïsn 239  "Retrieve Cargo"   File: 1 : Override Data 1.
+      Res.: mïsn 263  "Take Message to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 268  "Ferry Passengers to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 269  "Ferry Passengers to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 270  "Ferry Passengers to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 273  "Ferry Passengers to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 274  "Ferry Passengers to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 275  "Ferry Passengers to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 276  "Ferry Passengers to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 277  "Ferry Passengers to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 286  "Ferry Passenger to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 292  "Defend <RST>"   File: 1 : Override Data 1.
+      Res.: mïsn 293  "Deliver <CT> to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 331  "Escort <SN> to <RST>"   File: 1 : Override Data 1.
+      Res.: öops 140  "A recession"   File: 2 : Override Data 2.
+      Res.: öops 141  "A serious drought"   File: 2 : Override Data 2.
+      Res.: öops 142  "A large quantity of skulls"   File: 2 : Override Data 2.
+      Res.: öops 143  "A successful raider"   File: 2 : Override Data 2.
+      Res.: öops 144  "A Zidagar offensive"   File: 2 : Override Data 2.
+      Res.: öops 145  "An Igadzra offensive"   File: 2 : Override Data 2.
+      Res.: öops 146  "An enormous food surplus"   File: 2 : Override Data 2.
+      Res.: öops 147  "An incredible harvest"   File: 2 : Override Data 2.
+      Res.: öops 148  "A manufacturing surplus"   File: 2 : Override Data 2.
+      Res.: öops 149  "Industrial expansion"   File: 2 : Override Data 2.
+      Res.: öops 150  "A massive brawl"   File: 2 : Override Data 2.
+      Res.: öops 151  "A new invention"   File: 2 : Override Data 2.
+      Res.: öops 152  "A bizarre training accident"   File: 2 : Override Data 2.
+      Res.: öops 153  "Decreased demand"   File: 2 : Override Data 2.
+      Res.: öops 154  "Increased demand"   File: 2 : Override Data 2.
+      Res.: öops 155  "The jubilant workforce"   File: 2 : Override Data 2.
+      Res.: öops 156  "Constant celebration"   File: 2 : Override Data 2.
+      Res.: öops 157  "A Voinian attack"   File: 2 : Override Data 2.
+      Res.: öops 169  "A good harvest"   File: 2 : Override Data 2.
+      Res.: öops 171  "A shortage of Munb leaves"   File: 2 : Override Data 2.
+      Res.: öops 172  "Toxic rainfall"   File: 2 : Override Data 2.
+      Res.: öops 174  "A volcanic eruption"   File: 2 : Override Data 2.
+      Res.: crön 133  "Miranu treaty news"   File: 2 : Override Data 2.
+      Res.: përs 161  "Matt Burch"   File: 2 : Override Data 2.
+      Res.: përs 193  "Miranu Courier 687"   File: 2 : Override Data 2.
+      Res.: përs 194  "Miranu Courier 45"   File: 2 : Override Data 2.
+      Res.: përs 195  "Miranu Courier 98"   File: 2 : Override Data 2.
+      Res.: përs 196  "Miranu Courier 111"   File: 2 : Override Data 2.
+      Res.: përs 197  "Miranu Courier 272"   File: 2 : Override Data 2.
+      Res.: përs 198  "Miranu Courier 821"   File: 2 : Override Data 2.
+      Res.: përs 199  "Miranu Freighter 869"   File: 2 : Override Data 2.
+      Res.: përs 200  "Miranu Freighter 413"   File: 2 : Override Data 2.
+      Res.: përs 201  "Miranu Freighter 612"   File: 2 : Override Data 2.
+      Res.: përs 202  "Miranu H. Freighter 9"   File: 2 : Override Data 2.
+      Res.: përs 221  "S.S. Lose Control"   File: 2 : Override Data 2.
+      Res.: përs 222  "S.S. PVC"   File: 2 : Override Data 2.
+      Res.: përs 223  "S.S. Angel Interceptor"   File: 2 : Override Data 2.
+      Res.: përs 224  "S.S. Sinister"   File: 2 : Override Data 2.
+      Res.: përs 225  "S.S. Mayfly"   File: 2 : Override Data 2.
+      Res.: përs 226  "S.S. Bluetonic"   File: 2 : Override Data 2.
+      Res.: përs 227  "S.S. Nifkin"   File: 2 : Override Data 2.
+      Res.: përs 228  "S.S. Lost Cat"   File: 2 : Override Data 2.
+      Res.: përs 229  "S.S. Tinkerbell"   File: 2 : Override Data 2.
+      Res.: përs 230  "S.S. Planetary"   File: 2 : Override Data 2.
+      Res.: përs 231  "S.S. Spacerock"   File: 2 : Override Data 2.
+      Res.: përs 232  "S.S. Peanut Dispenser"   File: 2 : Override Data 2.
+      Res.: përs 233  "S.S. Lucy"   File: 2 : Override Data 2.
+      Res.: përs 234  "S.S. Diamond"   File: 2 : Override Data 2.
+      Res.: përs 235  "S.S. Starmoonsun"   File: 2 : Override Data 2.
+      Res.: përs 236  "S.S. Wizard"   File: 2 : Override Data 2.
+      Res.: përs 237  "S.S. Lizard"   File: 2 : Override Data 2.
+      Res.: përs 238  "S.S. Robot"   File: 2 : Override Data 2.
+      Res.: përs 239  "S.S. Acetone"   File: 2 : Override Data 2.
+      Res.: përs 240  "S.S. True Faith"   File: 2 : Override Data 2.
+      Res.: përs 241  "S.S. Blue Monday"   File: 2 : Override Data 2.
+      Res.: përs 242  "S.S. Lithium"   File: 2 : Override Data 2.
+      Res.: përs 243  "S.S. Countdown"   File: 2 : Override Data 2.
+      Res.: përs 244  "S.S. Legendary"   File: 2 : Override Data 2.
+      Res.: përs 245  "S.S. Condemned House"   File: 2 : Override Data 2.
+      Res.: përs 246  "S.S. Acrylic"   File: 2 : Override Data 2.
+      Res.: përs 247  "S.S. Happy Endings"   File: 2 : Override Data 2.
+      Res.: përs 248  "S.S. Bullet Proof"   File: 2 : Override Data 2.
+      Res.: përs 249  "S.S. Surprise"   File: 2 : Override Data 2.
+      Res.: përs 250  "S.S. Hobart"   File: 2 : Override Data 2.
+      Res.: përs 251  "S.S. Motorway"   File: 2 : Override Data 2.
+      Res.: përs 252  "S.S. Shakespeare"   File: 2 : Override Data 2.
+      Res.: përs 253  "S.S. Eternal Light"   File: 2 : Override Data 2.
+      Res.: përs 254  "S.S. Disko"   File: 2 : Override Data 2.
+      Res.: përs 255  "S.S. Stavros"   File: 2 : Override Data 2.
+      Res.: përs 256  "S.S. Unicorn"   File: 2 : Override Data 2.
+      Res.: përs 257  "S.S. Hermann"   File: 2 : Override Data 2.
+      Res.: përs 258  "S.S. Pauline"   File: 2 : Override Data 2.
+      Res.: përs 259  "S.S. Rooster"   File: 2 : Override Data 2.
+      Res.: përs 260  "S.S. Lethargy"   File: 2 : Override Data 2.
+      Res.: përs 261  "S.S. Richard III"   File: 2 : Override Data 2.
+      Res.: përs 262  "S.S. Cheapskate"   File: 2 : Override Data 2.
+      Res.: përs 263  "S.S. Sparky"   File: 2 : Override Data 2.
+      Res.: përs 264  "S.S. Verisimilitude"   File: 2 : Override Data 2.
+      Res.: përs 265  "S.S. Music"   File: 2 : Override Data 2.
+      Res.: përs 266  "S.S. History"   File: 2 : Override Data 2.
+      Res.: përs 267  "S.S. Razmatazz"   File: 2 : Override Data 2.
+      Res.: përs 268  "S.S. Rabbit"   File: 2 : Override Data 2.
+      Res.: përs 269  "S.S. Morphine"   File: 2 : Override Data 2.
+      Res.: përs 270  "Miranu Courier 90"   File: 2 : Override Data 2.
+      Res.: përs 271  "Miranu Courier 450"   File: 2 : Override Data 2.
+      Res.: përs 272  "Miranu Courier 73"   File: 2 : Override Data 2.
+      Res.: përs 273  "Miranu Courier 938"   File: 2 : Override Data 2.
+      Res.: përs 274  "Miranu Courier 574"   File: 2 : Override Data 2.
+      Res.: përs 276  "Miranu Courier 871"   File: 2 : Override Data 2.
+      Res.: përs 277  "Miranu Freighter 666"   File: 2 : Override Data 2.
+      Res.: përs 278  "Miranu Freighter 315"   File: 2 : Override Data 2.
+      Res.: përs 279  "Miranu Freighter 671"   File: 2 : Override Data 2.
+      Res.: përs 280  "Miranu H. Freighter 84"   File: 2 : Override Data 2.
+      Res.: përs 324  "Ali Saidi"   File: 2 : Override Data 2.
+      Res.: përs 326  "Lazurus"   File: 2 : Override Data 2.
+      Res.: përs 328  "Pete Hopkins"   File: 2 : Override Data 2.
+      Res.: përs 329  "S.S. MoonBaby"   File: 2 : Override Data 2.
+      Res.: përs 336  "David Dunham"   File: 2 : Override Data 2.
+      Res.: përs 338  "Kestelnon V"   File: 2 : Override Data 2.
+   -----------------------
+   Bit 9 :
+   Total : 14 times
+   Set   : 1 times
+   Tested: 13 times
+   Locations:
+   -----------------------
+      Res.: mïsn 340  "Observe DSN-4922 System"   File: 1 : Override Data 1.
+      Res.: mïsn 340  "Observe DSN-4922 System"   File: 1 : Override Data 1.
+      Res.: mïsn 341  "Drive off Azdgari Raiders"   File: 1 : Override Data 1.
+      Res.: mïsn 342  "Defend <RST>"   File: 1 : Override Data 1.
+      Res.: mïsn 343  "Defend <RST>"   File: 1 : Override Data 1.
+      Res.: mïsn 344  "Attack Innor"   File: 1 : Override Data 1.
+      Res.: mïsn 345  "Attack Pimre Station"   File: 1 : Override Data 1.
+      Res.: mïsn 346  "Escort Convoy to <RST>"   File: 1 : Override Data 1.
+      Res.: mïsn 347  "Escort Convoy to <RST>"   File: 1 : Override Data 1.
+      Res.: mïsn 348  "Retrieve Sensor Readings"   File: 1 : Override Data 1.
+      Res.: shïp 152  "Zidara"   File: 2 : Override Data 2.
+      Res.: oütf 170  "Phased Disruption Beam"   File: 2 : Override Data 2.
+      Res.: oütf 182  "Zidagar Fighter"   File: 2 : Override Data 2.
+      Res.: oütf 199  "Zidagar ECM System"   File: 2 : Override Data 2.
+   -----------------------
+   Bit 10 :
+   Total : 14 times
+   Set   : 1 times
+   Tested: 13 times
+   Locations:
+   -----------------------
+      Res.: mïsn 308  "Evacuate to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 308  "Evacuate to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 309  "Raid <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 310  "Raid <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 311  "Evacuate <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 312  "Evacuate <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 313  "Defend <RST>"   File: 1 : Override Data 1.
+      Res.: mïsn 314  "Defend <RST>"   File: 1 : Override Data 1.
+      Res.: mïsn 315  "Defend <RST>"   File: 1 : Override Data 1.
+      Res.: mïsn 318  "Ferry Passenger to <DST>"   File: 1 : Override Data 1.
+      Res.: oütf 171  "Azdara Bay"   File: 2 : Override Data 2.
+      Res.: oütf 172  "Azdara Fighter"   File: 2 : Override Data 2.
+      Res.: oütf 189  "Shield Generator"   File: 2 : Override Data 2.
+      Res.: oütf 192  "Azdgari Upgrade"   File: 2 : Override Data 2.
+   -----------------------
+   Bit 11 :
+   Total : 16 times
+   Set   : 1 times
+   Tested: 15 times
+   Locations:
+   -----------------------
+      Res.: mïsn 367  "Defend Station Raelion"   File: 1 : Override Data 1.
+      Res.: mïsn 367  "Defend Station Raelion"   File: 1 : Override Data 1.
+      Res.: mïsn 368  "Drive off Azdgari Raiders"   File: 1 : Override Data 1.
+      Res.: mïsn 369  "Defend <RST>"   File: 1 : Override Data 1.
+      Res.: mïsn 370  "Defend <RST>"   File: 1 : Override Data 1.
+      Res.: mïsn 371  "Attack Vastan IV"   File: 1 : Override Data 1.
+      Res.: mïsn 372  "Attack Outpost Terapin"   File: 1 : Override Data 1.
+      Res.: mïsn 373  "Escort Convoy to <RST>"   File: 1 : Override Data 1.
+      Res.: mïsn 374  "Escort Convoy to <RST>"   File: 1 : Override Data 1.
+      Res.: mïsn 375  "Hunt Azdgari Warship"   File: 1 : Override Data 1.
+      Res.: mïsn 376  "Transport Cargo to <DST>"   File: 1 : Override Data 1.
+      Res.: shïp 154  "Igazra"   File: 2 : Override Data 2.
+      Res.: oütf 200  "SAE launcher"   File: 2 : Override Data 2.
+      Res.: oütf 201  "SAE module"   File: 2 : Override Data 2.
+      Res.: përs 304  "I.S.S. Espionage"   File: 2 : Override Data 2.
+      Res.: përs 309  "I.S.S. Intelligence"   File: 2 : Override Data 2.
+   -----------------------
+   Bit 12 :
+   Total : 5 times
+   Set   : 1 times
+   Tested: 4 times
+   Locations:
+   -----------------------
+      Res.: mïsn 193  "Destroy Renegade Fleet"   File: 1 : Override Data 1.
+      Res.: mïsn 193  "Destroy Renegade Fleet"   File: 1 : Override Data 1.
+      Res.: crön 130  "Huron news"   File: 2 : Override Data 2.
+      Res.: sÿst 165  "Huron"   File: 2 : Override Data 2.
+      Res.: sÿst 190  "Huron"   File: 2 : Override Data 2.
+   -----------------------
+   Bit 13 :
+   Total : 26 times
+   Set   : 1 times
+   Tested: 25 times
+   Locations:
+   -----------------------
+      Res.: mïsn 199  "Attack Avann"   File: 1 : Override Data 1.
+      Res.: mïsn 199  "Attack Avann"   File: 1 : Override Data 1.
+      Res.: mïsn 200  "Make Contact with Hinwar"   File: 1 : Override Data 1.
+      Res.: crön 131  "Avann offensive news"   File: 2 : Override Data 2.
+      Res.: sÿst 138  "DSN-1810"   File: 2 : Override Data 2.
+      Res.: sÿst 139  "DSN-7455"   File: 2 : Override Data 2.
+      Res.: sÿst 155  "DSN-1003"   File: 2 : Override Data 2.
+      Res.: sÿst 156  "Grenits"   File: 2 : Override Data 2.
+      Res.: sÿst 157  "Avann"   File: 2 : Override Data 2.
+      Res.: sÿst 188  "Pust"   File: 2 : Override Data 2.
+      Res.: sÿst 205  "Romit"   File: 2 : Override Data 2.
+      Res.: sÿst 207  "Krraali"   File: 2 : Override Data 2.
+      Res.: sÿst 208  "DSN-4743"   File: 2 : Override Data 2.
+      Res.: sÿst 209  "Fridion"   File: 2 : Override Data 2.
+      Res.: sÿst 223  "Emalghion"   File: 2 : Override Data 2.
+      Res.: sÿst 225  "DSN-1810"   File: 2 : Override Data 2.
+      Res.: sÿst 226  "DSN-1003"   File: 2 : Override Data 2.
+      Res.: sÿst 227  "Grenits"   File: 2 : Override Data 2.
+      Res.: sÿst 228  "Avann"   File: 2 : Override Data 2.
+      Res.: sÿst 230  "Pust"   File: 2 : Override Data 2.
+      Res.: sÿst 231  "Romit"   File: 2 : Override Data 2.
+      Res.: sÿst 232  "Krraali"   File: 2 : Override Data 2.
+      Res.: sÿst 233  "DSN-4743"   File: 2 : Override Data 2.
+      Res.: sÿst 234  "Fridion"   File: 2 : Override Data 2.
+      Res.: sÿst 235  "Emalghion"   File: 2 : Override Data 2.
+      Res.: sÿst 236  "DSN-7455"   File: 2 : Override Data 2.
+   -----------------------
+   Bit 14 :
+   Total : 22 times
+   Set   : 1 times
+   Tested: 21 times
+   Locations:
+   -----------------------
+      Res.: mïsn 202  "Report to UE High Command"   File: 1 : Override Data 1.
+      Res.: mïsn 202  "Report to UE High Command"   File: 1 : Override Data 1.
+      Res.: mïsn 203  "Defend Krotun"   File: 1 : Override Data 1.
+      Res.: crön 132  "Obron offensive news"   File: 2 : Override Data 2.
+      Res.: sÿst 140  "Yandros"   File: 2 : Override Data 2.
+      Res.: sÿst 141  "DSN-114"   File: 2 : Override Data 2.
+      Res.: sÿst 161  "DSN-9338"   File: 2 : Override Data 2.
+      Res.: sÿst 162  "Obron"   File: 2 : Override Data 2.
+      Res.: sÿst 163  "Zator"   File: 2 : Override Data 2.
+      Res.: sÿst 164  "DSN-3620"   File: 2 : Override Data 2.
+      Res.: sÿst 193  "Gamur"   File: 2 : Override Data 2.
+      Res.: sÿst 195  "DSN-4420"   File: 2 : Override Data 2.
+      Res.: sÿst 197  "Gualon"   File: 2 : Override Data 2.
+      Res.: sÿst 229  "Yandros"   File: 2 : Override Data 2.
+      Res.: sÿst 238  "DSN-114"   File: 2 : Override Data 2.
+      Res.: sÿst 239  "DSN-9338"   File: 2 : Override Data 2.
+      Res.: sÿst 240  "Obron"   File: 2 : Override Data 2.
+      Res.: sÿst 241  "Zator"   File: 2 : Override Data 2.
+      Res.: sÿst 242  "DSN-3620"   File: 2 : Override Data 2.
+      Res.: sÿst 243  "Gamur"   File: 2 : Override Data 2.
+      Res.: sÿst 244  "DSN-4420"   File: 2 : Override Data 2.
+      Res.: sÿst 245  "Hinavar"   File: 2 : Override Data 2.
+   -----------------------
+   Bit 15 :
+   Total : 10 times
+   Set   : 1 times
+   Tested: 9 times
+   Locations:
+   -----------------------
+      Res.: mïsn 205  "Transport Cargo to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 205  "Transport Cargo to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 225  "Transport Cargo to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 226  "Transport Cargo to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 227  "Transport Cargo to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 228  "Transport Cargo to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 229  "Transport Cargo to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 230  "Transport Cargo to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 231  "Transport Cargo to <DST>"   File: 1 : Override Data 1.
+      Res.: shïp 133  "Voinian Supply Ship"   File: 2 : Override Data 2.
+   -----------------------
+   Bit 16 :
+   Total : 17 times
+   Set   : 1 times
+   Tested: 16 times
+   Locations:
+   -----------------------
+      Res.: mïsn 207  "Miranu Delivery to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 207  "Miranu Delivery to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 208  "Delivery to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 209  "Delivery to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 210  "Delivery to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 211  "Delivery to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 212  "Delivery to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 213  "Delivery to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 214  "Delivery to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 215  "Rush Delivery to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 216  "Rush Delivery to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 217  "Rush Delivery to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 218  "Rush Delivery to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 219  "Urgent Delivery to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 220  "Urgent Delivery to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 240  "Special Delivery to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 259  "Delivery to <DST>"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 18 :
+   Total : 10 times
+   Set   : 1 times
+   Tested: 9 times
+   Locations:
+   -----------------------
+      Res.: mïsn 221  "Zachit Testing"   File: 1 : Override Data 1.
+      Res.: mïsn 222  "Defend <RST>"   File: 1 : Override Data 1.
+      Res.: mïsn 223  "Zachit: Escort Convoy to <RST>"   File: 1 : Override Data 1.
+      Res.: mïsn 224  "Zachit: Escort Convoy to <RST>"   File: 1 : Override Data 1.
+      Res.: mïsn 244  "Defend New Mira"   File: 1 : Override Data 1.
+      Res.: mïsn 260  "Defend <RST>"   File: 1 : Override Data 1.
+      Res.: mïsn 297  "Zachit: Escort Convoy to <RST>"   File: 1 : Override Data 1.
+      Res.: mïsn 298  "Zachit: Termination"   File: 1 : Override Data 1.
+      Res.: mïsn 299  "Zachit: Termination"   File: 1 : Override Data 1.
+      Res.: mïsn 300  "Zachit: Mass Termination"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 99 :
+   Total : 6 times
+   Set   : 3 times
+   Tested: 3 times
+   Locations:
+   -----------------------
+      Res.: mïsn 239  "Retrieve Cargo"   File: 1 : Override Data 1.
+      Res.: mïsn 239  "Retrieve Cargo"   File: 1 : Override Data 1.
+      Res.: mïsn 292  "Defend <RST>"   File: 1 : Override Data 1.
+      Res.: mïsn 292  "Defend <RST>"   File: 1 : Override Data 1.
+      Res.: mïsn 293  "Deliver <CT> to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 293  "Deliver <CT> to <DST>"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 100 :
+   Total : 12 times
+   Set   : 1 times
+   Tested: 11 times
+   Locations:
+   -----------------------
+      Res.: mïsn 128  "UE Shipping: Recruitment"   File: 1 : Override Data 1.
+      Res.: mïsn 128  "UE Shipping: Recruitment"   File: 1 : Override Data 1.
+      Res.: mïsn 129  "UE: Delivery to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 130  "UE: Delivery to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 131  "UE: Delivery to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 132  "UE: Delivery to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 133  "UE: Rush Delivery to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 134  "UE: Rush Delivery to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 135  "UE: Rush Delivery to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 149  "Rescue Voinian Defector"   File: 1 : Override Data 1.
+      Res.: mïsn 384  "UE: Transport Colonists to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 385  "UE: Transport Colonists to <DST>"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 101 :
+   Total : 13 times
+   Set   : 1 times
+   Tested: 12 times
+   Locations:
+   -----------------------
+      Res.: mïsn 139  "Stellar Corp: Recruitment"   File: 1 : Override Data 1.
+      Res.: mïsn 139  "Stellar Corp: Recruitment"   File: 1 : Override Data 1.
+      Res.: mïsn 140  "SC: Delivery to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 141  "SC: Delivery to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 142  "SC: Delivery to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 143  "SC: Delivery to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 144  "SC: Rush Delivery to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 145  "SC: Rush Delivery to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 146  "SC: Rush Delivery to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 147  "SC: Freight Delivery to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 148  "SC: Freight Delivery to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 258  "SC: Rush Delivery to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 279  "Special Delivery to <DST>"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 102 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 162  "Cargo for <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 162  "Cargo for <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 169  "UE: Delivery to <DST>"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 103 :
+   Total : 7 times
+   Set   : 1 times
+   Tested: 6 times
+   Locations:
+   -----------------------
+      Res.: mïsn 150  "Frontier Express: Recruitment"   File: 1 : Override Data 1.
+      Res.: mïsn 150  "Frontier Express: Recruitment"   File: 1 : Override Data 1.
+      Res.: mïsn 151  "FE: Delivery to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 152  "FE: Delivery to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 153  "FE: Delivery to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 279  "Special Delivery to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 330  "Trade War"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 104 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 183  "Observe Voinian Research Base"   File: 1 : Override Data 1.
+      Res.: mïsn 183  "Observe Voinian Research Base"   File: 1 : Override Data 1.
+      Res.: mïsn 184  "Destroy Voinian Dreadnought"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 105 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 169  "UE: Delivery to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 169  "UE: Delivery to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 170  "UE: Delivery to <DST>"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 106 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 170  "UE: Delivery to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 170  "UE: Delivery to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 171  "UE: Delivery to <DST>"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 107 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 171  "UE: Delivery to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 171  "UE: Delivery to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 172  "Rescue Voinian Defector"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 108 :
+   Total : 2 times
+   Set   : 1 times
+   Tested: 1 times
+   Locations:
+   -----------------------
+      Res.: mïsn 173  "Transport Defector to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 173  "Transport Defector to <DST>"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 109 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 174  "Rescue UE Agent"   File: 1 : Override Data 1.
+      Res.: mïsn 174  "Rescue UE Agent"   File: 1 : Override Data 1.
+      Res.: mïsn 175  "Locate Raiding Party"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 110 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 175  "Locate Raiding Party"   File: 1 : Override Data 1.
+      Res.: mïsn 175  "Locate Raiding Party"   File: 1 : Override Data 1.
+      Res.: mïsn 176  "Destroy Renegade Raiders"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 111 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 176  "Destroy Renegade Raiders"   File: 1 : Override Data 1.
+      Res.: mïsn 176  "Destroy Renegade Raiders"   File: 1 : Override Data 1.
+      Res.: mïsn 177  "Attack Renegade Base"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 112 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 178  "Investigate Abduction"   File: 1 : Override Data 1.
+      Res.: mïsn 178  "Investigate Abduction"   File: 1 : Override Data 1.
+      Res.: mïsn 179  "Investigate Abduction"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 113 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 179  "Investigate Abduction"   File: 1 : Override Data 1.
+      Res.: mïsn 179  "Investigate Abduction"   File: 1 : Override Data 1.
+      Res.: mïsn 180  "Investigate Abduction"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 114 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 180  "Investigate Abduction"   File: 1 : Override Data 1.
+      Res.: mïsn 180  "Investigate Abduction"   File: 1 : Override Data 1.
+      Res.: mïsn 181  "Investigate Abduction"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 115 :
+   Total : 3 times
+   Set   : 2 times
+   Tested: 1 times
+   Locations:
+   -----------------------
+      Res.: mïsn 181  "Investigate Abduction"   File: 1 : Override Data 1.
+      Res.: mïsn 181  "Investigate Abduction"   File: 1 : Override Data 1.
+      Res.: mïsn 181  "Investigate Abduction"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 116 :
+   Total : 4 times
+   Set   : 1 times
+   Tested: 3 times
+   Locations:
+   -----------------------
+      Res.: mïsn 184  "Destroy Voinian Dreadnought"   File: 1 : Override Data 1.
+      Res.: mïsn 184  "Destroy Voinian Dreadnought"   File: 1 : Override Data 1.
+      Res.: sÿst 189  "Isled"   File: 2 : Override Data 2.
+      Res.: sÿst 224  "Isled"   File: 2 : Override Data 2.
+   -----------------------
+   Bit 117 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 185  "Destroy Renegade Fleet"   File: 1 : Override Data 1.
+      Res.: mïsn 185  "Destroy Renegade Fleet"   File: 1 : Override Data 1.
+      Res.: mïsn 186  "Investigate <DST>"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 118 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 186  "Investigate <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 186  "Investigate <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 187  "Transport UE Agent to <DST>"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 119 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 187  "Transport UE Agent to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 187  "Transport UE Agent to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 188  "Defend <RST>"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 120 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 188  "Defend <RST>"   File: 1 : Override Data 1.
+      Res.: mïsn 188  "Defend <RST>"   File: 1 : Override Data 1.
+      Res.: mïsn 189  "Rescue UE Agent"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 121 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 189  "Rescue UE Agent"   File: 1 : Override Data 1.
+      Res.: mïsn 189  "Rescue UE Agent"   File: 1 : Override Data 1.
+      Res.: mïsn 190  "Defend <RST>"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 122 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 190  "Defend <RST>"   File: 1 : Override Data 1.
+      Res.: mïsn 190  "Defend <RST>"   File: 1 : Override Data 1.
+      Res.: mïsn 191  "Capture Renegade Leader"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 123 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 191  "Capture Renegade Leader"   File: 1 : Override Data 1.
+      Res.: mïsn 191  "Capture Renegade Leader"   File: 1 : Override Data 1.
+      Res.: mïsn 192  "Meet with Freedom Fighters"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 124 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 192  "Meet with Freedom Fighters"   File: 1 : Override Data 1.
+      Res.: mïsn 192  "Meet with Freedom Fighters"   File: 1 : Override Data 1.
+      Res.: mïsn 193  "Destroy Renegade Fleet"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 125 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 182  "Aid the Voinians!"   File: 1 : Override Data 1.
+      Res.: mïsn 182  "Aid the Voinians!"   File: 1 : Override Data 1.
+      Res.: mïsn 204  "Aid the Voinians!"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 126 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 194  "Defend Emalghia"   File: 1 : Override Data 1.
+      Res.: mïsn 194  "Defend Emalghia"   File: 1 : Override Data 1.
+      Res.: mïsn 196  "Relay Message to UE Government"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 127 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 196  "Relay Message to UE Government"   File: 1 : Override Data 1.
+      Res.: mïsn 196  "Relay Message to UE Government"   File: 1 : Override Data 1.
+      Res.: mïsn 197  "Transport Ambassador to <DST>"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 128 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 197  "Transport Ambassador to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 197  "Transport Ambassador to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 198  "Attack Romit"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 129 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 198  "Attack Romit"   File: 1 : Override Data 1.
+      Res.: mïsn 198  "Attack Romit"   File: 1 : Override Data 1.
+      Res.: mïsn 199  "Attack Avann"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 130 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 200  "Make Contact with Hinwar"   File: 1 : Override Data 1.
+      Res.: mïsn 200  "Make Contact with Hinwar"   File: 1 : Override Data 1.
+      Res.: mïsn 201  "Capture Gualon station"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 131 :
+   Total : 3 times
+   Set   : 2 times
+   Tested: 1 times
+   Locations:
+   -----------------------
+      Res.: mïsn 172  "Rescue Voinian Defector"   File: 1 : Override Data 1.
+      Res.: mïsn 172  "Rescue Voinian Defector"   File: 1 : Override Data 1.
+      Res.: mïsn 172  "Rescue Voinian Defector"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 132 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 203  "Defend Krotun"   File: 1 : Override Data 1.
+      Res.: mïsn 203  "Defend Krotun"   File: 1 : Override Data 1.
+      Res.: mïsn 291  "Defend <RST>"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 133 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 201  "Capture Gualon station"   File: 1 : Override Data 1.
+      Res.: mïsn 201  "Capture Gualon station"   File: 1 : Override Data 1.
+      Res.: mïsn 202  "Report to UE High Command"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 134 :
+   Total : 6 times
+   Set   : 1 times
+   Tested: 5 times
+   Locations:
+   -----------------------
+      Res.: mïsn 204  "Aid the Voinians!"   File: 1 : Override Data 1.
+      Res.: mïsn 204  "Aid the Voinians!"   File: 1 : Override Data 1.
+      Res.: mïsn 205  "Transport Cargo to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 232  "Raid Outpost Alpha"   File: 1 : Override Data 1.
+      Res.: shïp 134  "Voinian Heavy Fighter"   File: 2 : Override Data 2.
+      Res.: shïp 140  "Voinian Interceptor"   File: 2 : Override Data 2.
+   -----------------------
+   Bit 135 :
+   Total : 2 times
+   Set   : 1 times
+   Tested: 1 times
+   Locations:
+   -----------------------
+      Res.: mïsn 221  "Zachit Testing"   File: 1 : Override Data 1.
+      Res.: mïsn 221  "Zachit Testing"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 136 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 236  "Raid Emalghion"   File: 1 : Override Data 1.
+      Res.: mïsn 236  "Raid Emalghion"   File: 1 : Override Data 1.
+      Res.: mïsn 237  "Locate Emalgha Mines"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 137 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 237  "Locate Emalgha Mines"   File: 1 : Override Data 1.
+      Res.: mïsn 237  "Locate Emalgha Mines"   File: 1 : Override Data 1.
+      Res.: mïsn 238  "Divert Emalgha Fleet"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 138 :
+   Total : 5 times
+   Set   : 1 times
+   Tested: 4 times
+   Locations:
+   -----------------------
+      Res.: mïsn 238  "Divert Emalgha Fleet"   File: 1 : Override Data 1.
+      Res.: mïsn 238  "Divert Emalgha Fleet"   File: 1 : Override Data 1.
+      Res.: mïsn 285  "Destroy UE Convoy"   File: 1 : Override Data 1.
+      Res.: sÿst 256  "Kelmaon"   File: 2 : Override Data 2.
+      Res.: sÿst 405  "Kelmaon"   File: 2 : Override Data 2.
+   -----------------------
+   Bit 139 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 244  "Defend New Mira"   File: 1 : Override Data 1.
+      Res.: mïsn 244  "Defend New Mira"   File: 1 : Override Data 1.
+      Res.: mïsn 245  "Test New Gunship"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 140 :
+   Total : 9 times
+   Set   : 1 times
+   Tested: 8 times
+   Locations:
+   -----------------------
+      Res.: mïsn 245  "Test New Gunship"   File: 1 : Override Data 1.
+      Res.: mïsn 245  "Test New Gunship"   File: 1 : Override Data 1.
+      Res.: mïsn 246  "Lure Renegade Fleet"   File: 1 : Override Data 1.
+      Res.: shïp 162  "Miranu Gunship"   File: 2 : Override Data 2.
+      Res.: përs 214  "Miranu Gunship"   File: 2 : Override Data 2.
+      Res.: përs 215  "Miranu Gunship"   File: 2 : Override Data 2.
+      Res.: përs 216  "Miranu Gunship"   File: 2 : Override Data 2.
+      Res.: përs 217  "Miranu Gunship"   File: 2 : Override Data 2.
+      Res.: përs 218  "Miranu Gunship"   File: 2 : Override Data 2.
+   -----------------------
+   Bit 141 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 246  "Lure Renegade Fleet"   File: 1 : Override Data 1.
+      Res.: mïsn 246  "Lure Renegade Fleet"   File: 1 : Override Data 1.
+      Res.: mïsn 247  "Crush Renegade Fleet"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 142 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 247  "Crush Renegade Fleet"   File: 1 : Override Data 1.
+      Res.: mïsn 247  "Crush Renegade Fleet"   File: 1 : Override Data 1.
+      Res.: mïsn 248  "Attack the Rock"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 143 :
+   Total : 5 times
+   Set   : 1 times
+   Tested: 4 times
+   Locations:
+   -----------------------
+      Res.: mïsn 248  "Attack the Rock"   File: 1 : Override Data 1.
+      Res.: mïsn 248  "Attack the Rock"   File: 1 : Override Data 1.
+      Res.: crön 134  "The Rock news"   File: 2 : Override Data 2.
+      Res.: sÿst 305  "DSN-2131"   File: 2 : Override Data 2.
+      Res.: sÿst 406  "DSN-2131"   File: 2 : Override Data 2.
+   -----------------------
+   Bit 144 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 263  "Take Message to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 263  "Take Message to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 264  "Transport Cargo from <DST>"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 145 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 264  "Transport Cargo from <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 264  "Transport Cargo from <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 265  "Salvage Cargo"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 146 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 265  "Salvage Cargo"   File: 1 : Override Data 1.
+      Res.: mïsn 265  "Salvage Cargo"   File: 1 : Override Data 1.
+      Res.: mïsn 266  "Take Message to <DST>"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 147 :
+   Total : 5 times
+   Set   : 1 times
+   Tested: 4 times
+   Locations:
+   -----------------------
+      Res.: mïsn 266  "Take Message to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 266  "Take Message to <DST>"   File: 1 : Override Data 1.
+      Res.: crön 137  "Ski Resort news"   File: 2 : Override Data 2.
+      Res.: sÿst 270  "Kirrim"   File: 2 : Override Data 2.
+      Res.: sÿst 416  "Kirrim"   File: 2 : Override Data 2.
+   -----------------------
+   Bit 148 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 239  "Retrieve Cargo"   File: 1 : Override Data 1.
+      Res.: mïsn 278  "Lead Squadron to <RST>"   File: 1 : Override Data 1.
+      Res.: shïp 153  "Azdara"   File: 2 : Override Data 2.
+   -----------------------
+   Bit 149 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 240  "Special Delivery to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 240  "Special Delivery to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 241  "Collect Shipment from <DST>"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 150 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 241  "Collect Shipment from <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 241  "Collect Shipment from <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 242  "Ferry Passenger to <DST>"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 151 :
+   Total : 4 times
+   Set   : 2 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 241  "Collect Shipment from <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 253  "Evacuate Project to <DST>"   File: 1 : Override Data 1.
+      Res.: sÿst 172  "DSN-3587"   File: 2 : Override Data 2.
+      Res.: sÿst 183  "DSN-3587"   File: 2 : Override Data 2.
+   -----------------------
+   Bit 152 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 242  "Ferry Passenger to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 242  "Ferry Passenger to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 243  "Test Prototype NPD"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 153 :
+   Total : 4 times
+   Set   : 1 times
+   Tested: 3 times
+   Locations:
+   -----------------------
+      Res.: mïsn 243  "Test Prototype NPD"   File: 1 : Override Data 1.
+      Res.: mïsn 243  "Test Prototype NPD"   File: 1 : Override Data 1.
+      Res.: mïsn 249  "Enter the Proxima Nebula"   File: 1 : Override Data 1.
+      Res.: sÿst 415  "DSN-6253"   File: 2 : Override Data 2.
+   -----------------------
+   Bit 154 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 249  "Enter the Proxima Nebula"   File: 1 : Override Data 1.
+      Res.: mïsn 249  "Enter the Proxima Nebula"   File: 1 : Override Data 1.
+      Res.: mïsn 250  "Intercept Renegade Fleet"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 155 :
+   Total : 6 times
+   Set   : 1 times
+   Tested: 5 times
+   Locations:
+   -----------------------
+      Res.: mïsn 250  "Intercept Renegade Fleet"   File: 1 : Override Data 1.
+      Res.: mïsn 250  "Intercept Renegade Fleet"   File: 1 : Override Data 1.
+      Res.: mïsn 251  "Explore the Proxima Nebula"   File: 1 : Override Data 1.
+      Res.: sÿst 417  "DSN-463"   File: 2 : Override Data 2.
+      Res.: sÿst 418  "DSN-7887"   File: 2 : Override Data 2.
+      Res.: sÿst 419  "DSN-5495"   File: 2 : Override Data 2.
+   -----------------------
+   Bit 156 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 251  "Explore the Proxima Nebula"   File: 1 : Override Data 1.
+      Res.: mïsn 251  "Explore the Proxima Nebula"   File: 1 : Override Data 1.
+      Res.: mïsn 252  "Defend <RST>"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 157 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 252  "Defend <RST>"   File: 1 : Override Data 1.
+      Res.: mïsn 252  "Defend <RST>"   File: 1 : Override Data 1.
+      Res.: mïsn 253  "Evacuate Project to <DST>"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 158 :
+   Total : 12 times
+   Set   : 1 times
+   Tested: 11 times
+   Locations:
+   -----------------------
+      Res.: mïsn 253  "Evacuate Project to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 253  "Evacuate Project to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 254  "Explore the Ji Nebula"   File: 1 : Override Data 1.
+      Res.: sÿst 420  "DSN-4647"   File: 2 : Override Data 2.
+      Res.: sÿst 421  "DSN-1412"   File: 2 : Override Data 2.
+      Res.: sÿst 422  "DSN-2322"   File: 2 : Override Data 2.
+      Res.: sÿst 423  "DSN-3934"   File: 2 : Override Data 2.
+      Res.: sÿst 424  "DSN-2791"   File: 2 : Override Data 2.
+      Res.: sÿst 425  "DSN-8789"   File: 2 : Override Data 2.
+      Res.: sÿst 426  "DSN-6008"   File: 2 : Override Data 2.
+      Res.: sÿst 427  "DSN-4689"   File: 2 : Override Data 2.
+      Res.: sÿst 428  "DSN-6160"   File: 2 : Override Data 2.
+   -----------------------
+   Bit 159 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 254  "Explore the Ji Nebula"   File: 1 : Override Data 1.
+      Res.: mïsn 254  "Explore the Ji Nebula"   File: 1 : Override Data 1.
+      Res.: crön 135  "NPD news"   File: 2 : Override Data 2.
+   -----------------------
+   Bit 160 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 267  "Lead Patrol"   File: 1 : Override Data 1.
+      Res.: mïsn 278  "Lead Squadron to <RST>"   File: 1 : Override Data 1.
+      Res.: mïsn 278  "Lead Squadron to <RST>"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 161 :
+   Total : 2 times
+   Set   : 1 times
+   Tested: 1 times
+   Locations:
+   -----------------------
+      Res.: mïsn 279  "Special Delivery to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 330  "Trade War"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 162 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 267  "Lead Patrol"   File: 1 : Override Data 1.
+      Res.: mïsn 267  "Lead Patrol"   File: 1 : Override Data 1.
+      Res.: mïsn 280  "Defend <RST>"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 163 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 280  "Defend <RST>"   File: 1 : Override Data 1.
+      Res.: mïsn 280  "Defend <RST>"   File: 1 : Override Data 1.
+      Res.: mïsn 295  "Raid Hrekka"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 164 :
+   Total : 4 times
+   Set   : 1 times
+   Tested: 3 times
+   Locations:
+   -----------------------
+      Res.: mïsn 285  "Destroy UE Convoy"   File: 1 : Override Data 1.
+      Res.: mïsn 285  "Destroy UE Convoy"   File: 1 : Override Data 1.
+      Res.: mïsn 294  "Defend <RST>"   File: 1 : Override Data 1.
+      Res.: shïp 144  "UE Cruiser"   File: 2 : Override Data 2.
+   -----------------------
+   Bit 165 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 286  "Ferry Passenger to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 286  "Ferry Passenger to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 287  "Collect Munb Leaves"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 166 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 287  "Collect Munb Leaves"   File: 1 : Override Data 1.
+      Res.: mïsn 287  "Collect Munb Leaves"   File: 1 : Override Data 1.
+      Res.: mïsn 288  "Approach Igadzra"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 167 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 288  "Approach Igadzra"   File: 1 : Override Data 1.
+      Res.: mïsn 288  "Approach Igadzra"   File: 1 : Override Data 1.
+      Res.: mïsn 289  "Disable Strange Asteroid"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 168 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 289  "Disable Strange Asteroid"   File: 1 : Override Data 1.
+      Res.: mïsn 289  "Disable Strange Asteroid"   File: 1 : Override Data 1.
+      Res.: mïsn 290  "Transport Medicine to <DST>"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 169 :
+   Total : 5 times
+   Set   : 1 times
+   Tested: 4 times
+   Locations:
+   -----------------------
+      Res.: mïsn 290  "Transport Medicine to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 290  "Transport Medicine to <DST>"   File: 1 : Override Data 1.
+      Res.: crön 136  "New Calcutta news"   File: 2 : Override Data 2.
+      Res.: sÿst 144  "Aludra"   File: 2 : Override Data 2.
+      Res.: sÿst 429  "Aludra"   File: 2 : Override Data 2.
+   -----------------------
+   Bit 170 :
+   Total : 2 times
+   Set   : 1 times
+   Tested: 1 times
+   Locations:
+   -----------------------
+      Res.: mïsn 292  "Defend <RST>"   File: 1 : Override Data 1.
+      Res.: mïsn 335  "Travel with <SN> to <RST>"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 171 :
+   Total : 2 times
+   Set   : 1 times
+   Tested: 1 times
+   Locations:
+   -----------------------
+      Res.: mïsn 293  "Deliver <CT> to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 360  "Intercept Cargo"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 172 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 294  "Defend <RST>"   File: 1 : Override Data 1.
+      Res.: mïsn 294  "Defend <RST>"   File: 1 : Override Data 1.
+      Res.: mïsn 316  "Observe Verril Prime"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 173 :
+   Total : 6 times
+   Set   : 2 times
+   Tested: 4 times
+   Locations:
+   -----------------------
+      Res.: mïsn 295  "Raid Hrekka"   File: 1 : Override Data 1.
+      Res.: mïsn 295  "Raid Hrekka"   File: 1 : Override Data 1.
+      Res.: mïsn 296  "Report to New Base at <RST>"   File: 1 : Override Data 1.
+      Res.: mïsn 308  "Evacuate to <DST>"   File: 1 : Override Data 1.
+      Res.: sÿst 259  "Stror"   File: 2 : Override Data 2.
+      Res.: sÿst 430  "Stror"   File: 2 : Override Data 2.
+   -----------------------
+   Bit 174 :
+   Total : 9 times
+   Set   : 1 times
+   Tested: 8 times
+   Locations:
+   -----------------------
+      Res.: mïsn 296  "Report to New Base at <RST>"   File: 1 : Override Data 1.
+      Res.: mïsn 296  "Report to New Base at <RST>"   File: 1 : Override Data 1.
+      Res.: mïsn 301  "Stop Zidagar Photographer"   File: 1 : Override Data 1.
+      Res.: mïsn 302  "Destroy Zidagar Patrol"   File: 1 : Override Data 1.
+      Res.: mïsn 303  "Intercept Cargo"   File: 1 : Override Data 1.
+      Res.: mïsn 304  "Add to Stash on <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 305  "Destroy Zidagar Convoy"   File: 1 : Override Data 1.
+      Res.: sÿst 298  "Raigar"   File: 2 : Override Data 2.
+      Res.: sÿst 431  "Raigar"   File: 2 : Override Data 2.
+   -----------------------
+   Bit 175 :
+   Total : 7 times
+   Set   : 1 times
+   Tested: 6 times
+   Locations:
+   -----------------------
+      Res.: mïsn 301  "Stop Zidagar Photographer"   File: 1 : Override Data 1.
+      Res.: mïsn 301  "Stop Zidagar Photographer"   File: 1 : Override Data 1.
+      Res.: mïsn 302  "Destroy Zidagar Patrol"   File: 1 : Override Data 1.
+      Res.: mïsn 303  "Intercept Cargo"   File: 1 : Override Data 1.
+      Res.: mïsn 304  "Add to Stash on <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 305  "Destroy Zidagar Convoy"   File: 1 : Override Data 1.
+      Res.: mïsn 306  "Escort Evacuees to <RST>"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 176 :
+   Total : 4 times
+   Set   : 2 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 306  "Escort Evacuees to <RST>"   File: 1 : Override Data 1.
+      Res.: mïsn 306  "Escort Evacuees to <RST>"   File: 1 : Override Data 1.
+      Res.: mïsn 306  "Escort Evacuees to <RST>"   File: 1 : Override Data 1.
+      Res.: mïsn 307  "Defend <RST>"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 177 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 307  "Defend <RST>"   File: 1 : Override Data 1.
+      Res.: mïsn 307  "Defend <RST>"   File: 1 : Override Data 1.
+      Res.: mïsn 308  "Evacuate to <DST>"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 178 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 316  "Observe Verril Prime"   File: 1 : Override Data 1.
+      Res.: mïsn 316  "Observe Verril Prime"   File: 1 : Override Data 1.
+      Res.: mïsn 317  "Attack Verril Prime"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 179 :
+   Total : 4 times
+   Set   : 1 times
+   Tested: 3 times
+   Locations:
+   -----------------------
+      Res.: mïsn 317  "Attack Verril Prime"   File: 1 : Override Data 1.
+      Res.: mïsn 317  "Attack Verril Prime"   File: 1 : Override Data 1.
+      Res.: sÿst 135  "Verril"   File: 2 : Override Data 2.
+      Res.: sÿst 432  "Verril"   File: 2 : Override Data 2.
+   -----------------------
+   Bit 180 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 318  "Ferry Passenger to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 318  "Ferry Passenger to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 319  "Test New Shield Generator"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 181 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 319  "Test New Shield Generator"   File: 1 : Override Data 1.
+      Res.: mïsn 319  "Test New Shield Generator"   File: 1 : Override Data 1.
+      Res.: mïsn 320  "Acquire Aligned Crystals"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 182 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 320  "Acquire Aligned Crystals"   File: 1 : Override Data 1.
+      Res.: mïsn 320  "Acquire Aligned Crystals"   File: 1 : Override Data 1.
+      Res.: mïsn 321  "Escort Prototype Ship"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 183 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 321  "Escort Prototype Ship"   File: 1 : Override Data 1.
+      Res.: mïsn 321  "Escort Prototype Ship"   File: 1 : Override Data 1.
+      Res.: mïsn 322  "Escort Prototype Ship"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 184 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 322  "Escort Prototype Ship"   File: 1 : Override Data 1.
+      Res.: mïsn 322  "Escort Prototype Ship"   File: 1 : Override Data 1.
+      Res.: mïsn 323  "Collect Passenger from <DST>"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 185 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 323  "Collect Passenger from <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 323  "Collect Passenger from <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 324  "Attack Outpost Terapin"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 186 :
+   Total : 4 times
+   Set   : 1 times
+   Tested: 3 times
+   Locations:
+   -----------------------
+      Res.: mïsn 324  "Attack Outpost Terapin"   File: 1 : Override Data 1.
+      Res.: mïsn 324  "Attack Outpost Terapin"   File: 1 : Override Data 1.
+      Res.: sÿst 341  "Terapin"   File: 2 : Override Data 2.
+      Res.: sÿst 433  "Terapin"   File: 2 : Override Data 2.
+   -----------------------
+   Bit 187 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 325  "Travel to <RST>"   File: 1 : Override Data 1.
+      Res.: mïsn 325  "Travel to <RST>"   File: 1 : Override Data 1.
+      Res.: mïsn 326  "Destroy the <SN>"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 188 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 326  "Destroy the <SN>"   File: 1 : Override Data 1.
+      Res.: mïsn 326  "Destroy the <SN>"   File: 1 : Override Data 1.
+      Res.: mïsn 327  "Attack Histiri Station"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 189 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 327  "Attack Histiri Station"   File: 1 : Override Data 1.
+      Res.: mïsn 327  "Attack Histiri Station"   File: 1 : Override Data 1.
+      Res.: mïsn 328  "Defend <RST>"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 190 :
+   Total : 5 times
+   Set   : 1 times
+   Tested: 4 times
+   Locations:
+   -----------------------
+      Res.: mïsn 328  "Defend <RST>"   File: 1 : Override Data 1.
+      Res.: mïsn 328  "Defend <RST>"   File: 1 : Override Data 1.
+      Res.: mïsn 329  "Meeting on <DST>"   File: 1 : Override Data 1.
+      Res.: sÿst 181  "Yelts"   File: 2 : Override Data 2.
+      Res.: sÿst 434  "Yelts"   File: 2 : Override Data 2.
+   -----------------------
+   Bit 191 :
+   Total : 2 times
+   Set   : 1 times
+   Tested: 1 times
+   Locations:
+   -----------------------
+      Res.: mïsn 329  "Meeting on <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 329  "Meeting on <DST>"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 192 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 331  "Escort <SN> to <RST>"   File: 1 : Override Data 1.
+      Res.: mïsn 331  "Escort <SN> to <RST>"   File: 1 : Override Data 1.
+      Res.: mïsn 332  "Attack Miranu Convoy"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 193 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 332  "Attack Miranu Convoy"   File: 1 : Override Data 1.
+      Res.: mïsn 332  "Attack Miranu Convoy"   File: 1 : Override Data 1.
+      Res.: mïsn 333  "Intercept Zachit Patrol"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 194 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 333  "Intercept Zachit Patrol"   File: 1 : Override Data 1.
+      Res.: mïsn 333  "Intercept Zachit Patrol"   File: 1 : Override Data 1.
+      Res.: mïsn 334  "Attack Outpost Zachit"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 195 :
+   Total : 5 times
+   Set   : 1 times
+   Tested: 4 times
+   Locations:
+   -----------------------
+      Res.: mïsn 334  "Attack Outpost Zachit"   File: 1 : Override Data 1.
+      Res.: mïsn 334  "Attack Outpost Zachit"   File: 1 : Override Data 1.
+      Res.: crön 138  "Outpost Zachit news"   File: 2 : Override Data 2.
+      Res.: sÿst 284  "Zachit"   File: 2 : Override Data 2.
+      Res.: sÿst 435  "Zachit"   File: 2 : Override Data 2.
+   -----------------------
+   Bit 196 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 335  "Travel with <SN> to <RST>"   File: 1 : Override Data 1.
+      Res.: mïsn 335  "Travel with <SN> to <RST>"   File: 1 : Override Data 1.
+      Res.: mïsn 336  "Defend <RST>"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 197 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 336  "Defend <RST>"   File: 1 : Override Data 1.
+      Res.: mïsn 336  "Defend <RST>"   File: 1 : Override Data 1.
+      Res.: mïsn 337  "Hunt <SN>"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 198 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 337  "Hunt <SN>"   File: 1 : Override Data 1.
+      Res.: mïsn 337  "Hunt <SN>"   File: 1 : Override Data 1.
+      Res.: mïsn 338  "Cripple Renegade Vessel"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 199 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 338  "Cripple Renegade Vessel"   File: 1 : Override Data 1.
+      Res.: mïsn 338  "Cripple Renegade Vessel"   File: 1 : Override Data 1.
+      Res.: mïsn 339  "Destroy Azdgari Raiding Party"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 200 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 339  "Destroy Azdgari Raiding Party"   File: 1 : Override Data 1.
+      Res.: mïsn 339  "Destroy Azdgari Raiding Party"   File: 1 : Override Data 1.
+      Res.: mïsn 340  "Observe DSN-4922 System"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 201 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 348  "Retrieve Sensor Readings"   File: 1 : Override Data 1.
+      Res.: mïsn 348  "Retrieve Sensor Readings"   File: 1 : Override Data 1.
+      Res.: mïsn 349  "Observe Mark System"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 202 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 349  "Observe Mark System"   File: 1 : Override Data 1.
+      Res.: mïsn 349  "Observe Mark System"   File: 1 : Override Data 1.
+      Res.: mïsn 350  "Take Sensor Readings to <DST>"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 203 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 350  "Take Sensor Readings to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 350  "Take Sensor Readings to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 351  "Assassinate Igadzra Scientist"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 204 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 351  "Assassinate Igadzra Scientist"   File: 1 : Override Data 1.
+      Res.: mïsn 351  "Assassinate Igadzra Scientist"   File: 1 : Override Data 1.
+      Res.: mïsn 352  "Defend <RST>"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 205 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 352  "Defend <RST>"   File: 1 : Override Data 1.
+      Res.: mïsn 352  "Defend <RST>"   File: 1 : Override Data 1.
+      Res.: mïsn 353  "Report to <DST>"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 206 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 353  "Report to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 353  "Report to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 354  "Defend <RST>"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 207 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 354  "Defend <RST>"   File: 1 : Override Data 1.
+      Res.: mïsn 354  "Defend <RST>"   File: 1 : Override Data 1.
+      Res.: mïsn 355  "Transport <CT> to <DST>"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 208 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 355  "Transport <CT> to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 355  "Transport <CT> to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 356  "Observe Elridi system"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 209 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 356  "Observe Elridi system"   File: 1 : Override Data 1.
+      Res.: mïsn 356  "Observe Elridi system"   File: 1 : Override Data 1.
+      Res.: mïsn 357  "Escort <SN> to <RST>"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 210 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 357  "Escort <SN> to <RST>"   File: 1 : Override Data 1.
+      Res.: mïsn 357  "Escort <SN> to <RST>"   File: 1 : Override Data 1.
+      Res.: mïsn 358  "Defend <RST>"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 211 :
+   Total : 5 times
+   Set   : 1 times
+   Tested: 4 times
+   Locations:
+   -----------------------
+      Res.: mïsn 358  "Defend <RST>"   File: 1 : Override Data 1.
+      Res.: mïsn 358  "Defend <RST>"   File: 1 : Override Data 1.
+      Res.: mïsn 359  "Attack Chak system"   File: 1 : Override Data 1.
+      Res.: sÿst 373  "Diudir"   File: 2 : Override Data 2.
+      Res.: sÿst 436  "Diudir"   File: 2 : Override Data 2.
+   -----------------------
+   Bit 212 :
+   Total : 2 times
+   Set   : 1 times
+   Tested: 1 times
+   Locations:
+   -----------------------
+      Res.: mïsn 359  "Attack Chak system"   File: 1 : Override Data 1.
+      Res.: mïsn 359  "Attack Chak system"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 213 :
+   Total : 4 times
+   Set   : 3 times
+   Tested: 1 times
+   Locations:
+   -----------------------
+      Res.: mïsn 324  "Attack Outpost Terapin"   File: 1 : Override Data 1.
+      Res.: mïsn 359  "Attack Chak system"   File: 1 : Override Data 1.
+      Res.: mïsn 383  "Defend <RST>"   File: 1 : Override Data 1.
+      Res.: crön 139  "Council news"   File: 2 : Override Data 2.
+   -----------------------
+   Bit 214 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 360  "Intercept Cargo"   File: 1 : Override Data 1.
+      Res.: mïsn 360  "Intercept Cargo"   File: 1 : Override Data 1.
+      Res.: mïsn 361  "Visit <DST>"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 215 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 361  "Visit <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 361  "Visit <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 362  "Collect Message from <DST>"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 216 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 362  "Collect Message from <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 362  "Collect Message from <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 363  "Observe Leka system"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 217 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 363  "Observe Leka system"   File: 1 : Override Data 1.
+      Res.: mïsn 363  "Observe Leka system"   File: 1 : Override Data 1.
+      Res.: mïsn 364  "Observe Elder system"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 218 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 364  "Observe Elder system"   File: 1 : Override Data 1.
+      Res.: mïsn 364  "Observe Elder system"   File: 1 : Override Data 1.
+      Res.: mïsn 365  "Transport Cargo to <DST>"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 219 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 365  "Transport Cargo to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 365  "Transport Cargo to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 366  "Hunt <SN>"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 220 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 366  "Hunt <SN>"   File: 1 : Override Data 1.
+      Res.: mïsn 366  "Hunt <SN>"   File: 1 : Override Data 1.
+      Res.: mïsn 367  "Defend Station Raelion"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 221 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 376  "Transport Cargo to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 376  "Transport Cargo to <DST>"   File: 1 : Override Data 1.
+      Res.: mïsn 377  "Recover shipment of <CT>"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 222 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 377  "Recover shipment of <CT>"   File: 1 : Override Data 1.
+      Res.: mïsn 377  "Recover shipment of <CT>"   File: 1 : Override Data 1.
+      Res.: mïsn 378  "Eliminate Renegade Fleet"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 223 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 378  "Eliminate Renegade Fleet"   File: 1 : Override Data 1.
+      Res.: mïsn 378  "Eliminate Renegade Fleet"   File: 1 : Override Data 1.
+      Res.: mïsn 379  "Cleanse Novish system"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 224 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 379  "Cleanse Novish system"   File: 1 : Override Data 1.
+      Res.: mïsn 379  "Cleanse Novish system"   File: 1 : Override Data 1.
+      Res.: mïsn 380  "Raid Diudir"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 225 :
+   Total : 5 times
+   Set   : 1 times
+   Tested: 4 times
+   Locations:
+   -----------------------
+      Res.: mïsn 380  "Raid Diudir"   File: 1 : Override Data 1.
+      Res.: mïsn 380  "Raid Diudir"   File: 1 : Override Data 1.
+      Res.: mïsn 381  "Cleanse Tollb system"   File: 1 : Override Data 1.
+      Res.: sÿst 387  "Novish"   File: 2 : Override Data 2.
+      Res.: sÿst 437  "Novish"   File: 2 : Override Data 2.
+   -----------------------
+   Bit 226 :
+   Total : 5 times
+   Set   : 1 times
+   Tested: 4 times
+   Locations:
+   -----------------------
+      Res.: mïsn 381  "Cleanse Tollb system"   File: 1 : Override Data 1.
+      Res.: mïsn 381  "Cleanse Tollb system"   File: 1 : Override Data 1.
+      Res.: mïsn 382  "Raid Terapin system"   File: 1 : Override Data 1.
+      Res.: sÿst 349  "Tollb"   File: 2 : Override Data 2.
+      Res.: sÿst 438  "Tollb"   File: 2 : Override Data 2.
+   -----------------------
+   Bit 227 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 382  "Raid Terapin system"   File: 1 : Override Data 1.
+      Res.: mïsn 382  "Raid Terapin system"   File: 1 : Override Data 1.
+      Res.: mïsn 383  "Defend <RST>"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 228 :
+   Total : 2 times
+   Set   : 1 times
+   Tested: 1 times
+   Locations:
+   -----------------------
+      Res.: mïsn 383  "Defend <RST>"   File: 1 : Override Data 1.
+      Res.: mïsn 383  "Defend <RST>"   File: 1 : Override Data 1.
+   -----------------------
+   Bit 511 :
+   Total : 3 times
+   Set   : 2 times
+   Tested: 1 times
+   Locations:
+   -----------------------
+      Res.: mïsn 639  "Pay Fine"   File: 1 : Override Data 1.
+      Res.: mïsn 639  "Pay Fine"   File: 1 : Override Data 1.
+      Res.: oütf 151  "Space Mine"   File: 2 : Override Data 2.
+   -----------------------
+   Bit 1000 :
+   Total : 2 times
+   Set   : 1 times
+   Tested: 1 times
+   Locations:
+   -----------------------
+      Res.: crön 128  "Paaren station news"   File: 2 : Override Data 2.
+      Res.: crön 128  "Paaren station news"   File: 2 : Override Data 2.
+   -----------------------
+   Bit 1001 :
+   Total : 2 times
+   Set   : 1 times
+   Tested: 1 times
+   Locations:
+   -----------------------
+      Res.: crön 129  "UE Cruiser news"   File: 2 : Override Data 2.
+      Res.: crön 129  "UE Cruiser news"   File: 2 : Override Data 2.
+   -----------------------
+   Bit 1002 :
+   Total : 2 times
+   Set   : 1 times
+   Tested: 1 times
+   Locations:
+   -----------------------
+      Res.: crön 130  "Huron news"   File: 2 : Override Data 2.
+      Res.: crön 130  "Huron news"   File: 2 : Override Data 2.
+   -----------------------
+   Bit 1003 :
+   Total : 2 times
+   Set   : 1 times
+   Tested: 1 times
+   Locations:
+   -----------------------
+      Res.: crön 131  "Avann offensive news"   File: 2 : Override Data 2.
+      Res.: crön 131  "Avann offensive news"   File: 2 : Override Data 2.
+   -----------------------
+   Bit 1004 :
+   Total : 2 times
+   Set   : 1 times
+   Tested: 1 times
+   Locations:
+   -----------------------
+      Res.: crön 132  "Obron offensive news"   File: 2 : Override Data 2.
+      Res.: crön 132  "Obron offensive news"   File: 2 : Override Data 2.
+   -----------------------
+   Bit 1005 :
+   Total : 2 times
+   Set   : 1 times
+   Tested: 1 times
+   Locations:
+   -----------------------
+      Res.: crön 133  "Miranu treaty news"   File: 2 : Override Data 2.
+      Res.: crön 133  "Miranu treaty news"   File: 2 : Override Data 2.
+   -----------------------
+   Bit 1006 :
+   Total : 2 times
+   Set   : 1 times
+   Tested: 1 times
+   Locations:
+   -----------------------
+      Res.: crön 134  "The Rock news"   File: 2 : Override Data 2.
+      Res.: crön 134  "The Rock news"   File: 2 : Override Data 2.
+   -----------------------
+   Bit 1007 :
+   Total : 2 times
+   Set   : 1 times
+   Tested: 1 times
+   Locations:
+   -----------------------
+      Res.: crön 135  "NPD news"   File: 2 : Override Data 2.
+      Res.: crön 135  "NPD news"   File: 2 : Override Data 2.
+   -----------------------
+   Bit 1008 :
+   Total : 2 times
+   Set   : 1 times
+   Tested: 1 times
+   Locations:
+   -----------------------
+      Res.: crön 136  "New Calcutta news"   File: 2 : Override Data 2.
+      Res.: crön 136  "New Calcutta news"   File: 2 : Override Data 2.
+   -----------------------
+   Bit 1009 :
+   Total : 2 times
+   Set   : 1 times
+   Tested: 1 times
+   Locations:
+   -----------------------
+      Res.: crön 137  "Ski Resort news"   File: 2 : Override Data 2.
+      Res.: crön 137  "Ski Resort news"   File: 2 : Override Data 2.
+   -----------------------
+   Bit 1010 :
+   Total : 2 times
+   Set   : 1 times
+   Tested: 1 times
+   Locations:
+   -----------------------
+      Res.: crön 138  "Outpost Zachit news"   File: 2 : Override Data 2.
+      Res.: crön 138  "Outpost Zachit news"   File: 2 : Override Data 2.
+   -----------------------
+   Bit 1011 :
+   Total : 2 times
+   Set   : 1 times
+   Tested: 1 times
+   Locations:
+   -----------------------
+      Res.: crön 139  "Council news"   File: 2 : Override Data 2.
+      Res.: crön 139  "Council news"   File: 2 : Override Data 2.
+   -----------------------

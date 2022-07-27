@@ -1,0 +1,818 @@
+﻿ EVN Mission Bit Map (v1.0.0fc):
+ --------------------------------------
+Analysed: 7/27/22 at 7:20 PM
+
+ Resources Scanned :
+ -------
+   1 : chär
+   2 : crön
+   3 : dësc
+   4 : flët
+   5 : jünk
+   6 : mïsn
+   7 : nëbu
+   8 : öops
+   9 : oütf
+   10 : përs
+   11 : shïp
+   12 : spöb
+   13 : sÿst
+ -------
+
+ Files :
+ -------
+   1 : EV Data
+ -------
+
+
+ Bit Usage Analysis:
+ -------------------
+
+ Total Bits Used          : 0
+ Total Unique Bits Used   : 64
+ Total Bits Tested        : 187
+ Total Unique Bits Tested : 64
+ Total Bits Set           : 71
+ Total Unique Bits Set    : 63
+
+ Bits Tested But Not Set:
+  67,
+
+ Bits Set But Not Tested:
+
+
+ Used Bits:
+ ---------
+  24,25,26,27,28,33,35,36,37,38,39,40,41,42,43,44,45,46,47,50,
+  51,52,56,57,58,59,60,61,62,63,64,65,66,67,72,73,75,76,77,78,
+  79,95,96,97,98,99,102,103,104,105,106,107,108,109,110,111,112,113,114,1000,
+  1001,1002,1003,1004,
+
+
+ Other Test Operators Analysis:
+ ------------------------------
+ Paid Days Details :
+  ------------------
+
+ Outfit Test Bit Details :
+  -------------------------
+
+ Explore Test Bit Details :
+  --------------------------
+
+ Set Operators Analysis:
+ -----------------------
+ Total Outfs Granted (Gxxxx)         : 3
+ Total Unique Outfs Granted (Gxxxx)  : 3
+ Total Outfs Deleted (Dxxxx)         : 2
+ Total Unique Outfs Deleted (Dxxxx)  : 1
+
+ Used Set Operators:
+ ------------------
+ Grant outfs (Gxxxx):
+  166,167,173,
+ Delete outfs (Dxxxx):
+  167,
+
+
+ Set Operator Details :
+ ----------------------
+ Grant outf (Gxxxx):
+ Outf 166 :
+   Set   : 1 times
+   Locations:
+   -----------------------
+      Res.: mïsn 170  "Rebel Pursuit Part 4"   File: 1 : EV Data.
+   -----------------------
+ Outf 167 :
+   Set   : 1 times
+   Locations:
+   -----------------------
+      Res.: mïsn 164  "Special Ops Insertion"   File: 1 : EV Data.
+   -----------------------
+ Outf 173 :
+   Set   : 1 times
+   Locations:
+   -----------------------
+      Res.: mïsn 235  "Astrodyne Outpost V"   File: 1 : EV Data.
+   -----------------------
+
+ Delete outf (Dxxxx):
+ Outf 167 :
+   Set   : 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 164  "Special Ops Insertion"   File: 1 : EV Data.
+      Res.: mïsn 164  "Special Ops Insertion"   File: 1 : EV Data.
+   -----------------------
+
+
+ Used Bit Details :
+  ------------------
+
+   Bit 24 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 152  "Investigate Dumping"   File: 1 : EV Data.
+      Res.: mïsn 152  "Investigate Dumping"   File: 1 : EV Data.
+      Res.: mïsn 153  "Observe Antares"   File: 1 : EV Data.
+   -----------------------
+   Bit 25 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 153  "Observe Antares"   File: 1 : EV Data.
+      Res.: mïsn 153  "Observe Antares"   File: 1 : EV Data.
+      Res.: mïsn 154  "Capture Ore Sample"   File: 1 : EV Data.
+   -----------------------
+   Bit 26 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 154  "Capture Ore Sample"   File: 1 : EV Data.
+      Res.: mïsn 154  "Capture Ore Sample"   File: 1 : EV Data.
+      Res.: mïsn 155  "Destroy Freighters"   File: 1 : EV Data.
+   -----------------------
+   Bit 27 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 155  "Destroy Freighters"   File: 1 : EV Data.
+      Res.: mïsn 155  "Destroy Freighters"   File: 1 : EV Data.
+      Res.: mïsn 156  "Escape Astex"   File: 1 : EV Data.
+   -----------------------
+   Bit 28 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: crön 132  "Astex news"   File: 1 : EV Data.
+      Res.: mïsn 156  "Escape Astex"   File: 1 : EV Data.
+      Res.: mïsn 156  "Escape Astex"   File: 1 : EV Data.
+   -----------------------
+   Bit 33 :
+   Total : 2 times
+   Set   : 1 times
+   Tested: 1 times
+   Locations:
+   -----------------------
+      Res.: mïsn 161  "Locate Rebel Fleet"   File: 1 : EV Data.
+      Res.: mïsn 161  "Locate Rebel Fleet"   File: 1 : EV Data.
+   -----------------------
+   Bit 35 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 163  "Rebel Special Ops"   File: 1 : EV Data.
+      Res.: mïsn 163  "Rebel Special Ops"   File: 1 : EV Data.
+      Res.: mïsn 164  "Special Ops Insertion"   File: 1 : EV Data.
+   -----------------------
+   Bit 36 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 164  "Special Ops Insertion"   File: 1 : EV Data.
+      Res.: mïsn 164  "Special Ops Insertion"   File: 1 : EV Data.
+      Res.: mïsn 165  "Special Ops Rendezvous"   File: 1 : EV Data.
+   -----------------------
+   Bit 37 :
+   Total : 4 times
+   Set   : 1 times
+   Tested: 3 times
+   Locations:
+   -----------------------
+      Res.: crön 129  "Rebel intermediate news"   File: 1 : EV Data.
+      Res.: mïsn 165  "Special Ops Rendezvous"   File: 1 : EV Data.
+      Res.: mïsn 165  "Special Ops Rendezvous"   File: 1 : EV Data.
+      Res.: mïsn 184  "Investigate Disappearances"   File: 1 : EV Data.
+   -----------------------
+   Bit 38 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 166  "Confed Recon Mission"   File: 1 : EV Data.
+      Res.: mïsn 166  "Confed Recon Mission"   File: 1 : EV Data.
+      Res.: mïsn 167  "Rebel Pursuit"   File: 1 : EV Data.
+   -----------------------
+   Bit 39 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 167  "Rebel Pursuit"   File: 1 : EV Data.
+      Res.: mïsn 167  "Rebel Pursuit"   File: 1 : EV Data.
+      Res.: mïsn 168  "Rebel Pursuit Part 2"   File: 1 : EV Data.
+   -----------------------
+   Bit 40 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 168  "Rebel Pursuit Part 2"   File: 1 : EV Data.
+      Res.: mïsn 168  "Rebel Pursuit Part 2"   File: 1 : EV Data.
+      Res.: mïsn 169  "Rebel Pursuit Part 3"   File: 1 : EV Data.
+   -----------------------
+   Bit 41 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 169  "Rebel Pursuit Part 3"   File: 1 : EV Data.
+      Res.: mïsn 169  "Rebel Pursuit Part 3"   File: 1 : EV Data.
+      Res.: mïsn 170  "Rebel Pursuit Part 4"   File: 1 : EV Data.
+   -----------------------
+   Bit 42 :
+   Total : 12 times
+   Set   : 1 times
+   Tested: 11 times
+   Locations:
+   -----------------------
+      Res.: përs 234  "U.S.S. Chimera"   File: 1 : EV Data.
+      Res.: përs 235  "U.S.S. Devastator"   File: 1 : EV Data.
+      Res.: përs 236  "U.S.S. Executor"   File: 1 : EV Data.
+      Res.: përs 237  "U.S.S. Reaper"   File: 1 : EV Data.
+      Res.: përs 238  "U.S.S. Agamemnon"   File: 1 : EV Data.
+      Res.: përs 239  "U.S.S. Inquisitor"   File: 1 : EV Data.
+      Res.: përs 240  "U.S.S. Alexander"   File: 1 : EV Data.
+      Res.: përs 241  "U.S.S. Dominator"   File: 1 : EV Data.
+      Res.: crön 128  "Confed intermediate news"   File: 1 : EV Data.
+      Res.: mïsn 170  "Rebel Pursuit Part 4"   File: 1 : EV Data.
+      Res.: mïsn 170  "Rebel Pursuit Part 4"   File: 1 : EV Data.
+      Res.: mïsn 190  "Investigate Disappearances"   File: 1 : EV Data.
+   -----------------------
+   Bit 43 :
+   Total : 10 times
+   Set   : 1 times
+   Tested: 9 times
+   Locations:
+   -----------------------
+      Res.: mïsn 149  "Rescue Mission"   File: 1 : EV Data.
+      Res.: mïsn 150  "Salvage Convoy"   File: 1 : EV Data.
+      Res.: mïsn 161  "Locate Rebel Fleet"   File: 1 : EV Data.
+      Res.: mïsn 166  "Confed Recon Mission"   File: 1 : EV Data.
+      Res.: mïsn 171  "Transport Confed Documents"   File: 1 : EV Data.
+      Res.: mïsn 171  "Transport Confed Documents"   File: 1 : EV Data.
+      Res.: mïsn 172  "Transport Rebel Parcels"   File: 1 : EV Data.
+      Res.: mïsn 220  "Confed Covert Ops"   File: 1 : EV Data.
+      Res.: mïsn 228  "Stop Confed Defector"   File: 1 : EV Data.
+      Res.: mïsn 242  "Destroy Escort Carrier"   File: 1 : EV Data.
+   -----------------------
+   Bit 44 :
+   Total : 10 times
+   Set   : 1 times
+   Tested: 9 times
+   Locations:
+   -----------------------
+      Res.: mïsn 134  "Gun Running"   File: 1 : EV Data.
+      Res.: mïsn 146  "Assassination"   File: 1 : EV Data.
+      Res.: mïsn 148  "Rebel Defense"   File: 1 : EV Data.
+      Res.: mïsn 162  "Rebel Interdiction"   File: 1 : EV Data.
+      Res.: mïsn 163  "Rebel Special Ops"   File: 1 : EV Data.
+      Res.: mïsn 171  "Transport Confed Documents"   File: 1 : EV Data.
+      Res.: mïsn 172  "Transport Rebel Parcels"   File: 1 : EV Data.
+      Res.: mïsn 172  "Transport Rebel Parcels"   File: 1 : EV Data.
+      Res.: mïsn 227  "Rebel Recon"   File: 1 : EV Data.
+      Res.: mïsn 230  "Astrodyne Outpost Recruitment"   File: 1 : EV Data.
+   -----------------------
+   Bit 45 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 173  "Help Starbound Shipping"   File: 1 : EV Data.
+      Res.: mïsn 173  "Help Starbound Shipping"   File: 1 : EV Data.
+      Res.: mïsn 174  "Ferry Important Documents"   File: 1 : EV Data.
+   -----------------------
+   Bit 46 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 174  "Ferry Important Documents"   File: 1 : EV Data.
+      Res.: mïsn 174  "Ferry Important Documents"   File: 1 : EV Data.
+      Res.: mïsn 175  "Dangerous Courier Mission"   File: 1 : EV Data.
+   -----------------------
+   Bit 47 :
+   Total : 4 times
+   Set   : 1 times
+   Tested: 3 times
+   Locations:
+   -----------------------
+      Res.: mïsn 175  "Dangerous Courier Mission"   File: 1 : EV Data.
+      Res.: mïsn 175  "Dangerous Courier Mission"   File: 1 : EV Data.
+      Res.: mïsn 176  "Escort Courier to <RST>"   File: 1 : EV Data.
+      Res.: mïsn 177  "Commerce Raid"   File: 1 : EV Data.
+   -----------------------
+   Bit 50 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 178  "Transport Engineers"   File: 1 : EV Data.
+      Res.: mïsn 178  "Transport Engineers"   File: 1 : EV Data.
+      Res.: mïsn 179  "Retrieve Equipment"   File: 1 : EV Data.
+   -----------------------
+   Bit 51 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 179  "Retrieve Equipment"   File: 1 : EV Data.
+      Res.: mïsn 179  "Retrieve Equipment"   File: 1 : EV Data.
+      Res.: mïsn 180  "Retrieve Colonists"   File: 1 : EV Data.
+   -----------------------
+   Bit 52 :
+   Total : 5 times
+   Set   : 1 times
+   Tested: 4 times
+   Locations:
+   -----------------------
+      Res.: mïsn 180  "Retrieve Colonists"   File: 1 : EV Data.
+      Res.: mïsn 180  "Retrieve Colonists"   File: 1 : EV Data.
+      Res.: mïsn 181  "Get Repair Equipment"   File: 1 : EV Data.
+      Res.: mïsn 182  "Resupply Colony"   File: 1 : EV Data.
+      Res.: mïsn 183  "Defend Turin V"   File: 1 : EV Data.
+   -----------------------
+   Bit 56 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 184  "Investigate Disappearances"   File: 1 : EV Data.
+      Res.: mïsn 184  "Investigate Disappearances"   File: 1 : EV Data.
+      Res.: mïsn 185  "Lead Rebel Patrol"   File: 1 : EV Data.
+   -----------------------
+   Bit 57 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 185  "Lead Rebel Patrol"   File: 1 : EV Data.
+      Res.: mïsn 185  "Lead Rebel Patrol"   File: 1 : EV Data.
+      Res.: mïsn 186  "Rescue Rebel Spy"   File: 1 : EV Data.
+   -----------------------
+   Bit 58 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 186  "Rescue Rebel Spy"   File: 1 : EV Data.
+      Res.: mïsn 186  "Rescue Rebel Spy"   File: 1 : EV Data.
+      Res.: mïsn 187  "Get War Records"   File: 1 : EV Data.
+   -----------------------
+   Bit 59 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 187  "Get War Records"   File: 1 : EV Data.
+      Res.: mïsn 187  "Get War Records"   File: 1 : EV Data.
+      Res.: mïsn 188  "Locate Aliens"   File: 1 : EV Data.
+   -----------------------
+   Bit 60 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 188  "Locate Aliens"   File: 1 : EV Data.
+      Res.: mïsn 188  "Locate Aliens"   File: 1 : EV Data.
+      Res.: mïsn 189  "Destroy Alien Cruiser"   File: 1 : EV Data.
+   -----------------------
+   Bit 61 :
+   Total : 19 times
+   Set   : 2 times
+   Tested: 17 times
+   Locations:
+   -----------------------
+      Res.: shïp 141  "Rebel Destroyer"   File: 1 : EV Data.
+      Res.: shïp 142  "Rebel Cruiser"   File: 1 : EV Data.
+      Res.: shïp 144  "Manta"   File: 1 : EV Data.
+      Res.: oütf 142  "Manta Light Fighter"   File: 1 : EV Data.
+      Res.: oütf 144  "Mass Driver"   File: 1 : EV Data.
+      Res.: përs 328  "Alien Fighter"   File: 1 : EV Data.
+      Res.: përs 329  "Alien Fighter"   File: 1 : EV Data.
+      Res.: përs 330  "Alien Fighter"   File: 1 : EV Data.
+      Res.: përs 331  "Alien Fighter"   File: 1 : EV Data.
+      Res.: përs 332  "Alien Fighter"   File: 1 : EV Data.
+      Res.: përs 333  "Alien Fighter"   File: 1 : EV Data.
+      Res.: përs 334  "Alien Fighter"   File: 1 : EV Data.
+      Res.: përs 335  "Alien Fighter"   File: 1 : EV Data.
+      Res.: përs 336  "Alien Fighter"   File: 1 : EV Data.
+      Res.: përs 337  "Alien Fighter"   File: 1 : EV Data.
+      Res.: crön 131  "Rebel alien news"   File: 1 : EV Data.
+      Res.: mïsn 189  "Destroy Alien Cruiser"   File: 1 : EV Data.
+      Res.: mïsn 189  "Destroy Alien Cruiser"   File: 1 : EV Data.
+      Res.: mïsn 194  "Destroy Alien Cruiser"   File: 1 : EV Data.
+   -----------------------
+   Bit 62 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 190  "Investigate Disappearances"   File: 1 : EV Data.
+      Res.: mïsn 190  "Investigate Disappearances"   File: 1 : EV Data.
+      Res.: mïsn 191  "Escort Confed Convoy"   File: 1 : EV Data.
+   -----------------------
+   Bit 63 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 191  "Escort Confed Convoy"   File: 1 : EV Data.
+      Res.: mïsn 191  "Escort Confed Convoy"   File: 1 : EV Data.
+      Res.: mïsn 192  "Extract Confed Spy"   File: 1 : EV Data.
+   -----------------------
+   Bit 64 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 192  "Extract Confed Spy"   File: 1 : EV Data.
+      Res.: mïsn 192  "Extract Confed Spy"   File: 1 : EV Data.
+      Res.: mïsn 193  "Locate Aliens"   File: 1 : EV Data.
+   -----------------------
+   Bit 65 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 193  "Locate Aliens"   File: 1 : EV Data.
+      Res.: mïsn 193  "Locate Aliens"   File: 1 : EV Data.
+      Res.: mïsn 194  "Destroy Alien Cruiser"   File: 1 : EV Data.
+   -----------------------
+   Bit 66 :
+   Total : 8 times
+   Set   : 1 times
+   Tested: 7 times
+   Locations:
+   -----------------------
+      Res.: shïp 133  "Confederate Frigate"   File: 1 : EV Data.
+      Res.: shïp 134  "Confederate Cruiser"   File: 1 : EV Data.
+      Res.: shïp 135  "Confed Patrol Ship"   File: 1 : EV Data.
+      Res.: shïp 147  "Confed Gunboat"   File: 1 : EV Data.
+      Res.: oütf 141  "Confed Patrol Ship"   File: 1 : EV Data.
+      Res.: crön 130  "Confed alien news"   File: 1 : EV Data.
+      Res.: mïsn 194  "Destroy Alien Cruiser"   File: 1 : EV Data.
+      Res.: mïsn 194  "Destroy Alien Cruiser"   File: 1 : EV Data.
+   -----------------------
+   Bit 67 :
+   Total : 1 times
+   Set   : 0 times
+   Tested: 1 times
+   Locations:
+   -----------------------
+      Res.: shïp 139  "Executive Transport"   File: 1 : EV Data.
+   -----------------------
+   Bit 72 :
+   Total : 2 times
+   Set   : 1 times
+   Tested: 1 times
+   Locations:
+   -----------------------
+      Res.: mïsn 200  "Switch Sides"   File: 1 : EV Data.
+      Res.: mïsn 200  "Switch Sides"   File: 1 : EV Data.
+   -----------------------
+   Bit 73 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: shïp 152  "Kestrel"   File: 1 : EV Data.
+      Res.: mïsn 201  "Deliver Kestrel Parts"   File: 1 : EV Data.
+      Res.: mïsn 201  "Deliver Kestrel Parts"   File: 1 : EV Data.
+   -----------------------
+   Bit 75 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 203  "Locate Weapons Cache"   File: 1 : EV Data.
+      Res.: mïsn 203  "Locate Weapons Cache"   File: 1 : EV Data.
+      Res.: mïsn 204  "Distribute Rebel Munitions"   File: 1 : EV Data.
+   -----------------------
+   Bit 76 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 209  "Help United Galactic Express"   File: 1 : EV Data.
+      Res.: mïsn 209  "Help United Galactic Express"   File: 1 : EV Data.
+      Res.: mïsn 210  "UGE Recruitment"   File: 1 : EV Data.
+   -----------------------
+   Bit 77 :
+   Total : 10 times
+   Set   : 1 times
+   Tested: 9 times
+   Locations:
+   -----------------------
+      Res.: mïsn 210  "UGE Recruitment"   File: 1 : EV Data.
+      Res.: mïsn 210  "UGE Recruitment"   File: 1 : EV Data.
+      Res.: mïsn 211  "UGE Cargo to <DST>"   File: 1 : EV Data.
+      Res.: mïsn 212  "UGE Delivery to <DST>"   File: 1 : EV Data.
+      Res.: mïsn 213  "UGE Transport to <DST>"   File: 1 : EV Data.
+      Res.: mïsn 214  "UGE Freight to <DST>"   File: 1 : EV Data.
+      Res.: mïsn 215  "UGE Cargo to <DST>"   File: 1 : EV Data.
+      Res.: mïsn 216  "UGE Delivery to <DST>"   File: 1 : EV Data.
+      Res.: mïsn 217  "UGE Smuggling"   File: 1 : EV Data.
+      Res.: mïsn 218  "UGE Smuggling"   File: 1 : EV Data.
+   -----------------------
+   Bit 78 :
+   Total : 9 times
+   Set   : 2 times
+   Tested: 7 times
+   Locations:
+   -----------------------
+      Res.: mïsn 211  "UGE Cargo to <DST>"   File: 1 : EV Data.
+      Res.: mïsn 212  "UGE Delivery to <DST>"   File: 1 : EV Data.
+      Res.: mïsn 213  "UGE Transport to <DST>"   File: 1 : EV Data.
+      Res.: mïsn 214  "UGE Freight to <DST>"   File: 1 : EV Data.
+      Res.: mïsn 215  "UGE Cargo to <DST>"   File: 1 : EV Data.
+      Res.: mïsn 216  "UGE Delivery to <DST>"   File: 1 : EV Data.
+      Res.: mïsn 218  "UGE Smuggling"   File: 1 : EV Data.
+      Res.: mïsn 219  "UGE Redemption"   File: 1 : EV Data.
+      Res.: mïsn 219  "UGE Redemption"   File: 1 : EV Data.
+   -----------------------
+   Bit 79 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 217  "UGE Smuggling"   File: 1 : EV Data.
+      Res.: mïsn 218  "UGE Smuggling"   File: 1 : EV Data.
+      Res.: mïsn 218  "UGE Smuggling"   File: 1 : EV Data.
+   -----------------------
+   Bit 95 :
+   Total : 4 times
+   Set   : 2 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 220  "Confed Covert Ops"   File: 1 : EV Data.
+      Res.: mïsn 220  "Confed Covert Ops"   File: 1 : EV Data.
+      Res.: mïsn 221  "Confed Courier Operations"   File: 1 : EV Data.
+      Res.: mïsn 221  "Confed Courier Operations"   File: 1 : EV Data.
+   -----------------------
+   Bit 96 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 221  "Confed Courier Operations"   File: 1 : EV Data.
+      Res.: mïsn 221  "Confed Courier Operations"   File: 1 : EV Data.
+      Res.: mïsn 222  "Intercept Rebel Convoy"   File: 1 : EV Data.
+   -----------------------
+   Bit 97 :
+   Total : 6 times
+   Set   : 4 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 222  "Intercept Rebel Convoy"   File: 1 : EV Data.
+      Res.: mïsn 222  "Intercept Rebel Convoy"   File: 1 : EV Data.
+      Res.: mïsn 222  "Intercept Rebel Convoy"   File: 1 : EV Data.
+      Res.: mïsn 223  "Intercept Rebel Convoy"   File: 1 : EV Data.
+      Res.: mïsn 223  "Intercept Rebel Convoy"   File: 1 : EV Data.
+      Res.: mïsn 223  "Intercept Rebel Convoy"   File: 1 : EV Data.
+   -----------------------
+   Bit 98 :
+   Total : 4 times
+   Set   : 2 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 224  "Transport Industrial Toxins"   File: 1 : EV Data.
+      Res.: mïsn 224  "Transport Industrial Toxins"   File: 1 : EV Data.
+      Res.: mïsn 225  "Deliver Refined Toxins"   File: 1 : EV Data.
+      Res.: mïsn 225  "Deliver Refined Toxins"   File: 1 : EV Data.
+   -----------------------
+   Bit 99 :
+   Total : 5 times
+   Set   : 2 times
+   Tested: 3 times
+   Locations:
+   -----------------------
+      Res.: mïsn 225  "Deliver Refined Toxins"   File: 1 : EV Data.
+      Res.: mïsn 225  "Deliver Refined Toxins"   File: 1 : EV Data.
+      Res.: mïsn 226  "Distribute Biological Weapons"   File: 1 : EV Data.
+      Res.: mïsn 227  "Rebel Recon"   File: 1 : EV Data.
+      Res.: mïsn 227  "Rebel Recon"   File: 1 : EV Data.
+   -----------------------
+   Bit 102 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 230  "Astrodyne Outpost Recruitment"   File: 1 : EV Data.
+      Res.: mïsn 230  "Astrodyne Outpost Recruitment"   File: 1 : EV Data.
+      Res.: mïsn 231  "Astrodyne Outpost I"   File: 1 : EV Data.
+   -----------------------
+   Bit 103 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 231  "Astrodyne Outpost I"   File: 1 : EV Data.
+      Res.: mïsn 231  "Astrodyne Outpost I"   File: 1 : EV Data.
+      Res.: mïsn 232  "Astrodyne Outpost II"   File: 1 : EV Data.
+   -----------------------
+   Bit 104 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 232  "Astrodyne Outpost II"   File: 1 : EV Data.
+      Res.: mïsn 232  "Astrodyne Outpost II"   File: 1 : EV Data.
+      Res.: mïsn 233  "Astrodyne Outpost III"   File: 1 : EV Data.
+   -----------------------
+   Bit 105 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 233  "Astrodyne Outpost III"   File: 1 : EV Data.
+      Res.: mïsn 233  "Astrodyne Outpost III"   File: 1 : EV Data.
+      Res.: mïsn 234  "Astrodyne Outpost IV"   File: 1 : EV Data.
+   -----------------------
+   Bit 106 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 234  "Astrodyne Outpost IV"   File: 1 : EV Data.
+      Res.: mïsn 234  "Astrodyne Outpost IV"   File: 1 : EV Data.
+      Res.: mïsn 235  "Astrodyne Outpost V"   File: 1 : EV Data.
+   -----------------------
+   Bit 107 :
+   Total : 2 times
+   Set   : 1 times
+   Tested: 1 times
+   Locations:
+   -----------------------
+      Res.: mïsn 235  "Astrodyne Outpost V"   File: 1 : EV Data.
+      Res.: mïsn 235  "Astrodyne Outpost V"   File: 1 : EV Data.
+   -----------------------
+   Bit 108 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 236  "Ferry Passenger to <RST>"   File: 1 : EV Data.
+      Res.: mïsn 236  "Ferry Passenger to <RST>"   File: 1 : EV Data.
+      Res.: mïsn 237  "Retrieve Data"   File: 1 : EV Data.
+   -----------------------
+   Bit 109 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 237  "Retrieve Data"   File: 1 : EV Data.
+      Res.: mïsn 237  "Retrieve Data"   File: 1 : EV Data.
+      Res.: mïsn 238  "Rescue Agent"   File: 1 : EV Data.
+   -----------------------
+   Bit 110 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 238  "Rescue Agent"   File: 1 : EV Data.
+      Res.: mïsn 238  "Rescue Agent"   File: 1 : EV Data.
+      Res.: mïsn 239  "Gather Hunters"   File: 1 : EV Data.
+   -----------------------
+   Bit 111 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 239  "Gather Hunters"   File: 1 : EV Data.
+      Res.: mïsn 239  "Gather Hunters"   File: 1 : EV Data.
+      Res.: mïsn 240  "Meet with UGE Reps"   File: 1 : EV Data.
+   -----------------------
+   Bit 112 :
+   Total : 3 times
+   Set   : 1 times
+   Tested: 2 times
+   Locations:
+   -----------------------
+      Res.: mïsn 240  "Meet with UGE Reps"   File: 1 : EV Data.
+      Res.: mïsn 240  "Meet with UGE Reps"   File: 1 : EV Data.
+      Res.: mïsn 241  "T.A.G. - You’re It"   File: 1 : EV Data.
+   -----------------------
+   Bit 113 :
+   Total : 2 times
+   Set   : 1 times
+   Tested: 1 times
+   Locations:
+   -----------------------
+      Res.: mïsn 241  "T.A.G. - You’re It"   File: 1 : EV Data.
+      Res.: mïsn 241  "T.A.G. - You’re It"   File: 1 : EV Data.
+   -----------------------
+   Bit 114 :
+   Total : 12 times
+   Set   : 1 times
+   Tested: 11 times
+   Locations:
+   -----------------------
+      Res.: përs 338  "Escort Carrier"   File: 1 : EV Data.
+      Res.: përs 339  "Escort Carrier"   File: 1 : EV Data.
+      Res.: përs 340  "Escort Carrier"   File: 1 : EV Data.
+      Res.: përs 341  "Escort Carrier"   File: 1 : EV Data.
+      Res.: përs 342  "Escort Carrier"   File: 1 : EV Data.
+      Res.: përs 343  "Escort Carrier"   File: 1 : EV Data.
+      Res.: përs 344  "Escort Carrier"   File: 1 : EV Data.
+      Res.: përs 345  "Escort Carrier"   File: 1 : EV Data.
+      Res.: mïsn 229  "Destroy Rebel Convoy"   File: 1 : EV Data.
+      Res.: mïsn 242  "Destroy Escort Carrier"   File: 1 : EV Data.
+      Res.: mïsn 242  "Destroy Escort Carrier"   File: 1 : EV Data.
+      Res.: mïsn 243  "Destroy Escort Carrier"   File: 1 : EV Data.
+   -----------------------
+   Bit 1000 :
+   Total : 2 times
+   Set   : 1 times
+   Tested: 1 times
+   Locations:
+   -----------------------
+      Res.: crön 128  "Confed intermediate news"   File: 1 : EV Data.
+      Res.: crön 128  "Confed intermediate news"   File: 1 : EV Data.
+   -----------------------
+   Bit 1001 :
+   Total : 2 times
+   Set   : 1 times
+   Tested: 1 times
+   Locations:
+   -----------------------
+      Res.: crön 129  "Rebel intermediate news"   File: 1 : EV Data.
+      Res.: crön 129  "Rebel intermediate news"   File: 1 : EV Data.
+   -----------------------
+   Bit 1002 :
+   Total : 2 times
+   Set   : 1 times
+   Tested: 1 times
+   Locations:
+   -----------------------
+      Res.: crön 130  "Confed alien news"   File: 1 : EV Data.
+      Res.: crön 130  "Confed alien news"   File: 1 : EV Data.
+   -----------------------
+   Bit 1003 :
+   Total : 2 times
+   Set   : 1 times
+   Tested: 1 times
+   Locations:
+   -----------------------
+      Res.: crön 131  "Rebel alien news"   File: 1 : EV Data.
+      Res.: crön 131  "Rebel alien news"   File: 1 : EV Data.
+   -----------------------
+   Bit 1004 :
+   Total : 2 times
+   Set   : 1 times
+   Tested: 1 times
+   Locations:
+   -----------------------
+      Res.: crön 132  "Astex news"   File: 1 : EV Data.
+      Res.: crön 132  "Astex news"   File: 1 : EV Data.
+   -----------------------
