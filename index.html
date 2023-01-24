@@ -43,15 +43,15 @@
                     <div class="col-lg-6">
                         <div class="icon-item">
                             <img src="plugins/evicon.png" class="icon">
-                            <h5><a href="plugins/EV_Classic_for_Nova_1.1.4.zip">EV Classic for Nova 1.1.4</a> <span class="filesize">(7.5 MB)</span></h5>
-                            <div class="update text-muted">29 November 2021: 1.1.4 released with anti-escort fleets enabled.</div>
+                            <h5><a href="plugins/EV_Classic_for_Nova_1.1.5.zip">EV Classic for Nova 1.1.5</a> <span class="filesize">(7.8 MB)</span></h5>
+                            <div class="update text-muted">23 January 2023: 1.1.5 released with compatibility improvements.</div>
                             <p class="desc">Port of the original Escape Velocity to the Nova engine.</p>
                         </div>
 
                         <div class="icon-item">
                             <img src="plugins/revicon.png" class="icon">
-                            <a href="plugins/rEV_1.1b6.zip">rEV 1.1b6</a> <span class="filesize">(28.7 MB)</span>
-                            <div class="update text-muted">16 September 2021: Updated to match EVC changes.</div>
+                            <a href="plugins/rEV_1.1.zip">rEV 1.1</a> <span class="filesize">(28.7 MB)</span>
+                            <div class="update text-muted">23 January 2023: Updated to match EVC changes.</div>
                             <p class="desc">Kris Quistorff's rEVisited graphical remake and expansion, rebuilt for EV Classic for Nova.</p>
                         </div>
 
@@ -68,22 +68,22 @@
                     <div class="col-lg-6">
                         <div class="icon-item">
                             <img src="plugins/evoicon.png" class="icon">
-                            <h5><a href="plugins/EV_Override_for_Nova_1.1.3.zip">EV Override for Nova 1.1.3</a> <span class="filesize">(8.6 MB)</span></h5>
-                            <div class="update text-muted">16 September 2021: 1.1.3 released with combat rating improvements.</div>
+                            <h5><a href="plugins/EV_Override_for_Nova_1.1.5.zip">EV Override for Nova 1.1.5</a> <span class="filesize">(9.5 MB)</span></h5>
+                            <div class="update text-muted">23 January 2023: 1.1.5 released with compatibility improvements.</div>
                             <p class="desc">Port of the original EV Override to the Nova engine.</p>
                         </div>
 
                         <div class="icon-item">
                             <img src="plugins/eeicon.png" class="icon">
-                            <a href="plugins/EVO_Extras.zip">EVO Extras</a> <span class="filesize">(991 KB)</span>
-                            <div class="update text-muted">29 June 2022: Updated Paaren Proceedings with minor fixes.</div>
-                            <p class="desc">Collection of six small plug-ins for EV Override for Nova.</p>
+                            <a href="plugins/EVO_Extras.zip">EVO Extras</a> <span class="filesize">(990 KB)</span>
+                            <div class="update text-muted">23 January 2023: Updated to match EVO changes.</div>
+                            <p class="desc">Collection of five small plug-ins for EV Override for Nova.</p>
                         </div>
 
                         <div class="icon-item">
                             <img src="plugins/flicon.png" class="icon">
-                            <a href="plugins/EVO_Facelift_1.0.6.zip">EVO Facelift 1.0.6</a> <span class="filesize">(22.1 MB)</span>
-                            <div class="update text-muted">16 September 2021: Updated to match EVO changes.</div>
+                            <a href="plugins/EVO_Facelift_1.0.7.zip">EVO Facelift 1.0.7</a> <span class="filesize">(22.1 MB)</span>
+                            <div class="update text-muted">23 January 2023: Updated to match EVO changes.</div>
                             <p class="desc">Tim Morgan's graphical facelift for EV Override for Nova.</p>
                         </div>
 
@@ -112,8 +112,8 @@
                 <a href="plugins/Shields.zip">Shields</a> <span class="filesize">(306 KB)</span>
                 <p class="desc">Nova shield graphics plug by Dark Revenant, tweaked for better scaling and masking plus a version for ARPIA2.</p>
 
-                <a href="plugins/Nova_Roid_Fix.zip">Nova Roid Fix</a> <span class="filesize">(546 KB)</span>
-                <p class="desc">This plug-in works around a Nova engine bug to ensure that asteroids do not disappear when playing in 16:9 widescreen resolutions.</p>
+                <div><a href="plugins/Nova_Roid_Fix.zip">Nova Roid Fix</a> <span class="filesize">(546 KB)</span></div>
+                <p class="desc">This plug-in works around a Nova engine bug to ensure that asteroids do not disappear when playing in 16:9 widescreen resolutions.<br>Alternate version for ultrawide: <a href="plugins/Nova_Roid_Fix_240.zip">Nova Roid Fix 240</a> <span class="filesize">(552 KB)</span></p>
             </div>
             <div class="tab-pane" id="utilities-tab">
                 <h4>Utilities</h4>
@@ -227,7 +227,7 @@
         }
         window.addEventListener('hashchange', checkHash);
         var regex = new RegExp('://(.*)\.github\.io/([^/]*)/');
-        var replace = Math.random() >= 0.5 ? '://media.githubusercontent.com/media/$1/$2/master/' : '://bitbucket.org/andrews050/$2/raw/master/';
+        var replace = Math.random() >= 0.25 ? '://media.githubusercontent.com/media/$1/$2/master/' : '://bitbucket.org/andrews050/$2/raw/master/';
         for (var lfs of document.querySelectorAll('a[href$=".zip"],a[href$=".dmg"]')) {
             lfs.href = lfs.href.replace(regex, replace);
         }
