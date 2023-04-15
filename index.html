@@ -5,215 +5,226 @@
         <meta name="viewport" content="width=device-width">
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <style>
-            body {padding-top: 1rem}
-            .tab-content {padding-top: 1rem}
             .filesize {font-size: 0.75rem; color: #555}
             .source {font-size: 0.8rem; padding-top: 0.3rem}
+            .badge {vertical-align: text-top}
             .update {font-size: 0.75rem}
             .icon {height: 48px; float: left; margin-right: 0.6em}
             .desc {margin-bottom: 1.5em}
             .icon-item .update {margin: .3rem 0}
-            .alert-flex {display: flex}
-            .alert-flex .icon {height: 64px; margin-right: 0.75em}
             h5 {margin-bottom: .25rem}
             #backroom-nav {margin-left: auto}
-            #backroom-nav>a:not(.active) {opacity:0}
+            #backroom-nav>a:not(.active) {opacity: 0}
         </style>
     </head>
-    <body class="container" onload="checkHash()">
-        <div class="alert alert-primary alert-flex">
-            <img src="evnicon.png" class="icon">
-            <div>
-                <h5><a href="https://www.dropbox.com/s/3552i9o0gjixkwg/EV%20Nova%20mod%203.dmg">EV Nova mod 3</a></h5>
-                Custom edition of EV Nova for macOS 10.11 to 10.14, with compatibility fixes, font size setting, and support for the .rez plug-in format.</div>
-            </div>
-        </div>
-        <ul class="nav nav-tabs">
-            <li class="nav-item"><a class="nav-link active" href="#evo">EV/O Plug-ins</a></li>
-            <li class="nav-item"><a class="nav-link" href="#nova">Nova Plug-ins</a></li>
-            <li class="nav-item"><a class="nav-link" href="#utilities">Utilities</a></li>
-            <li class="nav-item"><a class="nav-link" href="#guides">Guides</a></li>
-            <li class="nav-item" id="backroom-nav"><a class="nav-link" href="#backroom"><span class="d-none d-md-inline">Backroom</span><span class="d-md-none">?</span></a></li>
-        </ul>
-        <div class="tab-content">
-            <div class="tab-pane active" id="evo-tab">
-                <h4>EV/O TCs & Related Plug-ins</h4>
-                <br>
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="icon-item">
-                            <img src="plugins/evicon.png" class="icon">
-                            <h5><a href="plugins/EV_Classic_for_Nova_1.1.5.zip">EV Classic for Nova 1.1.5</a> <span class="filesize">(7.8 MB)</span></h5>
-                            <div class="update text-muted">23 January 2023: 1.1.5 released with compatibility improvements.</div>
-                            <p class="desc">Port of the original Escape Velocity to the Nova engine.</p>
-                        </div>
-
-                        <div class="icon-item">
-                            <img src="plugins/revicon.png" class="icon">
-                            <a href="plugins/rEV_1.1.zip">rEV 1.1</a> <span class="filesize">(28.7 MB)</span>
-                            <div class="update text-muted">2 April 2023: Minor fixes.</div>
-                            <p class="desc">Kris Quistorff's rEVisited graphical remake and expansion, rebuilt for EV Classic for Nova.</p>
-                        </div>
-
-                        <br>
-                        <br class="d-none d-lg-block">
-                        <div class="icon-item">
-                            <img src="plugins/fhicon.png" class="icon">
-                            <a href="plugins/The_Frozen_Heart.zip">The Frozen Heart</a> <span class="filesize">(7.4 MB)</span>
-                            <div class="update text-muted">16 September 2021: Updated with combat rating improvements.</div>
-                            <p class="desc">Martin Turner's classic adventure, ported to the Nova engine.</p>
-                        </div>
-                        <br>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="icon-item">
-                            <img src="plugins/evoicon.png" class="icon">
-                            <h5><a href="plugins/EV_Override_for_Nova_1.1.5.zip">EV Override for Nova 1.1.5</a> <span class="filesize">(9.5 MB)</span></h5>
-                            <div class="update text-muted">23 January 2023: 1.1.5 released with compatibility improvements.</div>
-                            <p class="desc">Port of the original EV Override to the Nova engine.</p>
-                        </div>
-
-                        <div class="icon-item">
-                            <img src="plugins/eeicon.png" class="icon">
-                            <a href="plugins/EVO_Extras.zip">EVO Extras</a> <span class="filesize">(990 KB)</span>
-                            <div class="update text-muted">23 January 2023: Updated to match EVO changes.</div>
-                            <p class="desc">Collection of five small plug-ins for EV Override for Nova.</p>
-                        </div>
-
-                        <div class="icon-item">
-                            <img src="plugins/flicon.png" class="icon">
-                            <a href="plugins/EVO_Facelift_1.0.7.zip">EVO Facelift 1.0.7</a> <span class="filesize">(22.1 MB)</span>
-                            <div class="update text-muted">23 January 2023: Updated to match EVO changes.</div>
-                            <p class="desc">Tim Morgan's graphical facelift for EV Override for Nova.</p>
-                        </div>
-
-                        <div class="icon-item">
-                            <img src="plugins/cficon.png" class="icon">
-                            <a href="plugins/Cold_Fusion_for_Nova_1.0.1.zip">Cold Fusion for Nova 1.0.1</a> <span class="filesize">(10.1 MB)</span>
-                            <div class="update text-muted">20 October 2009: 1.0.1 released with minor fixes and improvements.</div>
-                            <p class="desc">Dreamwave Studios' Cold Fusion graphics replacement for EV Override, ported to the Nova engine by Dr. Trowel.</p>
-                        </div>
+    <body class="container pt-3" onload="checkHash()">
+        <div class="row d-block">
+            <div class="col-xl-3 float-left">
+                <div class="card mb-3 icon-item">
+                    <div class="card-body">
+                        <img src="evnicon.png" class="icon">
+                        <h5><a href="https://www.dropbox.com/s/3552i9o0gjixkwg/EV%20Nova%20mod%203.dmg">EV Nova mod 3</a></h5>
+                        <div class="update text-muted">85.4 MB</div>
+                        Custom edition of EV Nova for macOS 10.11 to 10.14, with compatibility fixes, font size setting, and automatic .rez conversion.
                     </div>
                 </div>
+            </div>
+            <div class="col-xl-9 float-right">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item"><a class="nav-link active" href="#evo">EV/O Plug-ins</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#nova">Nova Plug-ins</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#utilities">Utilities</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#guides">Guides</a></li>
+                    <li class="nav-item" id="backroom-nav"><a class="nav-link" href="#backroom"><span class="d-none d-md-inline">Backroom</span><span class="d-md-none">?</span></a></li>
+                </ul>
+                <div class="tab-content pt-3">
+                    <div class="tab-pane active" id="evo-tab">
+                        <h4>EV/O TCs & Related Plug-ins</h4>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="icon-item">
+                                    <img src="plugins/evicon.png" class="icon">
+                                    <h5><a href="plugins/EV_Classic_for_Nova_1.1.5.zip">EV Classic for Nova 1.1.5</a> <span class="filesize">(7.8 MB)</span></h5>
+                                    <div class="update text-muted">23 January 2023: 1.1.5 released with compatibility updates.</div>
+                                    <div class="desc">Port of the original Escape Velocity to the Nova engine.</div>
+                                </div>
+
+                                <div class="icon-item">
+                                    <img src="plugins/revicon.png" class="icon">
+                                    <a href="plugins/rEV_1.1.zip">rEV 1.1</a> <span class="filesize">(28.7 MB)</span>
+                                    <div class="update text-muted">2 April 2023: Minor fixes.</div>
+                                    <div class="desc">Kris Quistorff's rEVisited graphical remake and expansion, rebuilt for EV Classic for Nova.</div>
+                                </div>
+
+                                <br>
+                                <br class="d-none d-lg-block">
+                                <div class="icon-item">
+                                    <img src="plugins/fhicon.png" class="icon">
+                                    <a href="plugins/The_Frozen_Heart.zip">The Frozen Heart</a> <span class="filesize">(7.4 MB)</span>
+                                    <div class="update text-muted">16 September 2021: Updated combat ratings.</div>
+                                    <div class="desc">Martin Turner's classic adventure, ported to the Nova engine.</div>
+                                </div>
+                                <br>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="icon-item">
+                                    <img src="plugins/evoicon.png" class="icon">
+                                    <h5><a href="plugins/EV_Override_for_Nova_1.1.5.zip">EV Override for Nova 1.1.5</a> <span class="filesize">(9.5 MB)</span></h5>
+                                    <div class="update text-muted">23 January 2023: 1.1.5 released with compatibility updates.</div>
+                                    <div class="desc">Port of the original EV Override to the Nova engine.</div>
+                                </div>
+
+                                <div class="icon-item">
+                                    <img src="plugins/eeicon.png" class="icon">
+                                    <a href="plugins/EVO_Extras.zip">EVO Extras</a> <span class="filesize">(990 KB)</span>
+                                    <div class="update text-muted">23 January 2023: Updated to match EVO changes.</div>
+                                    <div class="desc">Collection of five small plug-ins for EV Override for Nova.</div>
+                                </div>
+
+                                <div class="icon-item">
+                                    <img src="plugins/flicon.png" class="icon">
+                                    <a href="plugins/EVO_Facelift_1.0.7.zip">EVO Facelift 1.0.7</a> <span class="filesize">(22.1 MB)</span>
+                                    <div class="update text-muted">23 January 2023: Updated to match EVO changes.</div>
+                                    <div class="desc">Tim Morgan's graphical facelift for EV Override for Nova.</div>
+                                </div>
+
+                                <div class="icon-item">
+                                    <img src="plugins/cficon.png" class="icon">
+                                    <a href="plugins/Cold_Fusion_for_Nova_1.0.1.zip">Cold Fusion for Nova 1.0.1</a> <span class="filesize">(10.1 MB)</span>
+                                    <div class="update text-muted">20 October 2009: 1.0.1 released with minor fixes and improvements.</div>
+                                    <div class="desc">Dreamwave Studios' Cold Fusion graphics replacement for EV Override, ported to the Nova engine by Dr. Trowel.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="nova-tab">
+                        <h4>Nova Plug-ins</h4>
+                        <br>
+                        <a href="plugins/Dodge_That.zip">Dodge That</a> <span class="filesize">(86 KB)</span>
+                        <div class="desc">Dodge the crazy torpedo for as long as you can! Start a new Dodge That pilot to begin.</div>
+
+                        <a href="plugins/Collision_Damage.zip">Collision Damage</a> <span class="filesize">(1 KB)</span>
+                        <div class="desc">Looking for a challenge? With Collision Damage asteroids are no longer the friendly background decorations they once were. Visit any mission computer to begin.</div>
+
+                        <a href="plugins/Shields.zip">Shields</a> <span class="filesize">(306 KB)</span>
+                        <div class="desc">Nova shield graphics plug by Dark Revenant, tweaked for better scaling and masking plus a version for ARPIA2.</div>
+
+                        <div><a href="plugins/Nova_Roid_Fix.zip">Nova Roid Fix</a> <span class="filesize">(546 KB)</span></div>
+                        <div class="desc">This plug-in works around a Nova engine bug to ensure that asteroids do not disappear when playing in 16:9 widescreen resolutions.<br>Alternate version for ultrawide: <a href="plugins/Nova_Roid_Fix_240.zip">Nova Roid Fix 240</a> <span class="filesize">(552 KB)</span></div>
+                    </div>
+                    <div class="tab-pane" id="utilities-tab">
+                        <h4>Utilities</h4>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="icon-item">
+                                    <img src="https://github.com/andrews05/ResForge/raw/master/ResForge/Assets.xcassets/ResForge.appiconset/ResForge_128.png" class="icon">
+                                    <h5>
+                                        <a href="https://github.com/andrews05/ResForge/releases" target="_blank">ResForge</a> <span class="filesize"><span class="badge badge-success">Universal</span></span>
+                                    </h5>
+                                    <div class="desc">Modern resource fork editor, including advanced Nova templates and visual shan editor.</div>
+                                </div>
+
+                                <div class="icon-item">
+                                    <img src="utilities/mcicon.png" class="icon">
+                                    <h5>
+                                        <a href="utilities/MissionComputer431.zip">MissionComputer 4.3.1</a> <span class="filesize">(7.5 MB)</span>
+                                    </h5>
+                                    <div class="update text-muted">8 September 2020: 4.3.1 released with support for .npif files.</div>
+                                    <div class="desc">
+                                        Comprehensive plug-in editor for Mac. Written by David Arthur, minor updates by myself.
+                                        <div class="source">See also: <a href="utilities/Duessa422.zip">Duessa 4.2.2</a> <span class="filesize">(5.6 MB)</span>&ensp;<span class="badge badge-warning">Windows</span></div>
+                                    </div>
+                                </div>
+
+                                <div class="icon-item">
+                                    <img src="utilities/spicon.png" class="icon">
+                                    <h5>
+                                        <a class="source float-right text-info" href="sources/SpacePort.zip">&gt; source code</a>
+                                        <a href="utilities/SpacePort.zip">SpacePort 1.3.2</a> <span class="filesize">(2.0 MB)</span>
+                                    </h5>
+                                    <div class="update text-muted">31 January 2022: 1.3.2 released.</div>
+                                    <div class="desc">Program for porting EV and EVO plug-ins to the Nova engine, written by Michael Hewitt, Brian Norwood and myself.</div>
+                                </div>
+
+                                <div class="icon-item">
+                                    <img src="utilities/paicon.png" class="icon">
+                                    <h5><a href="utilities/Plug-in_Archiver.zip">Plug-in Archiver 2.4.2</a> <span class="filesize">(1.5 MB)&ensp;<span class="badge badge-danger">Deprecated</span></span></h5>
+                                    <div class="update text-muted">5 March 2012: 2.4.2 released.</div>
+                                    <div class="desc">
+                                        A simple archiving program with automatic MacBinary encoding.
+                                        <div class="source"><i>Note: The Windows .rez format is now preferred for plug-in distribution.</i></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <a href="utilities/Plug-in_Extractor.zip">Plug-in Extractor</a> <span class="filesize">(5.0 MB)&ensp;<span class="badge badge-warning">Windows</span></span>
+                                <div class="update text-muted">27 June 2013: Initial release.</div>
+                                <div class="desc">One-click plug-in extraction and conversion for Windows users - handles almost any archive format downloaded from the Nova Addons.</div>
+
+                                <a href="utilities/EV_Nova_Launcher.zip">EV Nova Launcher</a> <span class="filesize">(654 KB)</span>
+                                <div class="desc">Stand-alone, no-frills launcher to run EV Nova using the app&rsquo;s current directory for plug-ins and pilots.</div>
+
+                                <a class="source float-right text-info" href="sources/plugconvert.c">&gt; source code</a>
+                                <a href="utilities/Plug-in_Converter.zip">Plug-in Converter</a> <span class="filesize">(60 KB)&ensp;<span class="badge badge-success">64-bit</span></span><br>
+                                <div class="desc">Convert plug-ins between Mac and Windows formats. Correctly converts types such as 'snd ' that MC doesn't.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="guides-tab">
+                        <h4>Guides</h4>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <a href="guides/evnbible.html">EV Nova Bible</a>
+                                <div>Easy-navigation HTML version, originally formatted by Jail.</div>
+                                <br>
+                                <a href="guides/resourceidguide.html">Resource ID Guide</a>
+                                <div class="update text-muted">Last modified: 29 November 2021</div>
+                                <br>
+                                <a href="guides/pilotformat.txt">Pilot File Format</a>
+                                <div class="update text-muted">Last modified: 5 October 2021</div>
+                                <div>Based on Matt Burch's <a href="http://asw.forums.cytheraguides.com/topic/15023/pilot-data/9">spec for original EV pilot files</a>.<br>Note pilot files can be edited directly in <a href="https://github.com/andrews05/ResForge">ResForge</a>.</div>
+                                <br>
+                                <a href="guides/evnhacks.txt">EV Nova Hacks</a>
+                                <div class="update text-muted">Last modified: 15 February 2022</div>
+                                <br>
+                            </div>
+                            <div class="col-lg-6">
+                                <a href="guides/evnbitmap.txt">EV Nova Mission BitMap</a>
+                                <div>NCB analysis by the Mission BitMap program.</div>
+                                <br>
+                                <a href="guides/evobitmap.txt">EV Override Mission BitMap</a>
+                                <div>NCB analysis by the Mission BitMap program.</div>
+                                <br>
+                                <a href="guides/evcbitmap.txt">EV Classic Mission BitMap</a>
+                                <div>NCB analysis by the Mission BitMap program.</div>
+                                <br>
+                            </div>
+                        </div>
+                        <br>
+                    </div>
+                    <div class="tab-pane" id="backroom-tab">
+                        <h4>Back Room</h4>
+                        How did you get here?<br>
+                        <br>
+                        <a href="plugins/Polycon_EV.zip">Polycon EV</a> <span class="filesize">(29.1 MB)</span>
+                        <div class="desc">AnubisTTP's Polycon, unofficially updated and repackaged for compatibility with both Mac Nova 1.1 and Windows.</div>
+
+                        <a href="sources/Infini-D_Models.zip">Infini-D Models</a> <span class="filesize">(917 KB)</span>
+                        <div class="desc">Various 3D models I've used when making EVO Extras and maintaining Facelift, all based on the original EVO model files.</div>
+
+                        <a href="https://www.dropbox.com/sh/vilda84kuyghlks/AADAZD4UoSxUwno8OUI5NmUea">Additional Nova ports of classic plug-ins</a>
+                        <div class="desc">Largely untested and unsupported.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 float-left">
                 <div class="alert alert-success">
                     <h5>Don't Panic</h5>
-                    All plug-ins on this site are in the Windows ".rez" format. This makes it super easy for Windows users to use, but Mac users need not worry! When using the mod version of EV Nova, as shown at the top of this page, all .rez files will automatically be converted to Mac format when the game runs.
+                    All plug-ins on this site are in the Windows ".rez" format. This makes it super easy for Windows users to use, but Mac users need not worry! When using EV Nova mod 3, all .rez files will automatically be converted to Mac format when the game runs.
                 </div>
-            </div>
-            <div class="tab-pane" id="nova-tab">
-                <h4>Nova Plug-ins</h4>
-                <br>
-                <a href="plugins/Dodge_That.zip">Dodge That</a> <span class="filesize">(86 KB)</span>
-                <p class="desc">Dodge the crazy torpedo for as long as you can! Start a new Dodge That pilot to begin.</p>
-
-                <a href="plugins/Collision_Damage.zip">Collision Damage</a> <span class="filesize">(1 KB)</span>
-                <p class="desc">Looking for a challenge? With Collision Damage asteroids are no longer the friendly background decorations they once were. Visit any mission computer to begin.</p>
-
-                <a href="plugins/Shields.zip">Shields</a> <span class="filesize">(306 KB)</span>
-                <p class="desc">Nova shield graphics plug by Dark Revenant, tweaked for better scaling and masking plus a version for ARPIA2.</p>
-
-                <div><a href="plugins/Nova_Roid_Fix.zip">Nova Roid Fix</a> <span class="filesize">(546 KB)</span></div>
-                <p class="desc">This plug-in works around a Nova engine bug to ensure that asteroids do not disappear when playing in 16:9 widescreen resolutions.<br>Alternate version for ultrawide: <a href="plugins/Nova_Roid_Fix_240.zip">Nova Roid Fix 240</a> <span class="filesize">(552 KB)</span></p>
-            </div>
-            <div class="tab-pane" id="utilities-tab">
-                <h4>Utilities</h4>
-                <br>
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="icon-item">
-                            <img src="utilities/mcicon.png" class="icon">
-                            <h5>
-                                <a href="utilities/MissionComputer431.zip">MissionComputer 4.3.1</a> <span class="filesize">(7.5 MB)</span>
-                                <a class="source float-right text-warning" href="utilities/Duessa422.zip">Duessa 4.2.2 (win)</a>
-                            </h5>
-                            <div class="update text-muted">8 September 2020: 4.3.1 released with support for .npif files.</div>
-                            <p class="desc">The primary plug-in editor for Mac. Written by David Arthur, minor updates by myself.</p>
-                        </div>
-
-                        <div class="icon-item">
-                            <img src="https://github.com/andrews05/ResForge/raw/master/ResForge/Assets.xcassets/ResForge.appiconset/ResForge_128.png" class="icon">
-                            <h5>
-                                <a href="https://github.com/andrews05/ResForge">ResForge</a> <span class="filesize"><span class="badge badge-success">Universal</span></span>
-                            </h5>
-                            <p class="desc">Modern resource fork editor, including advanced Nova templates and visual shan editor.</p>
-                        </div>
-
-                        <div class="icon-item">
-                            <img src="utilities/spicon.png" class="icon">
-                            <h5>
-                                <a class="source float-right text-info" href="sources/SpacePort.zip">&gt; source code</a>
-                                <a href="utilities/SpacePort.zip">SpacePort 1.3.2</a> <span class="filesize">(2.0 MB)</span>
-                            </h5>
-                            <div class="update text-muted">31 January 2022: 1.3.2 released.</div>
-                            <p class="desc">Program for porting EV and EVO plug-ins to the Nova engine, written by Michael Hewitt, Brian Norwood and myself.</p>
-                        </div>
-
-                        <div class="icon-item">
-                            <img src="utilities/paicon.png" class="icon">
-                            <h5><a href="utilities/Plug-in_Archiver.zip">Plug-in Archiver 2.4.2</a> <span class="filesize">(1.5 MB)&ensp;<span class="badge badge-danger">Deprecated</span></span></h5>
-                            <div class="update text-muted">5 March 2012: 2.4.2 released.</div>
-                            <p class="desc">A simple archiving program with automatic MacBinary encoding.<br><i>Note: The Windows .rez format is now preferred for plug-in distribution.</i></p>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <a href="utilities/Plug-in_Extractor.zip">Plug-in Extractor</a> <span class="filesize">(5.0 MB)&ensp;<span class="badge badge-warning">Windows</span></span>
-                        <div class="update text-muted">27 June 2013: Initial release.</div>
-                        <p class="desc">One-click plug-in extraction and conversion for Windows users - handles almost any archive format downloaded from the Nova Addons.</p>
-
-                        <a href="utilities/EV_Nova_Launcher.zip">EV Nova Launcher</a> <span class="filesize">(654 KB)</span>
-                        <p class="desc">Stand-alone, no-frills launcher to run EV Nova using the app&rsquo;s current directory for plug-ins and pilots.</p>
-
-                        <a class="source float-right text-info" href="sources/plugconvert.c">&gt; source code</a>
-                        <a href="utilities/Plug-in_Converter.zip">Plug-in Converter</a> <span class="filesize">(60 KB)&ensp;<span class="badge badge-success">64-bit</span></span><br>
-                        <p class="desc">Convert plug-ins between Mac and Windows formats. Correctly converts types such as 'snd ' that MC doesn't.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="tab-pane" id="guides-tab">
-                <h4>Guides</h4>
-                <br>
-                <div class="row">
-                    <div class="col-lg-6">
-                        <a href="guides/evnbible.html">EV Nova Bible</a>
-                        <div>Easy-navigation HTML version, originally formatted by Jail.</div>
-                        <br>
-                        <a href="guides/resourceidguide.html">Resource ID Guide</a>
-                        <div class="update text-muted">Last modified: 29 November 2021</div>
-                        <br>
-                        <a href="guides/pilotformat.txt">Pilot File Format</a>
-                        <div class="update text-muted">Last modified: 5 October 2021</div>
-                        <div>Based on Matt Burch's <a href="http://asw.forums.cytheraguides.com/topic/15023/pilot-data/9">spec for original EV pilot files</a>.<br>Note pilot files can be edited directly in <a href="https://github.com/andrews05/ResForge">ResForge</a>.</div>
-                        <br>
-                        <a href="guides/evnhacks.txt">EV Nova Hacks</a>
-                        <div class="update text-muted">Last modified: 15 February 2022</div>
-                        <br>
-                    </div>
-                    <div class="col-lg-6">
-                        <a href="guides/evnbitmap.txt">EV Nova Mission BitMap</a>
-                        <div>NCB analysis by the Mission BitMap program.</div>
-                        <br>
-                        <a href="guides/evobitmap.txt">EV Override Mission BitMap</a>
-                        <div>NCB analysis by the Mission BitMap program.</div>
-                        <br>
-                        <a href="guides/evcbitmap.txt">EV Classic Mission BitMap</a>
-                        <div>NCB analysis by the Mission BitMap program.</div>
-                        <br>
-                    </div>
-                </div>
-                <br>
-            </div>
-            <div class="tab-pane" id="backroom-tab">
-                <h4>Back Room</h4>
-                How did you get here?<br>
-                <br>
-                <a href="plugins/Polycon_EV.zip">Polycon EV</a> <span class="filesize">(29.1 MB)</span>
-                <p class="desc">AnubisTTP's Polycon, unofficially updated and repackaged for compatibility with both Mac Nova 1.1 and Windows.</p>
-
-                <a href="sources/Infini-D_Models.zip">Infini-D Models</a> <span class="filesize">(917 KB)</span>
-                <p class="desc">Various 3D models I've used when making EVO Extras and maintaining Facelift, all based on the original EVO model files.</p>
-
-                <a href="https://www.dropbox.com/sh/vilda84kuyghlks/AADAZD4UoSxUwno8OUI5NmUea">Additional Nova ports of classic plug-ins</a>
-                <p class="desc">Largely untested and unsupported.</p>
             </div>
         </div>
         <script>
