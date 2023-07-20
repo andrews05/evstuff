@@ -24,4 +24,4 @@ ClearType               0BB94C  6A00          6A03          Disables ClearType
 Open Pilot (1)          0C934C  7442          EB42          Prevents switching to windowed mode when opening pilot
            (2)          0C93B8  0F85D2000000  909090909090  (combine with the above)
 Main Font               16C36C  Arial
-Enable Windows keys     0D1800 83F85B740D83F85C75 EB9090909090909090
+Enable Windows keys     0D1800  83F85B740D83F85C75 9090909090909090EB
