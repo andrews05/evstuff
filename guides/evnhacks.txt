@@ -20,8 +20,11 @@ Small Width             0B3A3E  2003
 Width Check             0B3A16  0003                        This is checked against your screen width to determine whether to use the small or large resolution
 Large Height            0B3A20  0003
 Large Width             0B3A25  0004
-ClearType               0BB94C  6A00          6A03          Disables ClearType
+Font Size*              0BB910  8B6C2428F7DD  BDF4FFFFFF90  Changes size of all text - the size is the middle 4 bytes, set to -12 (12pt) in this example (normally 9pt)
+ClearType*              0BB94C  6A00          6A03          Disables ClearType
 Open Pilot (1)          0C934C  7442          EB42          Prevents switching to windowed mode when opening pilot
            (2)          0C93B8  0F85D2000000  909090909090  (combine with the above)
 Main Font               16C36C  Arial
 Enable Windows keys     0D1800  83F85B740D83F85C75 9090909090909090EB
+
+*Prefer using cnc-ddraw to control these rather than applying the hacks.
