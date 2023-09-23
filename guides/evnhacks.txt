@@ -22,9 +22,17 @@ Large Height            0B3A20  0003
 Large Width             0B3A25  0004
 Font Size*              0BB910  8B6C2428F7DD  BDF4FFFFFF90  Changes size of all text - the size is the middle 4 bytes, set to -12 (12pt) in this example (normally 9pt)
 ClearType*              0BB94C  6A00          6A03          Disables ClearType
-Open Pilot (1)          0C934C  7442          EB42          Prevents switching to windowed mode when opening pilot
-           (2)          0C93B8  0F85D2000000  909090909090  (combine with the above)
-Main Font               16C36C  Arial
+Open Pilot (1)          0C934C  7442          EB42          Prevents switching to windowed mode when opening pilot (apply both)
+           (2)          0C93B8  0F85D2000000  909090909090
+Radar Interference (1)  0FD374  8B5A04        8B5A02        Fix radar interference (apply all 6)
+                   (2)  0FD379  8B4208        8B4206
+                   (3)  0FD388  83FB20        83FB1C
+                   (4)  0FD38d  83F854        83F84E
+                   (5)  0FD3EC  8B422C        8B422A
+                   (6)  0FD438  0FB74A22      0FB74A20
+Replacement Font        16C36C  Arial                       This font is used to substitute a number of following fonts
+Replaced Fonts          16C374  Geneva                      Replace with nulls to allow use of Geneva (main font)
+                        16C398  Charcoal                    Replace with nulls to allow use of Charcoal (button font)
 Enable Windows keys     0D1800  83F85B740D83F85C75 9090909090909090EB
 
 *Prefer using cnc-ddraw to control these rather than applying the hacks.
