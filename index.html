@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title>EV Stuff</title>
+        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
-        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <title>EV Stuff</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <style>
-            .filesize {font-size: 0.75rem; color: #555}
+            .filesize {font-size: 0.75rem; color: var(--bs-secondary-color)}
             .source {font-size: 0.8rem; padding-top: 0.3rem}
             .badge {vertical-align: text-top}
-            .update {font-size: 0.75rem}
+            .update {font-size: 0.75rem; color: var(--bs-secondary-color)}
             .icon {height: 48px; float: left; margin-right: 0.6em}
             .desc {margin-bottom: 1.5em}
             .icon-item .update {margin: .3rem 0}
@@ -16,20 +17,29 @@
             #backroom-nav {margin-left: auto}
             #backroom-nav>a:not(.active) {opacity: 0}
         </style>
+        <script>
+        const matchDark = window.matchMedia('(prefers-color-scheme: dark)');
+        function setTheme() {
+            const theme = matchDark.matches ? 'dark' : 'light';
+            document.documentElement.setAttribute('data-bs-theme', theme);
+        }
+        setTheme();
+        matchDark.addEventListener('change', setTheme);
+        </script>
     </head>
-    <body class="container pt-3" onload="checkHash()">
+    <body class="container pt-3">
         <div class="row d-block">
-            <div class="col-xl-3 float-left">
+            <div class="col-xl-3 float-start">
                 <div class="card mb-3 icon-item">
                     <div class="card-body">
                         <img src="evnicon.png" class="icon">
                         <h5><a href="https://www.dropbox.com/s/3552i9o0gjixkwg/EV%20Nova%20mod%203.dmg">EV Nova mod 3</a></h5>
-                        <div class="update text-muted">85.4 MB</div>
+                        <div class="update">85.4 MB</div>
                         Custom edition of EV Nova for macOS 10.11 to 10.14, with compatibility fixes, font size setting, and automatic .rez conversion.
                     </div>
                 </div>
             </div>
-            <div class="col-xl-9 float-right">
+            <div class="col-xl-9 float-end">
                 <ul class="nav nav-tabs">
                     <li class="nav-item"><a class="nav-link active" href="#evo">EV/O Plug-ins</a></li>
                     <li class="nav-item"><a class="nav-link" href="#nova">Nova Plug-ins</a></li>
@@ -46,14 +56,14 @@
                                 <div class="icon-item">
                                     <img src="plugins/evicon.png" class="icon">
                                     <h5><a href="plugins/EV_Classic_for_Nova_1.1.5.zip">EV Classic for Nova 1.1.5</a> <span class="filesize">(7.8 MB)</span></h5>
-                                    <div class="update text-muted">23 January 2023: 1.1.5 released with compatibility updates.</div>
+                                    <div class="update">23 January 2023: 1.1.5 released with compatibility updates.</div>
                                     <div class="desc">Port of the original Escape Velocity to the Nova engine.</div>
                                 </div>
 
                                 <div class="icon-item">
                                     <img src="plugins/revicon.png" class="icon">
                                     <a href="plugins/rEV_1.1.zip">rEV 1.1</a> <span class="filesize">(28.7 MB)</span>
-                                    <div class="update text-muted">2 April 2023: Minor fixes.</div>
+                                    <div class="update">2 April 2023: Minor fixes.</div>
                                     <div class="desc">Kris Quistorff's rEVisited graphical remake and expansion, rebuilt for EV Classic for Nova.</div>
                                 </div>
 
@@ -62,7 +72,7 @@
                                 <div class="icon-item">
                                     <img src="plugins/fhicon.png" class="icon">
                                     <a href="plugins/The_Frozen_Heart.zip">The Frozen Heart</a> <span class="filesize">(7.4 MB)</span>
-                                    <div class="update text-muted">16 September 2021: Updated combat ratings.</div>
+                                    <div class="update">16 September 2021: Updated combat ratings.</div>
                                     <div class="desc">Martin Turner's classic adventure, ported to the Nova engine.</div>
                                 </div>
                                 <br>
@@ -71,28 +81,28 @@
                                 <div class="icon-item">
                                     <img src="plugins/evoicon.png" class="icon">
                                     <h5><a href="plugins/EV_Override_for_Nova_1.1.5.zip">EV Override for Nova 1.1.5</a> <span class="filesize">(9.5 MB)</span></h5>
-                                    <div class="update text-muted">23 January 2023: 1.1.5 released with compatibility updates.</div>
+                                    <div class="update">23 January 2023: 1.1.5 released with compatibility updates.</div>
                                     <div class="desc">Port of the original EV Override to the Nova engine.</div>
                                 </div>
 
                                 <div class="icon-item">
                                     <img src="plugins/eeicon.png" class="icon">
                                     <a href="plugins/EVO_Extras.zip">EVO Extras</a> <span class="filesize">(990 KB)</span>
-                                    <div class="update text-muted">23 January 2023: Updated to match EVO changes.</div>
+                                    <div class="update">23 January 2023: Updated to match EVO changes.</div>
                                     <div class="desc">Collection of five small plug-ins for EV Override for Nova.</div>
                                 </div>
 
                                 <div class="icon-item">
                                     <img src="plugins/flicon.png" class="icon">
                                     <a href="plugins/EVO_Facelift_1.0.7.zip">EVO Facelift 1.0.7</a> <span class="filesize">(22.1 MB)</span>
-                                    <div class="update text-muted">23 January 2023: Updated to match EVO changes.</div>
+                                    <div class="update">23 January 2023: Updated to match EVO changes.</div>
                                     <div class="desc">Tim Morgan's graphical facelift for EV Override for Nova.</div>
                                 </div>
 
                                 <div class="icon-item">
                                     <img src="plugins/cficon.png" class="icon">
                                     <a href="plugins/Cold_Fusion_for_Nova_1.0.1.zip">Cold Fusion for Nova 1.0.1</a> <span class="filesize">(10.1 MB)</span>
-                                    <div class="update text-muted">20 October 2009: 1.0.1 released with minor fixes and improvements.</div>
+                                    <div class="update">20 October 2009: 1.0.1 released with minor fixes and improvements.</div>
                                     <div class="desc">Dreamwave Studios' Cold Fusion graphics replacement for EV Override, ported to the Nova engine by Dr. Trowel.</div>
                                 </div>
                             </div>
@@ -121,7 +131,7 @@
                                 <div class="icon-item">
                                     <img src="https://github.com/andrews05/ResForge/raw/master/ResForge/Assets.xcassets/ResForge.appiconset/ResForge_128.png" class="icon">
                                     <h5>
-                                        <a href="https://github.com/andrews05/ResForge/releases" target="_blank">ResForge</a> <span class="filesize"><span class="badge badge-success">Universal</span></span>
+                                        <a href="https://github.com/andrews05/ResForge/releases" target="_blank">ResForge</a> <span class="filesize"><span class="badge text-bg-success">Universal</span></span>
                                     </h5>
                                     <div class="desc">Modern resource fork editor, including advanced Nova templates and visual shan editor.</div>
                                 </div>
@@ -131,27 +141,27 @@
                                     <h5>
                                         <a href="utilities/MissionComputer431.zip">MissionComputer 4.3.1</a> <span class="filesize">(7.5 MB)</span>
                                     </h5>
-                                    <div class="update text-muted">8 September 2020: 4.3.1 released with support for .npif files.</div>
+                                    <div class="update">8 September 2020: 4.3.1 released with support for .npif files.</div>
                                     <div class="desc">
                                         Comprehensive plug-in editor for Mac. Written by David Arthur, minor updates by myself.
-                                        <div class="source">See also: <a href="utilities/Duessa422.zip">Duessa 4.2.2</a> <span class="filesize">(5.6 MB)</span>&ensp;<span class="badge badge-warning">Windows</span></div>
+                                        <div class="source">See also: <a href="utilities/Duessa422.zip">Duessa 4.2.2</a> <span class="filesize">(5.6 MB)</span>&ensp;<span class="badge text-bg-warning">Windows</span></div>
                                     </div>
                                 </div>
 
                                 <div class="icon-item">
                                     <img src="utilities/spicon.png" class="icon">
                                     <h5>
-                                        <a class="source float-right text-info" href="sources/SpacePort.zip">&gt; source code</a>
+                                        <a class="source float-end text-info" href="sources/SpacePort.zip">&gt; source code</a>
                                         <a href="utilities/SpacePort.zip">SpacePort 1.3.2</a> <span class="filesize">(2.0 MB)</span>
                                     </h5>
-                                    <div class="update text-muted">31 January 2022: 1.3.2 released.</div>
+                                    <div class="update">31 January 2022: 1.3.2 released.</div>
                                     <div class="desc">Program for porting EV and EVO plug-ins to the Nova engine, written by Michael Hewitt, Brian Norwood and myself.</div>
                                 </div>
 
                                 <div class="icon-item">
                                     <img src="utilities/paicon.png" class="icon">
-                                    <h5><a href="utilities/Plug-in_Archiver.zip">Plug-in Archiver 2.4.2</a> <span class="filesize">(1.5 MB)&ensp;<span class="badge badge-danger">Deprecated</span></span></h5>
-                                    <div class="update text-muted">5 March 2012: 2.4.2 released.</div>
+                                    <h5><a href="utilities/Plug-in_Archiver.zip">Plug-in Archiver 2.4.2</a> <span class="filesize">(1.5 MB)&ensp;<span class="badge text-bg-danger">Deprecated</span></span></h5>
+                                    <div class="update">5 March 2012: 2.4.2 released.</div>
                                     <div class="desc">
                                         A simple archiving program with automatic MacBinary encoding.
                                         <div class="source"><i>Note: The Windows .rez format is now preferred for plug-in distribution.</i></div>
@@ -159,15 +169,15 @@
                                 </div>
                             </div>
                             <div class="col-lg-6">
-                                <a href="utilities/Plug-in_Extractor.zip">Plug-in Extractor</a> <span class="filesize">(5.0 MB)&ensp;<span class="badge badge-warning">Windows</span></span>
-                                <div class="update text-muted">27 June 2013: Initial release.</div>
+                                <a href="utilities/Plug-in_Extractor.zip">Plug-in Extractor</a> <span class="filesize">(5.0 MB)&ensp;<span class="badge text-bg-warning">Windows</span></span>
+                                <div class="update">27 June 2013: Initial release.</div>
                                 <div class="desc">One-click plug-in extraction and conversion for Windows users - handles almost any archive format downloaded from the Nova Addons.</div>
 
                                 <a href="utilities/EV_Nova_Launcher.zip">EV Nova Launcher</a> <span class="filesize">(654 KB)</span>
                                 <div class="desc">Stand-alone, no-frills launcher to run EV Nova using the app&rsquo;s current directory for plug-ins and pilots.</div>
 
-                                <a class="source float-right text-info" href="sources/plugconvert.c">&gt; source code</a>
-                                <a href="utilities/Plug-in_Converter.zip">Plug-in Converter</a> <span class="filesize">(60 KB)&ensp;<span class="badge badge-success">64-bit</span></span><br>
+                                <a class="source float-end text-info" href="sources/plugconvert.c">&gt; source code</a>
+                                <a href="utilities/Plug-in_Converter.zip">Plug-in Converter</a> <span class="filesize">(60 KB)&ensp;<span class="badge text-bg-success">64-bit</span></span><br>
                                 <div class="desc">Convert plug-ins between Mac and Windows formats. Correctly converts types such as 'snd ' that MC doesn't.</div>
                             </div>
                         </div>
@@ -181,14 +191,14 @@
                                 <div>Easy-navigation HTML version, originally formatted by Jail.</div>
                                 <br>
                                 <a href="guides/resourceidguide.html">Resource ID Guide</a>
-                                <div class="update text-muted">Last modified: 29 November 2021</div>
+                                <div class="update">Last modified: 29 November 2021</div>
                                 <br>
                                 <a href="guides/pilotformat.txt">Pilot File Format</a>
-                                <div class="update text-muted">Last modified: 5 October 2021</div>
+                                <div class="update">Last modified: 5 October 2021</div>
                                 <div>Based on Matt Burch's <a href="http://asw.forums.cytheraguides.com/topic/15023/pilot-data/9">spec for original EV pilot files</a>.<br>Note pilot files can be edited directly in <a href="https://github.com/andrews05/ResForge">ResForge</a>.</div>
                                 <br>
                                 <a href="guides/evnhacks.txt">EV Nova Hacks</a>
-                                <div class="update text-muted">Last modified: 15 February 2022</div>
+                                <div class="update">Last modified: 15 February 2022</div>
                                 <br>
                             </div>
                             <div class="col-lg-6">
@@ -220,7 +230,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-xl-3 float-left">
+            <div class="col-xl-3 float-start">
                 <div class="alert alert-success">
                     <h5>Don't Panic</h5>
                     All plug-ins on this site are in the Windows ".rez" format. This makes it super easy for Windows users to use, but Mac users need not worry! When using EV Nova mod 3, all .rez files will automatically be converted to Mac format when the game runs.
@@ -229,17 +239,18 @@
         </div>
         <script>
         function checkHash() {
-            var newTab = document.querySelector(window.location.hash+'-tab');
+            const newTab = document.querySelector(`${window.location.hash}-tab`);
             if (!newTab) return;
             document.querySelector('.nav-link.active').classList.remove('active');
             document.querySelector('.tab-pane.active').classList.remove('active');
-            document.querySelector('.nav-link[href="'+window.location.hash+'"]').classList.add('active');
+            document.querySelector(`.nav-link[href="${window.location.hash}"]`).classList.add('active');
             newTab.classList.add('active');
         }
+        checkHash();
         window.addEventListener('hashchange', checkHash);
-        var regex = new RegExp('://(.*)\.github\.io/([^/]*)/');
-        var replace = Math.random() >= 0.25 ? '://media.githubusercontent.com/media/$1/$2/master/' : '://bitbucket.org/andrews050/$2/raw/master/';
-        for (var lfs of document.querySelectorAll('a[href$=".zip"],a[href$=".dmg"]')) {
+        const regex = new RegExp('://(.*)\.github\.io/([^/]*)/');
+        const replace = Math.random() >= 0.25 ? '://media.githubusercontent.com/media/$1/$2/master/' : '://bitbucket.org/andrews050/$2/raw/master/';
+        for (const lfs of document.querySelectorAll('a[href$=".zip"],a[href$=".dmg"]')) {
             lfs.href = lfs.href.replace(regex, replace);
         }
         </script>
