@@ -14,7 +14,7 @@ PlayerFileDataStruct (59826 bytes)
  0000	short lastStellar		last stellar object to be visited
  0002	short shipClass			player's ship class
  0004	short cargo[6]			current quantity of each of the six types of basic cargo
- 0010	short unused (30)		unused
+ 0010	short shield			unused
  0012	short fuel			current fuel quantity, 100 units per jump
  0014	short month			the currect month (1-12)
  0016	short day			the current day (1-31)
@@ -41,7 +41,10 @@ PlayerFileDataStruct (59826 bytes)
 						0-767 means a fighter of a certain class
  e82e	short escortUpgrade[64]		whether each escort is scheduled for upgrade
  e8ae	short escortSale[64]		whether each escort is scheduled for sale
- e92e	short unknown[64] (-1 or 0)	related to escorts but probably unused
+ e92e	short escortVoiceMode[64]	stores the voice mode of each escort/fighter
+						-1 means not an escort/fighter data item
+						0 means even-numbered voice sounds (when applicable)
+						1 means odd-numbered voice sounds
  e9ae	long rating			player's combat rating
 
 
@@ -50,16 +53,16 @@ MissionObjectives (20 bytes)
  281f	Boolean travelObjComplete	player has visited assigned destination
  2820	Boolean shipObjComplete		player has completed special-ship assignment
  2821	Boolean missionFailed		mission was failed
- 2822	unsigned short flags		unused?
+ 2822	unsigned short flags		(unused? also stored in MissionData)
  2824	short year			mission completion deadline (unused? relies on timeLeft)
  2826	short month
  2828	short day
- 282a	short unused[4]			unused
+ 282a	short unused[4]			unused (time fields of DateTimeRec)
 
 
 MissionData (2284 bytes)
  295e	short travelStellar
- 2960	short unknown
+ 2960	short unused			(was travelSystem in original EV)
  2962	short returnStellar
  2964	short specialShipCount		number of remaining special ships
  2966	short specialShipDude
@@ -78,7 +81,8 @@ MissionData (2284 bytes)
  2990	short initialShipCount		how many special ships there were at the start of the mission
  2992	Boolean canAbort
  2993	Boolean cargoLoaded		mission cargo is aboard
- 2994	short unused			(1 byte in windows .plt format)
+ 2994	Boolean available		unused
+ 2995	Byte unused			(0 bytes in windows .plt format)
  2996	short briefText, quickBriefText, loadCargoText, dropOffCargoText, compText, failText, refuseText, shipDoneText
  29a6	short timeLeft			number of days remaining
  29a8	short specialShipNameResID	ID of 'STR#' resource used to name the special ships
@@ -87,16 +91,16 @@ MissionData (2284 bytes)
  29ae	short missionID
  29b0	short specialShipSubtitleResID
  29b2	short specialShipSubtitleIndex
- 29b4	short unknown (-1)
+ 29b4	short specialShipPreselectType	index of the pre-selected ship slot within the dude resource
  29b6	unsigned short flags
  29b8	unsigned short flags2
- 29ba	short unknown[4]
+ 29ba	unsigned long requireBits[2]	unused
  29c2	short auxShipCount, auxShipDude, auxShipSyst, auxShipsJumpedIn, auxShipDelay, auxShipsLeft
  29ce	Byte specialShipNameLength
  29cf	char[63] specialShipName
  2a0e	Byte specialShipSubtitleLength
  2a0f	char[63] specialShipSubtitle
- 2a4e	char[255] unknown
+ 2a4e	char[255] availability		unused
  2b4d	char[255] onAccept
  2c4c	char[255] onRefuse
  2d4b	char[255] onSuccess
@@ -131,7 +135,12 @@ AltPlayerFileDataStruct (26366 bytes)
  3990	short cronHoldOff[512]
  3d90	short reinforcements[2048]	number of days until system reinforcements regenerate
  4d90	short stelDestroyed[2048]	number of days until stellar regenerates (-1 = alive)
- 5d90	short unknown[4] (0)
+ 5d90	short escortOrders[4]		orders given to each escort category
+						0 = formation
+						1 = defend
+						2 = attack
+						3 = return to hanger
+						4 = hold position
  5d98	Byte playerNicknameLength
  5d99	char[63] playerNickname
  5dd8	unsigned short shipColorRed	0-32
