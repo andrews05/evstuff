@@ -284,10 +284,14 @@ Exxx   Returns 1 if the player has explored system ID xxx, 0 if not
 &      Logical and operator
 !      Logical negation operator
 ( )    Parenthetical enclosure
+[ ]    Counted set - returns the number of 1s in the set.
+=,&lt;,&gt;  Comparison operators for counted sets. Returns 1 if the set count is
+       equal to, less than, or greater than the number on the right.
 
 Some examples:
 b13 & (b15 | !b72)
 !(B42 | B53) & b103
+( [b1 b2 b3] = 2 )
 
 Note that since the Nova evaluator is fairly primitive, it may do unpredictable
 things if you give it an expression like b1 & b2 | b3 ... instead, use proper
@@ -3702,6 +3706,9 @@ features:
 
   Game Constants
     Added Max Crons.
+
+  Control bit test expressions
+    Added syntax and example for counted sets.
 
   shïp Shields field
     Added note about negative shield values.
